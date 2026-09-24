@@ -340,16 +340,12 @@ const SQL = `
 
 async function main() {
   console.log("seeding...");
-  const client = new Client(
-    process.argv[2]
-      ? { connectionString: process.argv[2] }
-      : {
-          host: "localhost",
-          user: "johnglen.siy",
-          database: "rally_grids",
-          port: 5432,
-        },
-  );
+  const connectionString = process.argv[2] ?? process.env.DATABASE_URL;
+  if (!connectionString) {
+    throw new Error("Set DATABASE_URL in .env or pass a connection string");
+  }
+  const client = new Client({ connectionString });
+  
   await client.connect();
   try {
     await client.query(SQL);
