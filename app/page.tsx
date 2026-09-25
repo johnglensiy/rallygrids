@@ -1,7 +1,9 @@
 import Image from "next/image";
 import GameGrid from "./GameGrid";
+import { getAllPlayers } from "@/server/players";
 
-export default function Home() {
+export default async function Home() {
+  const players = await getAllPlayers();
   return (
     <GameGrid
       rows={["Grand Slam winner", "Left-handed", "Born in Spain"]}
