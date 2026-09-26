@@ -8,6 +8,7 @@ export default async function Home() {
     <GameGrid
       rows={["Grand Slam winner", "Left-handed", "Born in Spain"]}
       cols={["Wimbledon finalist", "Former world #1", "Olympic medalist"]}
+      allPlayers={players}
     />
   );
 }
