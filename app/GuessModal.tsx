@@ -10,6 +10,7 @@ type GuessModalProps = {
     onClose: () => void;
     onSelectPlayer: (playerId: number) => void; 
 }
+
 const normalize = (s: string) =>
     s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase()
 
@@ -42,7 +43,14 @@ export default function GuessModal({ allPlayers, rowLabel, colLabel, onClose, on
                 />
                 <ul>
                     {matches.slice(0, 8).map((p: Player) => 
-                        <p key={p.id} onClick={() => onSelectPlayer(p.id)}>{p.name}</p> 
+                        <p 
+                            key={p.id} 
+                            onClick={() => {
+                                onSelectPlayer(p.id)
+                                onClose()
+                            }}>
+                            {p.name}
+                        </p> 
                     )}
                     {matches.length > 8 ? <p>{matches.length} more...</p> : <></>}
                 </ul>
