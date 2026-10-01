@@ -22,7 +22,7 @@ export default function GuessModal({ allPlayers, rowLabel, colLabel, onClose, on
         ? allPlayers.filter((p) => normalize(p.name).includes(pInput))
         : [];
     
-    return (
+    return (    
         <div
             className="fixed inset-0 z-50 flex items-start justify-center bg-black/40 backdrop-blur-sm pt-24"
             onClick={onClose}

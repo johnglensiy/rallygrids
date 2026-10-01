@@ -32,8 +32,9 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
       try {
         const res = await fetch("/api/puzzles");
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        setPuzzle(await res.json());
-        console.log("this is the puzzle obj", puzzle);
+        const data = await res.json();
+        setPuzzle(data);
+        console.log("this is the puzzle obj", data);
       } catch (err) {
         console.error(err);
       }
@@ -41,15 +42,41 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
     loadPuzzle();
   }, []);
 
-  function handleGuess(playerId: number) {
+  async function handleGuess(playerId: number) {
     // set gridValues[cellSelected] to the player's name
     const thisPlayer = allPlayers.find((p) => p.id === playerId) // set a guard
     if (!thisPlayer) return;
-    console.log(thisPlayer.name);
+
+    if (!cellSelected) return;
+    const { row, col } = cellSelected;
+    
+    // sends an API call when guess is handled
+    // guess checking should occur in the server
+    try {
+      const res = await fetch("/api/guess", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ puzzleId: puzzle?.id, row, col, playerId })
+      });
+      if (!res.ok) throw new Error (`HTTP ${res.status}`);
+
+      const { guessIsCorrect } = await res.json();
+      if (!guessIsCorrect) {
+        console.log("guess incorrect");
+        return;
+      }
+    } catch (err) {
+      console.error(err);
+    }
 
     if (!cellSelected) return;
     const thisIndex = cellSelected.row * 3 + cellSelected.col;
     setGridValues((prev) => prev.map((v, i) => (i === thisIndex ? thisPlayer.name : v)))
+  
+    
+    // check if guess is correct (needs to send API call)
+    // prolly should break this into separate functions or change the ordering
+    // call 
   }
 
   if (!puzzle) return <p>Loading...</p>;
@@ -89,8 +116,8 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
       { cellSelected && 
         <GuessModal 
           allPlayers={allPlayers}
-          rowLabel={rows[cellSelected.row]}
-          colLabel={cols[cellSelected.col]}
+          rowLabel={puzzle.rows[cellSelected.row]}
+          colLabel={puzzle.cols[cellSelected.col]}
           onClose={() => setCellSelected(null)}
           onSelectPlayer={handleGuess}
         /> 
