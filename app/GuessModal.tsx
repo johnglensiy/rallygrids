@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Player } from "./GameGrid"
+import { GuessResult, Player } from "./GameGrid"
 
 type GuessModalProps = {
     allPlayers: Player[];  
     rowLabel: string;
     colLabel: string;
     onClose: () => void;
-    onSelectPlayer: (playerId: number) => void; 
+    onSelectPlayer: (playerId: number) => Promise<GuessResult>; 
 }
 
 const normalize = (s: string) =>
@@ -17,6 +17,7 @@ const normalize = (s: string) =>
 export default function GuessModal({ allPlayers, rowLabel, colLabel, onClose, onSelectPlayer }: GuessModalProps) {
     const [playerGuess, setPlayerGuess] = useState("");
     const [highlightIdx, setHighlightIdx] = useState<number>(-1);
+    const [shakeIdx, setShakeIdx] = useState<number | null>(null);
 
     const pInput = normalize(playerGuess.trim());   
     const matches = pInput
@@ -60,12 +61,20 @@ export default function GuessModal({ allPlayers, rowLabel, colLabel, onClose, on
                     {matches.slice(0, 8).map((p: Player, i) => 
                         <p 
                             key={p.id} 
-                            onClick={() => {
-                                onSelectPlayer(p.id)
-                                onClose()
+                            onMouseDown={(e) => e.preventDefault()}
+                            onClick={async () => {
+                                setHighlightIdx(i);
+                                const result = await onSelectPlayer(p.id)
+                                if (result == "correct") {
+                                    onClose();
+                                } else if (result == "incorrect") {
+                                    // don't close and jiggle player li
+                                    setShakeIdx(i);
+                                }
                             }}
+                            onAnimationEnd={() => setShakeIdx(null)}
                             className={`w-full rounded-md px-3 py-2 text-left ${
-                                i === highlightIdx ? "bg-neutral-100" : ""
+                                shakeIdx === i ? "animate-shake bg-red-50 text-red-700" : i === highlightIdx ? "bg-neutral-100" : ""
                             }`}
                         >
                             {p.name}

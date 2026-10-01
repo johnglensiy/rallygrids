@@ -22,6 +22,8 @@ type GameGridProps = {
   allPlayers: Player[];
 };
 
+type GuessResult = "correct" | "incorrect" | "error";
+
 export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
   const [cellSelected, setCellSelected] = useState<{ row: number; col: number} | null>(null);
@@ -42,12 +44,14 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
     loadPuzzle();
   }, []);
 
-  async function handleGuess(playerId: number) {
+  async function handleGuess(playerId: number): Promise<GuessResult> {
     // set gridValues[cellSelected] to the player's name
     const thisPlayer = allPlayers.find((p) => p.id === playerId) // set a guard
-    if (!thisPlayer) return;
+    // guard if player is not in player list
+    if (!thisPlayer) return "error";
 
-    if (!cellSelected) return;
+    // guard for if cell is not selected for some reason
+    if (!cellSelected) return "error";
     const { row, col } = cellSelected;
     
     // sends an API call when guess is handled
@@ -63,16 +67,15 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
       const { guessIsCorrect } = await res.json();
       if (!guessIsCorrect) {
         console.log("guess incorrect");
-        return;
+        return "incorrect";
       }
     } catch (err) {
       console.error(err);
     }
 
-    if (!cellSelected) return;
     const thisIndex = cellSelected.row * 3 + cellSelected.col;
     setGridValues((prev) => prev.map((v, i) => (i === thisIndex ? thisPlayer.name : v)))
-  
+    return "correct";
     
     // check if guess is correct (needs to send API call)
     // prolly should break this into separate functions or change the ordering
