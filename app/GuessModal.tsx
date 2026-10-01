@@ -16,12 +16,22 @@ const normalize = (s: string) =>
 
 export default function GuessModal({ allPlayers, rowLabel, colLabel, onClose, onSelectPlayer }: GuessModalProps) {
     const [playerGuess, setPlayerGuess] = useState("");
+    const [highlightIdx, setHighlightIdx] = useState<number>(-1);
 
     const pInput = normalize(playerGuess.trim());   
     const matches = pInput
         ? allPlayers.filter((p) => normalize(p.name).includes(pInput))
         : [];
     
+    function handleArrowKeys(e: React.KeyboardEvent<HTMLInputElement>) {
+        if (e.key == "ArrowDown") {
+            // set indices to either next index or keep at end of list if already there
+            setHighlightIdx((i) => Math.min(i + 1, matches.length - 1));
+        } else if (e.key == "ArrowUp") {
+            setHighlightIdx((i) => Math.max(i - 1, 0));
+        }
+    }
+
     return (    
         <div
             className="fixed inset-0 z-50 flex items-start justify-center bg-black/40 backdrop-blur-sm pt-24"
@@ -37,19 +47,29 @@ export default function GuessModal({ allPlayers, rowLabel, colLabel, onClose, on
                 <input
                     autoFocus
                     value={ playerGuess }
-                    onChange={(e) => setPlayerGuess(e.target.value)}
+                    onChange={(e) => {
+                        setPlayerGuess(e.target.value);
+                        setHighlightIdx(0);
+                    }}
+                    onKeyDown={handleArrowKeys}
                     placeholder="Type a player's name…"
                     className="w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-500"
                 />
+
                 <ul>
-                    {matches.slice(0, 8).map((p: Player) => 
+                    {matches.slice(0, 8).map((p: Player, i) => 
                         <p 
                             key={p.id} 
                             onClick={() => {
                                 onSelectPlayer(p.id)
                                 onClose()
-                            }}>
+                            }}
+                            className={`w-full rounded-md px-3 py-2 text-left ${
+                                i === highlightIdx ? "bg-neutral-100" : ""
+                            }`}
+                        >
                             {p.name}
+                            
                         </p> 
                     )}
                     {matches.length > 8 ? <p>{matches.length} more...</p> : <></>}
