@@ -1,0 +1,5804 @@
+{
+  "bucket": "headshots",
+  "headshots": [
+    {
+      "player": "Adam Walton",
+      "object": "adam-walton-f0c3c9d88d8b.jpg",
+      "sha256": "f0c3c9d88d8bce44c8f52fbd6b5819c2d62166975021a5687d841ea8ed879cba",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Adam Walton (2023 Cary) 01.jpg",
+      "crop": {
+        "x": 0.18004484304932739,
+        "y": 0.17584454409566516,
+        "size": 0.4
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Adam_Walton_(2023_Cary)_01.jpg",
+      "updatedAt": "2026-10-01T22:17:52.503Z"
+    },
+    {
+      "player": "Adolfo Daniel Vallejo",
+      "object": "adolfo-daniel-vallejo-f59b6b7753b5.jpg",
+      "sha256": "f59b6b7753b596e43c930f23ef30fdeb13998e45018571f8f8cecc1b327c8a1a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "adolfodanielvallejo.jpg",
+      "crop": {
+        "x": 0.33659756185399514,
+        "y": 0.0690439018287829,
+        "size": 0.36325260055936937
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:35:43.287Z"
+    },
+    {
+      "player": "Adrian Mannarino",
+      "object": "adrian-mannarino-6f416621618d.jpg",
+      "sha256": "6f416621618d07d88c15eb772dc7b73ab450337900715eabd13184423bf7ac8f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "adrianmannarino.jpg",
+      "crop": {
+        "x": 0.04101407925715763,
+        "y": 0.021940385922789574,
+        "size": 0.44993046620625815
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:05:18.367Z"
+    },
+    {
+      "player": "Adriano Panatta",
+      "object": "adriano-panatta-a85cdc16f9d0.jpg",
+      "sha256": "a85cdc16f9d0c35f6bf843875b227ad943319a024207c1e14a3006d6e2fe42f4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "adrianopanatta.jpg",
+      "crop": {
+        "x": 0.2895834877857627,
+        "y": 0.09652983185065829,
+        "size": 0.35153412206038354
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:05:56.158Z"
+    },
+    {
+      "player": "Agustin Calleri",
+      "object": "agustin-calleri-063a862fe265.jpg",
+      "sha256": "063a862fe2657258e067b56ccbd2e0f9f9527c96abdedb350e6b4dabd4fceb5a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "agustincalleri.webp",
+      "crop": {
+        "x": 0.34615384615384615,
+        "y": 0,
+        "size": 0.45525430340183637
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:50:22.611Z"
+    },
+    {
+      "player": "Albert Costa",
+      "object": "albert-costa-2636308cd7a5.jpg",
+      "sha256": "2636308cd7a57abbc3a23937847bc54f59ea53e28f21f2a9f88fdae59490cdd6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "albertcosta.jpg",
+      "crop": {
+        "x": 0.1625672978398627,
+        "y": 0.0789977253604112,
+        "size": 0.3422157456547286
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:06:55.011Z"
+    },
+    {
+      "player": "Albert Montanes",
+      "object": "albert-montanes-904a519e0a4c.jpg",
+      "sha256": "904a519e0a4c2b805aff68675514c717f2b1bc80cf4b2ec5b70fe464837ed628",
+      "mimeType": "image/jpeg",
+      "sourceFile": "albertmontanes.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.12787179551008393,
+        "size": 0.7465355491050246
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:37:13.669Z"
+    },
+    {
+      "player": "Albert Portas",
+      "object": "albert-portas-6dac10ba5f4d.jpg",
+      "sha256": "6dac10ba5f4d6e202927ab721e744775f33f3f4e5ee89c8e2f8eece2f0ad9511",
+      "mimeType": "image/jpeg",
+      "sourceFile": "albertportas.webp",
+      "crop": {
+        "x": 0.1767942583732057,
+        "y": 0.0363779527559055,
+        "size": 0.617025508606833
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:50:43.945Z"
+    },
+    {
+      "player": "Alberto Martin",
+      "object": "alberto-martin-5855d2339e47.jpg",
+      "sha256": "5855d2339e47691c3c1be6fcbb88df3c6a5b138cf6f75ad26a7fc614c96e400d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "albertomartin.webp",
+      "crop": {
+        "x": 0.3902061855670103,
+        "y": 0,
+        "size": 0.30709621783384344
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:50:34.149Z"
+    },
+    {
+      "player": "Alejandro Davidovich Fokina",
+      "object": "alejandro-davidovich-fokina-912d798b2664.jpg",
+      "sha256": "912d798b266431cbd1de8d643d0dd80ce21955ef6d0be1b540f599d2ac12509b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alejandrodavidovichfokina.webp",
+      "crop": {
+        "x": 0.10776892430278884,
+        "y": 0.10185351270553063,
+        "size": 0.4375431617037709
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:34:08.203Z"
+    },
+    {
+      "player": "Alejandro Tabilo",
+      "object": "alejandro-tabilo-1d9b91aabcfc.jpg",
+      "sha256": "1d9b91aabcfcfb3bc31a89007a2899828eae8886950993b8d23eb083c35e8f1b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alejandrotabilo.webp",
+      "crop": {
+        "x": 0.45741324921135645,
+        "y": 0,
+        "size": 0.3450753646192741
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:52:11.104Z"
+    },
+    {
+      "player": "Aleksandar Kovacevic",
+      "object": "aleksandar-kovacevic-49a61c427f47.jpg",
+      "sha256": "49a61c427f472f849d0b7b3247dec043510eb2959b1a7d5913e509c1c3b7e91c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "aleksandarkovacevic.jpg",
+      "crop": {
+        "x": 0.03964939964744003,
+        "y": 0.022057417780160904,
+        "size": 0.4477327378177223
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:05:22.791Z"
+    },
+    {
+      "player": "Aleksandar Vukic",
+      "object": "aleksandar-vukic-1ea23329ae4b.jpg",
+      "sha256": "1ea23329ae4ba657c1904ccb6124ae81daf34db1e11493e0ea04b172bbd4f8a3",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Vukic RGQ23.jpg",
+      "crop": {
+        "x": 0.016908212560386472,
+        "y": 0.01932367149758454,
+        "size": 0.5802334771640059
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Vukic_RGQ23.jpg",
+      "updatedAt": "2026-10-01T22:35:34.471Z"
+    },
+    {
+      "player": "Aleksandr Dolgopolov",
+      "object": "aleksandr-dolgopolov-93cf246ac29f.jpg",
+      "sha256": "93cf246ac29ff351b01c347e48ce32b698ea739d7ca8fba2f902567242e769da",
+      "mimeType": "image/jpeg",
+      "sourceFile": "aleksandrrdolgopolov.webp",
+      "crop": {
+        "x": 0.08959810874704487,
+        "y": 0,
+        "size": 0.6593380326074912
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:12:28.137Z"
+    },
+    {
+      "player": "Alex Calatrava",
+      "object": "alex-calatrava-a8fe198f4f96.jpg",
+      "sha256": "a8fe198f4f960a11e49b6f9dc83e9e2c236980fff6847c428cc2d36c14a7eb39",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alexcalatrava.webp",
+      "crop": {
+        "x": 0.17393800229621126,
+        "y": 0,
+        "size": 0.37655951481325345
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:51:01.549Z"
+    },
+    {
+      "player": "Alex Michelsen",
+      "object": "alex-michelsen-3b359f307162.jpg",
+      "sha256": "3b359f30716222ae045754b7347569262565d040784e850d1047a20af9bd68e0",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alexmichelsen.webp",
+      "crop": {
+        "x": 0.2429171038824764,
+        "y": 0.0007874015748031496,
+        "size": 0.4069779707277184
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:51:10.429Z"
+    },
+    {
+      "player": "Alex Molcan",
+      "object": "alex-molcan-80f074a56248.jpg",
+      "sha256": "80f074a56248014a25941448c5f87fe67fdda2d62a955f56e914bd55e61ab9d0",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alex molcan.jpg",
+      "crop": {
+        "x": 0.41080458459507163,
+        "y": 0.027953961311460853,
+        "size": 0.3889505645243828
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:04:14.303Z"
+    },
+    {
+      "player": "Alex de Minaur",
+      "object": "alex-de-minaur-a67e9984bfc2.jpg",
+      "sha256": "a67e9984bfc229bd8b20a592811b094b3525edaeae2eeaf03c858093f2b65b88",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alexdeminaur.webp",
+      "crop": {
+        "x": 0.17234042553191484,
+        "y": 0.04267716535433074,
+        "size": 0.6735618501126625
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:29:40.197Z"
+    },
+    {
+      "player": "Alexander Blockx",
+      "object": "alexander-blockx-ee1f22b5bd0b.jpg",
+      "sha256": "ee1f22b5bd0b7787239c9d22b9d646749076dd3029d145bd320e51b5ab155afb",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alexanderblockx.webp",
+      "crop": {
+        "x": 0.3196635120925342,
+        "y": 0.01196850393700791,
+        "size": 0.36768314590213425
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:29:52.656Z"
+    },
+    {
+      "player": "Alexander Bublik",
+      "object": "alexander-bublik-e9b6f2fe8403.jpg",
+      "sha256": "e9b6f2fe8403a6e60605ac6e7e7b0587448958d2a666d3f9e9cb6c943ed728c4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Bublik WM19 (34) (48522041177).jpg",
+      "crop": {
+        "x": 0.11113801452784498,
+        "y": 0,
+        "size": 0.6603308947842578
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bublik_WM19_(34)_(48522041177).jpg",
+      "updatedAt": "2026-10-01T22:33:45.060Z"
+    },
+    {
+      "player": "Alexander Popp",
+      "object": "alexander-popp-b0631355c86a.jpg",
+      "sha256": "b0631355c86a48f9f56893a3bb73cfaeb6a17e348c34bfa31459dc618a740410",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alexanderpopp.webp",
+      "crop": {
+        "x": 0.18483685220729368,
+        "y": 0.0031496062992125984,
+        "size": 0.6238323658304342
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:50:54.183Z"
+    },
+    {
+      "player": "Alexander Zverev",
+      "object": "alexander-zverev-da0842bb7658.jpg",
+      "sha256": "da0842bb76589728666e959a3523115f1991a844fcc97bd1c8c89fab789d6d4a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "alexanderzverev.webp",
+      "crop": {
+        "x": 0.3379737517673289,
+        "y": 0.08742781511441929,
+        "size": 0.6415313225058005
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:47:19.031Z"
+    },
+    {
+      "player": "Alexandra Eala",
+      "object": "alexandra-eala-ca92c418f01c.jpg",
+      "sha256": "ca92c418f01c724a2678f58c8425f9aa7d163afe1b8a18fc77a28a83ab834255",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Alex Eala 2024 US Open 2b.jpg",
+      "crop": {
+        "x": 0.21309012875536484,
+        "y": 0.06885668276972623,
+        "size": 0.4
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Alex_Eala_2024_US_Open_2b.jpg",
+      "updatedAt": "2026-10-01T23:30:12.427Z"
+    },
+    {
+      "player": "Amanda Anisimova",
+      "object": "amanda-anisimova-afb614d6821b.jpg",
+      "sha256": "afb614d6821bc491d51e1b140056a2cfdbf14d7e2e180c7c697250c5e7175e59",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Amanda Anisimova.jpg",
+      "crop": {
+        "x": 0.3659141141123802,
+        "y": 0.04549588712581088,
+        "size": 0.3491703687168792
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:03:01.275Z"
+    },
+    {
+      "player": "Amelie Mauresmo",
+      "object": "amelie-mauresmo-166d4763325c.jpg",
+      "sha256": "166d4763325c346d6243e24ea6a73c61f3f34647e6c9d707966ec34dad8bd960",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ameliemauresmo.webp",
+      "crop": {
+        "x": 0.12781065088757396,
+        "y": 0.0363779527559055,
+        "size": 0.3691321450859837
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:25:07.784Z"
+    },
+    {
+      "player": "Ana Ivanovic",
+      "object": "ana-ivanovic-ceb0bb666a20.jpg",
+      "sha256": "ceb0bb666a20c6b2a713216f565301515ca1aab33ddc3d7f8b2e71fc77010027",
+      "mimeType": "image/jpeg",
+      "sourceFile": "anaivanovic.jpg",
+      "crop": {
+        "x": 0.21639344262295082,
+        "y": 0.20955357142857142,
+        "size": 0.5214754198418289
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:46:36.702Z"
+    },
+    {
+      "player": "Anastasia Potapova",
+      "object": "anastasia-potapova-4e9926e0ad94.jpg",
+      "sha256": "4e9926e0ad94fba8d2f87b391aca6994151f5d3c1c12b1bede960d586f4d7639",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Anastasia Potapova.jpg",
+      "crop": {
+        "x": 0.13568988726553272,
+        "y": 0.038135593220338986,
+        "size": 0.4064971794516353
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:14:16.833Z"
+    },
+    {
+      "player": "Andre Agassi",
+      "object": "andre-agassi-513ff71c3f7f.jpg",
+      "sha256": "513ff71c3f7fb5bba49f53376011df2d027862d7a70839b39f38249c690b6f0e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andreagassi.jpg",
+      "crop": {
+        "x": 0.11587837837837842,
+        "y": 0.05553571428571428,
+        "size": 0.6769144315977353
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:26:03.043Z"
+    },
+    {
+      "player": "Andreas Seppi",
+      "object": "andreas-seppi-2eafd40474de.jpg",
+      "sha256": "2eafd40474de864e33b9796d17779a8a3cf31e6cac45f12f1b88c5b59c9baa3e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andreasseppi.webp",
+      "crop": {
+        "x": 0.11938663745892661,
+        "y": 0,
+        "size": 0.4499269884491802
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:12:36.686Z"
+    },
+    {
+      "player": "Andreas Vinciguerra",
+      "object": "andreas-vinciguerra-24914f265c2a.jpg",
+      "sha256": "24914f265c2a3b6d618cda51a8780f76fcd8a5aa11330d743c268cf64073b79a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Andreas Vinciguerra.jpg",
+      "crop": {
+        "x": 0.11892424824990724,
+        "y": 0.010228622842718053,
+        "size": 0.7933275480019418
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:23:14.092Z"
+    },
+    {
+      "player": "Andrei Medvedev",
+      "object": "andrei-medvedev-999ade5d4543.jpg",
+      "sha256": "999ade5d454361cf3d9c8cc42e5f71b572f88eabe68d920ee54a5c81a1b63dde",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andreimedvedev.webp",
+      "crop": {
+        "x": 0.29293478260869565,
+        "y": 0.01275590551181106,
+        "size": 0.3265398506496263
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:02:36.238Z"
+    },
+    {
+      "player": "Andres Gimeno",
+      "object": "andres-gimeno-da9137e6b89d.jpg",
+      "sha256": "da9137e6b89d933cac11a11a9576b9f61fc737a1f48052f454f81f1af0c26837",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andresgimeno.jpg",
+      "crop": {
+        "x": 0.3525930745601654,
+        "y": 0.10958051064320035,
+        "size": 0.37539302657047907
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:07:30.833Z"
+    },
+    {
+      "player": "Andres Gomez",
+      "object": "andres-gomez-326403cfcca7.jpg",
+      "sha256": "326403cfcca789befa55cbdf2cf6dc3988fb9a7496692a1e95a6cc90289d4d50",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andresgomez.jpg",
+      "crop": {
+        "x": 0.3,
+        "y": 0.16714285714285712,
+        "size": 0.44522989207300645
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:25:26.330Z"
+    },
+    {
+      "player": "Andrey Golubev",
+      "object": "andrey-golubev-aa78a06879c6.jpg",
+      "sha256": "aa78a06879c64a0e0bd7f920ddbeaef9100c0a9d5fe9a8adcea4279121c21641",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andreygolubev.jpg",
+      "crop": {
+        "x": 0.4358293113784859,
+        "y": 0.02846906422176859,
+        "size": 0.3479419271338764
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:37:51.452Z"
+    },
+    {
+      "player": "Andrey Rublev",
+      "object": "andrey-rublev-14d034fbe4dd.jpg",
+      "sha256": "14d034fbe4dd360ba891c29d41b6d588d5f24b9c97eb1cf195bbadcfb9913ed8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "andreyrublev.webp",
+      "crop": {
+        "x": 0.199402390438247,
+        "y": 0.03085201793721971,
+        "size": 0.36981407803843225
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:28:20.647Z"
+    },
+    {
+      "player": "Andy Murray",
+      "object": "andy-murray-228d69b8015a.jpg",
+      "sha256": "228d69b8015a26df2fdbae45423ffc7fcde7e04a4f12c5ba18206a95488e32e6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Murray A. US16 (10) (29236489603).jpg",
+      "crop": {
+        "x": 0.14964200477326967,
+        "y": 0,
+        "size": 0.6962212100518348
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Murray_A._US16_(10)_(29236489603).jpg",
+      "updatedAt": "2026-10-01T22:04:30.942Z"
+    },
+    {
+      "player": "Andy Roddick",
+      "object": "andy-roddick-40c9ec81231f.jpg",
+      "sha256": "40c9ec81231ffe68440fca353b12483b3d020da8e6aef7278a7427d36ef66c77",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Roddick 2012 (cropped).jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.027375201288244767,
+        "size": 1
+      },
+      "artist": "Carine06",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Roddick_2012_(cropped).jpg",
+      "updatedAt": "2026-10-01T22:06:11.564Z"
+    },
+    {
+      "player": "Angelique Kerber",
+      "object": "angelique-kerber-92a2d04e4b83.jpg",
+      "sha256": "92a2d04e4b83f27f1f4852566598908dc15678b104606e02f7daa37954bcb3d4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "angiekerber.jpg",
+      "crop": {
+        "x": 0.4263001485884101,
+        "y": 0.034330357142857135,
+        "size": 0.3329866270430907
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:45:45.831Z"
+    },
+    {
+      "player": "Ann Jones",
+      "object": "ann-jones-ccc141e2c33f.jpg",
+      "sha256": "ccc141e2c33f5263fa686d52c94372e3afe05f04c4a83a2cdc4c441fce817403",
+      "mimeType": "image/jpeg",
+      "sourceFile": "annjones.webp",
+      "crop": {
+        "x": 0.10421052631578948,
+        "y": 0.15685039370078743,
+        "size": 0.617122802734375
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:45:20.745Z"
+    },
+    {
+      "player": "Anna Kalinskaya",
+      "object": "anna-kalinskaya-31abe81c7c5b.jpg",
+      "sha256": "31abe81c7c5ba9ca9b8d9a877651bf5f960cd9a966618b5fdd5ce4428becb0d4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Anna Kalinskaya.jpg",
+      "crop": {
+        "x": 0.4337471475567591,
+        "y": 0.041818110841546165,
+        "size": 0.3663699608296156
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:06:51.710Z"
+    },
+    {
+      "player": "Antonia Ruzic",
+      "object": "antonia-ruzic-3af1c865d35f.jpg",
+      "sha256": "3af1c865d35fdc5781bfa9cd3e73e1bd0e9e2b4ac2f6ee89fa31cff32480b435",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Ruzic RGQ23 (52944045033).jpg",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Ruzic_RGQ23_(52944045033).jpg",
+      "updatedAt": "2026-10-01T21:51:18.148Z"
+    },
+    {
+      "player": "Arantxa Sanchez Vicario",
+      "object": "arantxa-sanchez-vicario-3bf526924a5c.jpg",
+      "sha256": "3bf526924a5cb6b7ebc88011c4071beb17153c51cf508c41b83d0f0352c91da4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arantxasanchezvicario.jpg",
+      "crop": {
+        "x": 0.1418367346938775,
+        "y": 0.1347767857142857,
+        "size": 0.6364625850340137
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:45:00.624Z"
+    },
+    {
+      "player": "Arnaud Clement",
+      "object": "arnaud-clement-9ae0f8935fdb.jpg",
+      "sha256": "9ae0f8935fdb5bb85066a1fddbf3155436e72d3ae3fef976c8737d4c8229bb2f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arnaudclement.jpg",
+      "crop": {
+        "x": 0.28294724273656513,
+        "y": 0.007692307692307693,
+        "size": 0.39953568534067996
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:38:34.162Z"
+    },
+    {
+      "player": "Arnaud Di Pasquale",
+      "object": "arnaud-di-pasquale-b2bc8cc97e76.jpg",
+      "sha256": "b2bc8cc97e76f2173c7a0f1bd311ca8d6284e3495fe6b66c01618ae3cc2ffccc",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arnauddipasquale.webp",
+      "crop": {
+        "x": 0.08779443254817987,
+        "y": 0.1883464566929134,
+        "size": 0.571556022693054
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:04:10.326Z"
+    },
+    {
+      "player": "Arthur Ashe",
+      "object": "arthur-ashe-206975839783.jpg",
+      "sha256": "20697583978379ac71b88160ae8f225014a969f1ab4c39e0e6b5421d4d65348a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arthurashe.jpg",
+      "crop": {
+        "x": 0.40605143721633885,
+        "y": 0.21178571428571427,
+        "size": 0.2711043872919819
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:24:00.341Z"
+    },
+    {
+      "player": "Arthur Fery",
+      "object": "arthur-fery-fbe6eb4173bd.jpg",
+      "sha256": "fbe6eb4173bda8471ca8fe57076a13af9c59d82586f7da7b6deb344227d6f550",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arthurfery.webp",
+      "crop": {
+        "x": 0.25617529880478085,
+        "y": 0.05476831091180865,
+        "size": 0.3407204586196231
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:04:16.271Z"
+    },
+    {
+      "player": "Arthur Fils",
+      "object": "arthur-fils-3f339ed6a7d6.jpg",
+      "sha256": "3f339ed6a7d6bacc88ad812e8e49d1f348a34818135e822bcfc239ce9b0223dd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arthurfils.jpg",
+      "crop": {
+        "x": 0.38721350276749855,
+        "y": 0,
+        "size": 0.40237594004775074
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:19:54.525Z"
+    },
+    {
+      "player": "Arthur Gea",
+      "object": "arthur-gea-1e4cbe6ba159.jpg",
+      "sha256": "1e4cbe6ba15946773a7ba52a48fee3a3b9ed28f67812de8720c35ddb43bb7d46",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Gea WMQ26 (1).jpg",
+      "crop": {
+        "x": 0.12062780269058299,
+        "y": 0.0171898355754858,
+        "size": 0.7453662205170088
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Gea_WMQ26_(1).jpg",
+      "updatedAt": "2026-10-01T22:57:41.339Z"
+    },
+    {
+      "player": "Arthur Rinderknech",
+      "object": "arthur-rinderknech-0dbd5e82b6af.jpg",
+      "sha256": "0dbd5e82b6af515f5977c3cf8d722a2c5b270d7afdb1e7e043f217a1ba67bb15",
+      "mimeType": "image/jpeg",
+      "sourceFile": "arthurrinderknech.webp",
+      "crop": {
+        "x": 0.31125131440588855,
+        "y": 0,
+        "size": 0.35769366114924256
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:18:31.398Z"
+    },
+    {
+      "player": "Aryna Sabalenka",
+      "object": "aryna-sabalenka-521a63b77bdc.jpg",
+      "sha256": "521a63b77bdc5bec96d2cb4ec649d82b8d5cb3c56c0fc3b4980050bd098eb4f4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Sabalenka RG21 (30) (51375296612).jpg",
+      "crop": {
+        "x": 0.13816425120772943,
+        "y": 0.04309178743961351,
+        "size": 0.6791465427564538
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Sabalenka_RG21_(30)_(51375296612).jpg",
+      "updatedAt": "2026-10-01T23:18:00.796Z"
+    },
+    {
+      "player": "Ashleigh Barty",
+      "object": "ashleigh-barty-2cf800590f2d.jpg",
+      "sha256": "2cf800590f2ddaac64995509ff71c47a1d661669a8bcba784ba6b8b17fd419a3",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Barty RG19 (9) (48199405532).jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.007246376811594203,
+        "size": 0.7010064240239092
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Barty_RG19_(9)_(48199405532).jpg",
+      "updatedAt": "2026-10-01T23:35:38.657Z"
+    },
+    {
+      "player": "Belinda Bencic",
+      "object": "belinda-bencic-1185ccc87848.jpg",
+      "sha256": "1185ccc87848ed4c5e8c3f72001f753c6f40f646d98174448afc0bc25b30f2e5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Bencic WM19 (6) (48522034607).jpg",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 0.8019773838883739
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bencic_WM19_(6)_(48522034607).jpg",
+      "updatedAt": "2026-10-01T23:26:34.795Z"
+    },
+    {
+      "player": "Ben Shelton",
+      "object": "ben-shelton-c7ec486f02d5.jpg",
+      "sha256": "c7ec486f02d5b9041e1e35c1c8562dbcc0e6ceb27b06d40798a559c3d313c61e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "benshelton.jpg",
+      "crop": {
+        "x": 0.32166278782598345,
+        "y": 0.026840824633836746,
+        "size": 0.3765445193030006
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:13:43.774Z"
+    },
+    {
+      "player": "Benjamin Becker",
+      "object": "benjamin-becker-b8160059da56.jpg",
+      "sha256": "b8160059da56d57305fd277af1e147379c98b06f53208056d69dd41dafdeb80f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "benjaminbecker.webp",
+      "crop": {
+        "x": 0.09200841219768664,
+        "y": 0,
+        "size": 0.46810375578646657
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:12:57.959Z"
+    },
+    {
+      "player": "Benjamin Bonzi",
+      "object": "benjamin-bonzi-747e61f60320.jpg",
+      "sha256": "747e61f603202a5629d785c80b874553bdf2985716db5382e99b81f672623e21",
+      "mimeType": "image/jpeg",
+      "sourceFile": "benjaminbonzi.jpg",
+      "crop": {
+        "x": 0.3083211726282349,
+        "y": 0.037732261009351654,
+        "size": 0.38845720605329337
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:04:05.179Z"
+    },
+    {
+      "player": "Billie Jean King",
+      "object": "billie-jean-king-ed742bf3349c.jpg",
+      "sha256": "ed742bf3349cceba75315b0ff3846396e939585c7935dd66f9159d5bd237b69c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Billie Jean King ©Lynn Gilbert 1978.jpg",
+      "crop": {
+        "x": 0.3193704600484261,
+        "y": 0.05516908212560385,
+        "size": 0.5204761732346209
+      },
+      "artist": "Lynn Gilbert",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Billie_Jean_King_%C2%A9Lynn_Gilbert_1978.jpg",
+      "updatedAt": "2026-10-01T23:36:31.481Z"
+    },
+    {
+      "player": "Bjorn Borg",
+      "object": "bjorn-borg-977671d801ff.jpg",
+      "sha256": "977671d801ff993cce8ec57e2de6694f91a310600868342d3eb7a4ca6b5ef3ba",
+      "mimeType": "image/jpeg",
+      "sourceFile": "bjornborg.jpg",
+      "crop": {
+        "x": 0.1869760479041916,
+        "y": 0.29214285714285715,
+        "size": 0.3654491017964072
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:21:29.875Z"
+    },
+    {
+      "player": "Bohdan Ulihrach",
+      "object": "bohdan-ulihrach-1f262c66edcd.jpg",
+      "sha256": "1f262c66edcde16f125064f89caea563f9c3b56b0f8c58ed301a3fa2a5d91775",
+      "mimeType": "image/jpeg",
+      "sourceFile": "bohdanulihrach.webp",
+      "crop": {
+        "x": 0.08458049886621317,
+        "y": 0,
+        "size": 0.6950491215366355
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:50:09.147Z"
+    },
+    {
+      "player": "Boris Becker",
+      "object": "boris-becker-c555c288057f.jpg",
+      "sha256": "c555c288057f58a17b1e77ad5f589e90a0f1949d9b69d90b44374d4c36efdfba",
+      "mimeType": "image/jpeg",
+      "sourceFile": "borisbecker.jpg",
+      "crop": {
+        "x": 0.1361774744027304,
+        "y": 0.07339285714285713,
+        "size": 0.517519933290449
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:20:47.698Z"
+    },
+    {
+      "player": "Botic van de Zandschulp",
+      "object": "botic-van-de-zandschulp-af450e10e88b.jpg",
+      "sha256": "af450e10e88ba2fef4b3955342f2b230c0bb82b490c3b368497f8b332bd4e980",
+      "mimeType": "image/jpeg",
+      "sourceFile": "boticvandezandschulp.webp",
+      "crop": {
+        "x": 0.3175604626708728,
+        "y": 0,
+        "size": 0.3433403392194072
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:51:19.541Z"
+    },
+    {
+      "player": "Brandon Nakashima",
+      "object": "brandon-nakashima-029366abeb03.jpg",
+      "sha256": "029366abeb030f19c7afce3eb9c78c57ea9d6f9da579b73fa6e44f53b31fa7c1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "brandonnakashima.jpg",
+      "crop": {
+        "x": 0.11836107460752367,
+        "y": 0.02701393713764215,
+        "size": 0.6381163438634266
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:26:53.129Z"
+    },
+    {
+      "player": "Brian Dabul",
+      "object": "brian-dabul-31a0d7b9a467.jpg",
+      "sha256": "31a0d7b9a467c4866169bcc02395cd1791e4b628ff207abc3f73390d21cf7027",
+      "mimeType": "image/jpeg",
+      "sourceFile": "briandabul.jpg",
+      "crop": {
+        "x": 0.3159566737007702,
+        "y": 0.10611840893151396,
+        "size": 0.35938847681571695
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:39:11.968Z"
+    },
+    {
+      "player": "Brian Teacher",
+      "object": "brian-teacher-cb17961db347.jpg",
+      "sha256": "cb17961db347d54d39b5f01598a2a9269a9e64e963a64a6904856025489c8ee1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "brianteacher.jpg",
+      "crop": {
+        "x": 0.24709697927419955,
+        "y": 0.0950837133420726,
+        "size": 0.379267409231588
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:39:52.119Z"
+    },
+    {
+      "player": "Cameron Norrie",
+      "object": "cameron-norrie-71a385ab1ac6.jpg",
+      "sha256": "71a385ab1ac6103cd1e8b7fe335f422a9c0ab15dbe1bf4ff1333487ba8264ab1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "cameronnorrie.webp",
+      "crop": {
+        "x": 0.2876404494382023,
+        "y": 0,
+        "size": 0.4337265871883778
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:51:28.937Z"
+    },
+    {
+      "player": "Camilo Ugo Carabelli",
+      "object": "camilo-ugo-carabelli-53cdec363272.jpg",
+      "sha256": "53cdec3632722e63242c456f623c6372b3f805f13f361cd8cdb3467edd910021",
+      "mimeType": "image/jpeg",
+      "sourceFile": "camilougocarabelli.jpg",
+      "crop": {
+        "x": 0.1448721552162238,
+        "y": 0,
+        "size": 0.4598626708787567
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:32:50.994Z"
+    },
+    {
+      "player": "Carlos Alcaraz",
+      "object": "carlos-alcaraz-eb40085e3c72.jpg",
+      "sha256": "eb40085e3c725459f984d4b66e122c72e8899710c7c22ace27d9ad3a36981234",
+      "mimeType": "image/jpeg",
+      "sourceFile": "carlosalcaraz.jpg",
+      "crop": {
+        "x": 0.3029133963797774,
+        "y": 0.04155361022547645,
+        "size": 0.39232856401848415
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:11:11.175Z"
+    },
+    {
+      "player": "Carlos Berlocq",
+      "object": "carlos-berlocq-80fbac7fc30c.jpg",
+      "sha256": "80fbac7fc30ccd3be4b430d0e0ee32342e9db1f6de1357a34ab6602734098346",
+      "mimeType": "image/jpeg",
+      "sourceFile": "carlosberlocq.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.04738633211512687,
+        "size": 0.6657362632381106
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:40:22.913Z"
+    },
+    {
+      "player": "Carlos Moya",
+      "object": "carlos-moya-317fde60e035.jpg",
+      "sha256": "317fde60e035924b087909a4a3a46456746b3d17c987293eb86aca6a73810a33",
+      "mimeType": "image/jpeg",
+      "sourceFile": "carlosmoya.jpg",
+      "crop": {
+        "x": 0.1425493716337522,
+        "y": 0,
+        "size": 0.4021543985637343
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:19:57.138Z"
+    },
+    {
+      "player": "Caroline Wozniacki",
+      "object": "caroline-wozniacki-8a9f5b1c5cef.jpg",
+      "sha256": "8a9f5b1c5cef1761a9448a1a6eaa7ed753b77dd69fd4331a1ca27d2c8ed6f170",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:2016 Citi Open Caroline Wozniacki (27787780684).jpg",
+      "crop": {
+        "x": 0.13552812071330592,
+        "y": 0.02054750402576488,
+        "size": 0.5335482298297647
+      },
+      "artist": "Keith Allison from Hanover, MD, USA",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:2016_Citi_Open_Caroline_Wozniacki_(27787780684).jpg",
+      "updatedAt": "2026-10-01T23:37:46.167Z"
+    },
+    {
+      "player": "Casper Ruud",
+      "object": "casper-ruud-f1d20e43a6c6.jpg",
+      "sha256": "f1d20e43a6c67e9af3248f5a4da2ba72999d0aa8201cf049d0af14d15017b5f7",
+      "mimeType": "image/jpeg",
+      "sourceFile": "casperruud.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.06483516483516484,
+        "size": 0.5982404692082112
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:27:07.002Z"
+    },
+    {
+      "player": "Chris Evert",
+      "object": "chris-evert-b18193001d29.jpg",
+      "sha256": "b18193001d2966480a901e1a46010e002bc730230a3796395859f04254a997ad",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Porsche Tennis Tournament in West Germany 1987 Chris Evert.jpg",
+      "crop": {
+        "x": 0.35113636363636364,
+        "y": 0.02296296296296295,
+        "size": 0.5124014989679511
+      },
+      "artist": "Mauritz Antin",
+      "license": "CC BY 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Porsche_Tennis_Tournament_in_West_Germany_1987_Chris_Evert.jpg",
+      "updatedAt": "2026-10-01T23:38:31.555Z"
+    },
+    {
+      "player": "Chris Woodruff",
+      "object": "chris-woodruff-dcc6145533ac.jpg",
+      "sha256": "dcc6145533ac37f73e046e38849ad3962849e2390e19833487c458410519a6cf",
+      "mimeType": "image/jpeg",
+      "sourceFile": "chris woodruff.webp",
+      "crop": {
+        "x": 0.165625,
+        "y": 0.04976377952755909,
+        "size": 0.6727430470784505
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:37:03.416Z"
+    },
+    {
+      "player": "Christophe Rochus",
+      "object": "christophe-rochus-756c3e7f1e8a.jpg",
+      "sha256": "756c3e7f1e8a0784d8b317ff535139daabd8b04f0e26f4eb62072ef88410404d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "christopherochus.webp",
+      "crop": {
+        "x": 0.21617357001972384,
+        "y": 0.030708661417322834,
+        "size": 0.41719262839774407
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:52:03.086Z"
+    },
+    {
+      "player": "Clara Tauson",
+      "object": "clara-tauson-849501811c2c.jpg",
+      "sha256": "849501811c2c409943595d074ea011c31d5d86ba5d05f476aab977b819f9d3de",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Tauson RGQ23.jpg",
+      "crop": {
+        "x": 0.11501638596090678,
+        "y": 0.05758454106280192,
+        "size": 0.7317419637443977
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Tauson_RGQ23.jpg",
+      "updatedAt": "2026-10-01T23:12:51.302Z"
+    },
+    {
+      "player": "Coco Gauff",
+      "object": "coco-gauff-7363228ce217.jpg",
+      "sha256": "7363228ce2173e4316dd8beaeb85ca01ea57b9639b4a1e16fed3954e4206728d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Coco Gauff 2022 US Open 001.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.07771336553945248,
+        "size": 1
+      },
+      "artist": "All-Pro Reels",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Coco_Gauff_2022_US_Open_001.jpg",
+      "updatedAt": "2026-10-01T23:20:06.224Z"
+    },
+    {
+      "player": "Conchita Martinez",
+      "object": "conchita-martinez-c26fa58badb8.jpg",
+      "sha256": "c26fa58badb80ac33af4c92ea84e30df513ce92af015f4aa17c063b9395c23b8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Conchita Martinez (4997196195).jpg",
+      "crop": {
+        "x": 0.1860971524288107,
+        "y": 0.06080515297906601,
+        "size": 0.5032774866765468
+      },
+      "artist": "robbiesaurus from Smithtown, NY, USA",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Conchita_Martinez_(4997196195).jpg",
+      "updatedAt": "2026-10-01T23:38:52.654Z"
+    },
+    {
+      "player": "Corentin Moutet",
+      "object": "corentin-moutet-814007a9023f.jpg",
+      "sha256": "814007a9023f9a95e2dc91734835549aa75461b706a9f8aad7828f8348729586",
+      "mimeType": "image/jpeg",
+      "sourceFile": "corentinmoutet.jpg",
+      "crop": {
+        "x": 0.38637556820490626,
+        "y": 0.049358973279595375,
+        "size": 0.28559847296518753
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:01:29.562Z"
+    },
+    {
+      "player": "Cristina Bucsa",
+      "object": "cristina-bucsa-a287c4eefb14.jpg",
+      "sha256": "a287c4eefb14cba72c5db5449e2692669427a4eb3545dee202bff31a4721283c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Cristina Bucșa (2025 DC Open) 02.jpg",
+      "crop": {
+        "x": 0.2528985507246376,
+        "y": 0.17191626409017713,
+        "size": 0.4000000000000001
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Cristina_Buc%C8%99a_(2025_DC_Open)_02.jpg",
+      "updatedAt": "2026-10-01T23:10:53.221Z"
+    },
+    {
+      "player": "Damir Dzumhur",
+      "object": "damir-dzumhur-17b49ac12ac5.jpg",
+      "sha256": "17b49ac12ac57da0c109e016032e4146e7e44ec2a152c2cba273af3b861aa166",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Dzumhur WMQ23 (53062101320).jpg",
+      "crop": {
+        "x": 0.24618834080717492,
+        "y": 0.014409566517189816,
+        "size": 0.6340657720865156
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Dzumhur_WMQ23_(53062101320).jpg",
+      "updatedAt": "2026-10-01T22:17:30.414Z"
+    },
+    {
+      "player": "Daniel Altmaier",
+      "object": "daniel-altmaier-a6267a28bd98.jpg",
+      "sha256": "a6267a28bd9820c5003d80416bafb6bf3927eab7ef6112c7c78618460c5d40b8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "danielaltmaier.jpg",
+      "crop": {
+        "x": 0.11260061565752,
+        "y": 0.06528996524669356,
+        "size": 0.7177044501983714
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:11:25.664Z"
+    },
+    {
+      "player": "Daniel Elsner",
+      "object": "daniel-elsner-beae6aecdc3c.jpg",
+      "sha256": "beae6aecdc3c9c1cf6b4ae70e9dd2b7579d184c20a39c27b94d47c0c16429194",
+      "mimeType": "image/jpeg",
+      "sourceFile": "danielelsner.jpg",
+      "crop": {
+        "x": 0.2823382972745724,
+        "y": 0.028017320938534655,
+        "size": 0.4405375097458269
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:41:35.627Z"
+    },
+    {
+      "player": "Daniel Gimeno-Traver",
+      "object": "daniel-gimeno-traver-5fb2a909f456.jpg",
+      "sha256": "5fb2a909f456fd8f82b2a1062a924000ff17924d149f5b070805e5bf16e6766e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Daniel Gimeno-Traver.jpg",
+      "crop": {
+        "x": 0.1189570858218694,
+        "y": 0,
+        "size": 0.43686302321385856
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:10:59.458Z"
+    },
+    {
+      "player": "Daniel Merida Aguilar",
+      "object": "daniel-merida-aguilar-e5e1dc92df73.jpg",
+      "sha256": "e5e1dc92df73dc303b1d756d2d631efa9f4cc8b8655880d22972a7fccae4ca51",
+      "mimeType": "image/jpeg",
+      "sourceFile": "danielmerida.webp",
+      "crop": {
+        "x": 0.4148264984227129,
+        "y": 0,
+        "size": 0.40396074842579355
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:12:49.029Z"
+    },
+    {
+      "player": "Daniil Medvedev",
+      "object": "daniil-medvedev-75ec95424ae8.jpg",
+      "sha256": "75ec95424ae87eb7d0f223468f11734dfe312d19527649fba7921490e05891b9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "daniilmedvedev.jpg",
+      "crop": {
+        "x": 0.10272121780805966,
+        "y": 0.07301677321749074,
+        "size": 0.40038394273321565
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:16:21.015Z"
+    },
+    {
+      "player": "Daria Snigur",
+      "object": "daria-snigur-fd6e9b88f941.jpg",
+      "sha256": "fd6e9b88f9410dad266db38361809e7781cf130d10dbcdd1bbf97f399c0b1d58",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Daria Snigur (2023 US Open) 03.jpg",
+      "crop": {
+        "x": 0.37850241545893715,
+        "y": 0.1292431561996779,
+        "size": 0.3465136704007209
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Daria_Snigur_(2023_US_Open)_03.jpg",
+      "updatedAt": "2026-10-01T23:14:24.674Z"
+    },
+    {
+      "player": "David Ferrer",
+      "object": "david-ferrer-a05b15424c9b.jpg",
+      "sha256": "a05b15424c9bac876e1d323d53c2b5dc0c6ac541aed16caaa0290496cee11121",
+      "mimeType": "image/jpeg",
+      "sourceFile": "davidferrer.jpg",
+      "crop": {
+        "x": 0.013547710486446056,
+        "y": 0.015099482831813522,
+        "size": 0.5104586448130369
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:42:23.212Z"
+    },
+    {
+      "player": "David Nalbandian",
+      "object": "david-nalbandian-5ec3e9dc4564.jpg",
+      "sha256": "5ec3e9dc45642f7be69678f4dccffef9f4b937c6a46a4774d158fc37a03afd93",
+      "mimeType": "image/jpeg",
+      "sourceFile": "david nalbandian.webp",
+      "crop": {
+        "x": 0.16314655172413792,
+        "y": 0.04251968503937008,
+        "size": 0.7130746775660022
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:13:07.641Z"
+    },
+    {
+      "player": "David Sanchez",
+      "object": "david-sanchez-cde3831498d7.jpg",
+      "sha256": "cde3831498d784437a7ddae10769285c597fe8bd7eb66e10415b24ef5420f896",
+      "mimeType": "image/jpeg",
+      "sourceFile": "David Sanchez.jpg",
+      "crop": {
+        "x": 0.2503495366154658,
+        "y": 0.002049682188337132,
+        "size": 0.7036504268027507
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:50:29.303Z"
+    },
+    {
+      "player": "Davide Sanguinetti",
+      "object": "davide-sanguinetti-b5cea6e1e46e.jpg",
+      "sha256": "b5cea6e1e46e80a7a2ca8df5ac06f6c4232b8a7fb7c2c488629c4f9b1f52e040",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Davide Sanguinetti.jpg",
+      "crop": {
+        "x": 0.48463744812695925,
+        "y": 0.12004166413729979,
+        "size": 0.394025269500504
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:51:25.065Z"
+    },
+    {
+      "player": "Denis Istomin",
+      "object": "denis-istomin-53046b25c51d.jpg",
+      "sha256": "53046b25c51db7e0ac15722a62ea5bceb343b06bfe9b4bd9d77581a2e241918c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "denisistomin.webp",
+      "crop": {
+        "x": 0.3743427970557308,
+        "y": 0,
+        "size": 0.40553803549203965
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:13:16.886Z"
+    },
+    {
+      "player": "Denis Shapovalov",
+      "object": "denis-shapovalov-b4300fa41dd2.jpg",
+      "sha256": "b4300fa41dd23f54fa41bfa03bca0b443a7504b2fafc5ea765f0a18cd35bab81",
+      "mimeType": "image/jpeg",
+      "sourceFile": "denisshapovalov.jpg",
+      "crop": {
+        "x": 0.32222403426957796,
+        "y": 0,
+        "size": 0.40836685178173254
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:22:17.952Z"
+    },
+    {
+      "player": "Diana Shnaider",
+      "object": "diana-shnaider-bd5ab3d70083.jpg",
+      "sha256": "bd5ab3d700834400342c464a88b3fc4f484f07f9f922fb9ad797d0f4e67441ac",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Diana Shnaider (2023 US Open) 07.jpg",
+      "crop": {
+        "x": 0.33140096618357484,
+        "y": 0.14534621578099838,
+        "size": 0.33685183465192864
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Diana_Shnaider_(2023_US_Open)_07.jpg",
+      "updatedAt": "2026-10-01T23:27:44.892Z"
+    },
+    {
+      "player": "Diane Parry",
+      "object": "diane-parry-ca1327a7322d.jpg",
+      "sha256": "ca1327a7322dd5d88e38635f45ed8dac094f6fefd314dddb6a0b57965fc7145c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Diane Parry, Roma 2026 (cropped2).jpg",
+      "crop": {
+        "x": 0.11223175965665239,
+        "y": 0.04792270531400965,
+        "size": 0.5964735183388379
+      },
+      "artist": "Raffaele Di Buono",
+      "license": "CC0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Diane_Parry,_Roma_2026_(cropped2).jpg",
+      "updatedAt": "2026-10-01T23:08:38.105Z"
+    },
+    {
+      "player": "Dominic Thiem",
+      "object": "dominic-thiem-c08a84c50250.jpg",
+      "sha256": "c08a84c50250cbce54e64decb5947166f5667b8799c77f48af233decfffa3e86",
+      "mimeType": "image/jpeg",
+      "sourceFile": "dominicthiem.jpg",
+      "crop": {
+        "x": 0.13444816053511702,
+        "y": 0.0488392857142857,
+        "size": 0.5804905103600544
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:19:13.464Z"
+    },
+    {
+      "player": "Donna Vekic",
+      "object": "donna-vekic-649a8632e416.jpg",
+      "sha256": "649a8632e41694c4ae0ff35ae0b203d17b3965d12cbce50320971a68fabc4ae5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Vekic RGQ22 (17) (52128492947).jpg",
+      "crop": {
+        "x": 0.011352657004830891,
+        "y": 0.02940418679549113,
+        "size": 0.8187358926229431
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Vekic_RGQ22_(17)_(52128492947).jpg",
+      "updatedAt": "2026-10-01T23:12:15.581Z"
+    },
+    {
+      "player": "Dudi Sela",
+      "object": "dudi-sela-58255f28a3a5.jpg",
+      "sha256": "58255f28a3a5b814975b764bfcb74445c6099ba1cf7504039db48aef9e37a027",
+      "mimeType": "image/jpeg",
+      "sourceFile": "dudisela.webp",
+      "crop": {
+        "x": 0.3480546792849632,
+        "y": 0,
+        "size": 0.3750438188779492
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:46:31.412Z"
+    },
+    {
+      "player": "Dustin Brown",
+      "object": "dustin-brown-fc45fc17994a.jpg",
+      "sha256": "fc45fc17994a3d66024c8d2cdf9f9614af022ceca13267c84ba923addf206424",
+      "mimeType": "image/jpeg",
+      "sourceFile": "dustinbrown.webp",
+      "crop": {
+        "x": 0.08758314855875832,
+        "y": 0.2760367566206324,
+        "size": 0.5096637023790448
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:44:52.732Z"
+    },
+    {
+      "player": "Eduardo Schwank",
+      "object": "eduardo-schwank-b226a450e07d.jpg",
+      "sha256": "b226a450e07d191498f6f1ac9f9ca2d36b440e923eed9e04543a9bf6dee2c272",
+      "mimeType": "image/jpeg",
+      "sourceFile": "eduardoschwank.jpg",
+      "crop": {
+        "x": 0.21983343672467118,
+        "y": 0.02282712305501356,
+        "size": 0.6069936627705091
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:44:08.202Z"
+    },
+    {
+      "player": "Elena Rybakina",
+      "object": "elena-rybakina-d748a64c3b83.jpg",
+      "sha256": "d748a64c3b830132c84efd0af606029461c8ad30544168c8f7e1e4ac4ac7f431",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Elena Rybakina (2025 DC Open) 11.jpg",
+      "crop": {
+        "x": 0.33723175965665236,
+        "y": 0.035040257648953285,
+        "size": 0.419481394362552
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Elena_Rybakina_(2025_DC_Open)_11.jpg",
+      "updatedAt": "2026-10-01T23:15:20.515Z"
+    },
+    {
+      "player": "Elina Svitolina",
+      "object": "elina-svitolina-103016dfd85a.jpg",
+      "sha256": "103016dfd85aabb5e8d7385a5f278085d4e93e89eaecb7f8409f5762b86cb02a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Elina Svitolina.jpg",
+      "crop": {
+        "x": 0.20529676836630897,
+        "y": 0.02359550561797753,
+        "size": 0.3427498594684872
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:01:25.111Z"
+    },
+    {
+      "player": "Elise Mertens",
+      "object": "elise-mertens-99f714327cdd.jpg",
+      "sha256": "99f714327cdd9e4ef60153d59d8959f2e26fc4fac733821ef9b311bb85177f95",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Mertens RG22 (25) (52144074831).jpg",
+      "crop": {
+        "x": 0.11242352766691197,
+        "y": 0.028599033816425107,
+        "size": 0.705209322574634
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Mertens_RG22_(25)_(52144074831).jpg",
+      "updatedAt": "2026-10-01T23:30:39.789Z"
+    },
+    {
+      "player": "Emma Navarro",
+      "object": "emma-navarro-21b936a70036.jpg",
+      "sha256": "21b936a70036fbff99892eaec434c8b45e6f9e9632dc42fca0f4406e52f53489",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Emma Navarro.jpg",
+      "crop": {
+        "x": 0.310102229759454,
+        "y": 0.010112359550561797,
+        "size": 0.3507485075625117
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:09:04.702Z"
+    },
+    {
+      "player": "Emma Raducanu",
+      "object": "emma-raducanu-add992b2f4d8.jpg",
+      "sha256": "add992b2f4d8dd681ee2dc97b583493294191cfe70075df0d2ba649852e05814",
+      "mimeType": "image/jpeg",
+      "sourceFile": "emmaraducanu.webp",
+      "crop": {
+        "x": 0.3186119873817035,
+        "y": 0.0031496062992125984,
+        "size": 0.39975464958247076
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:23:45.759Z"
+    },
+    {
+      "player": "Ernests Gulbis",
+      "object": "ernests-gulbis-1d0f5ced6516.jpg",
+      "sha256": "1d0f5ced6516af34af4bfe078422c222c2a326505358798a1eebc1a64c1b3a4c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ernestsgulbis.jpg",
+      "crop": {
+        "x": 0.3901185446672819,
+        "y": 0.08155972568707151,
+        "size": 0.32101750382033784
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:43:18.107Z"
+    },
+    {
+      "player": "Ethan Quinn",
+      "object": "ethan-quinn-020318a2defa.jpg",
+      "sha256": "020318a2defa288b1f59308895d421b91a18caa5bcc5eba4f8b72d7fda32b295",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ethanquinn.jpg",
+      "crop": {
+        "x": 0.332247013623534,
+        "y": 0.06724729627616458,
+        "size": 0.26601964991561566
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:32:16.898Z"
+    },
+    {
+      "player": "Eva Lys",
+      "object": "eva-lys-d01ae03c6a00.jpg",
+      "sha256": "d01ae03c6a005e55f508c008fa24f4423fc4ed42cb8d163284745504cf178d3a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "evalys.jpg",
+      "crop": {
+        "x": 0.22458151319906824,
+        "y": 0.02105578993047987,
+        "size": 0.36505119254191715
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:45:13.839Z"
+    },
+    {
+      "player": "Evonne Goolagong",
+      "object": "evonne-goolagong-88cdad198eef.jpg",
+      "sha256": "88cdad198eef89c7db754ad21095a1fb471b4b4bbcce921f7262569508b888a1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Internationale tenniskampioenschappen te Hilversum, Evonne Goolagong (winnares) , Bestanddeelnr 924-7796.jpg",
+      "crop": {
+        "x": 0.15221674876847294,
+        "y": 0.11958132045088565,
+        "size": 0.7388095062706859
+      },
+      "artist": "W. Punt for Anefo",
+      "license": "CC0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Internationale_tenniskampioenschappen_te_Hilversum,_Evonne_Goolagong_(winnares)_,_Bestanddeelnr_924-7796.jpg",
+      "updatedAt": "2026-10-01T23:39:52.995Z"
+    },
+    {
+      "player": "Fabian Marozsan",
+      "object": "fabian-marozsan-04e7b6011276.jpg",
+      "sha256": "04e7b60112761c98807509cf78336c79921adfa6ef85862631a0efd705cef6e1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Fábián Marozsán (2025 DC Open) 04.jpg",
+      "crop": {
+        "x": 0.10179282868525895,
+        "y": 0.05754857997010463,
+        "size": 0.5243359903890298
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:F%C3%A1bi%C3%A1n_Marozs%C3%A1n_(2025_DC_Open)_04.jpg",
+      "updatedAt": "2026-10-01T22:57:13.832Z"
+    },
+    {
+      "player": "Fabio Fognini",
+      "object": "fabio-fognini-f98179669269.jpg",
+      "sha256": "f98179669269393f0839150e3c40e9984cbd8464beebc004f751baafce903445",
+      "mimeType": "image/jpeg",
+      "sourceFile": "fabiofognini.webp",
+      "crop": {
+        "x": 0.27613882863340566,
+        "y": 0.06236220472440948,
+        "size": 0.6353940620339614
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:46:55.579Z"
+    },
+    {
+      "player": "Facundo Diaz Acosta",
+      "object": "facundo-diaz-acosta-42487d5f4fd8.jpg",
+      "sha256": "42487d5f4fd85fd8c135d2e4bf273be8fbfa295640cd696dade2b25065e6afd3",
+      "mimeType": "image/jpeg",
+      "sourceFile": "facundodiazacosta.jpg",
+      "crop": {
+        "x": 0.4128496766887889,
+        "y": 0.07233881205320358,
+        "size": 0.32791042907977386
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:01:24.875Z"
+    },
+    {
+      "player": "Feliciano Lopez",
+      "object": "feliciano-lopez-03b53173e873.jpg",
+      "sha256": "03b53173e8737045409cc0cbc52d047bb41294449947830b83b2bfb42f8d450b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "felicianolopez.webp",
+      "crop": {
+        "x": 0.2093625498007968,
+        "y": 0.04188976377952759,
+        "size": 0.6352921565690363
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:47:11.201Z"
+    },
+    {
+      "player": "Felix Auger-Aliassime",
+      "object": "felix-auger-aliassime-dc9706ab213c.jpg",
+      "sha256": "dc9706ab213c22ae552270f0993978e19db1db7a4a10544a48e4854f13009899",
+      "mimeType": "image/jpeg",
+      "sourceFile": "felixaugeraliassime.jpg",
+      "crop": {
+        "x": 0.29546546834846005,
+        "y": 0.04789574787757554,
+        "size": 0.3201571075365909
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:17:59.221Z"
+    },
+    {
+      "player": "Felix Mantilla",
+      "object": "felix-mantilla-12a9569e808f.jpg",
+      "sha256": "12a9569e808f8491214f27bd57f8e2f4d9c75a70fda88cdae1816497bc62b6df",
+      "mimeType": "image/jpeg",
+      "sourceFile": "felixmantilla.jpg",
+      "crop": {
+        "x": 0.43225599356054323,
+        "y": 0.03870720356323962,
+        "size": 0.5677440064394568
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:45:10.292Z"
+    },
+    {
+      "player": "Fernando Gonzalez",
+      "object": "fernando-gonzalez-2182ff9a43f0.jpg",
+      "sha256": "2182ff9a43f0dfbbaf506931aac87433d9ab41bf9391b76acda24009c80b82ac",
+      "mimeType": "image/jpeg",
+      "sourceFile": "fernandogonzalez.jpg",
+      "crop": {
+        "x": 0.19133805686142297,
+        "y": 0.026893268386691302,
+        "size": 0.4361095477361232
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:45:52.226Z"
+    },
+    {
+      "player": "Fernando Meligeni",
+      "object": "fernando-meligeni-43f81556204e.jpg",
+      "sha256": "43f81556204e264dd9beeccbc2b64e1ecd85409452bb73829bf1ad9dfa827169",
+      "mimeType": "image/jpeg",
+      "sourceFile": "fernandomeligreni.jpg",
+      "crop": {
+        "x": 0.311308788106082,
+        "y": 0.221902580474014,
+        "size": 0.3656043532112288
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:48:41.188Z"
+    },
+    {
+      "player": "Fernando Verdasco",
+      "object": "fernando-verdasco-948cfe6ef597.jpg",
+      "sha256": "948cfe6ef5979588c2a877c3231a6de81b44d7994128728aabc06379bd6b2277",
+      "mimeType": "image/jpeg",
+      "sourceFile": "fernandoverdasco.webp",
+      "crop": {
+        "x": 0.08048780487804881,
+        "y": 0.1505511811023622,
+        "size": 0.6080930993192212
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:48:26.255Z"
+    },
+    {
+      "player": "Filippo Volandri",
+      "object": "filippo-volandri-6424fd58c139.jpg",
+      "sha256": "6424fd58c139c79d3498ff201c02669de936cc39afcc22b469aeb5a6e1a77775",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Filippo Volandri.jpg",
+      "crop": {
+        "x": 0.08897192674604329,
+        "y": 0.01082575074949507,
+        "size": 0.6235037544610524
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:52:24.920Z"
+    },
+    {
+      "player": "Flavio Cobolli",
+      "object": "flavio-cobolli-f869af38a6f8.jpg",
+      "sha256": "f869af38a6f806959d8c9d331fd2a24812c24dbd208da3263659f990b28ca25a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "flaviocobolli.jpg",
+      "crop": {
+        "x": 0.3689256181320465,
+        "y": 0.1948405156219071,
+        "size": 0.2777019478503582
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:15:09.823Z"
+    },
+    {
+      "player": "Florent Serra",
+      "object": "florent-serra-1fc2d1f26f43.jpg",
+      "sha256": "1fc2d1f26f43fbb55274d03a3ddd0706b5b5ce30206bfbdca0857fafbfde146d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Florent Serra.jpg",
+      "crop": {
+        "x": 0.08833098762888249,
+        "y": 0,
+        "size": 0.518139569861133
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:55:38.697Z"
+    },
+    {
+      "player": "Florian Mayer",
+      "object": "florian-mayer-4058fb217b74.jpg",
+      "sha256": "4058fb217b747362d334af478ac68ac567b2c4264c3be618335dfa992b1b5ef9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Florian Mayer.jpg",
+      "crop": {
+        "x": 0.24383461222243616,
+        "y": 0.0475002688245248,
+        "size": 0.3860202092581835
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:54:37.989Z"
+    },
+    {
+      "player": "Frances Tiafoe",
+      "object": "frances-tiafoe-60a479766532.jpg",
+      "sha256": "60a479766532c6b8abc919f7060883dbaf83c0f39b61665bba6151b498f74b84",
+      "mimeType": "image/jpeg",
+      "sourceFile": "francestiafoe.jpg",
+      "crop": {
+        "x": 0.38090687208396556,
+        "y": 0.006088437643516195,
+        "size": 0.323685555571357
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:17:01.404Z"
+    },
+    {
+      "player": "Francesca Schiavone",
+      "object": "francesca-schiavone-d5eaba46ca8c.jpg",
+      "sha256": "d5eaba46ca8ce4847a6f0cef42e6c0dfae517b1aead6022b07978e5e07aa634b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "francescaschiavone.webp",
+      "crop": {
+        "x": 0.2704491725768321,
+        "y": 0.01984251968503936,
+        "size": 0.671197783918809
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:49:37.263Z"
+    },
+    {
+      "player": "Francisco Cerundolo",
+      "object": "francisco-cerundolo-904a69551a1d.jpg",
+      "sha256": "904a69551a1de547a36403f010ba563114bc21802bc606260b18cc0c8a94e776",
+      "mimeType": "image/jpeg",
+      "sourceFile": "franciscocerundolo.webp",
+      "crop": {
+        "x": 0.2831838565022422,
+        "y": 0.021136023916292955,
+        "size": 0.707249635431264
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:20:48.613Z"
+    },
+    {
+      "player": "Gabriela Sabatini",
+      "object": "gabriela-sabatini-141253477549.jpg",
+      "sha256": "1412534775497b16b47591a57f17dbd8551ce8afe11b7ec8e82841af2954898a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "sabatini.jpg",
+      "crop": {
+        "x": 0.13215962441314558,
+        "y": 0.030866141732283456,
+        "size": 0.7005085976470804
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:34:33.136Z"
+    },
+    {
+      "player": "Gael Monfils",
+      "object": "gael-monfils-a668b2d5af00.jpg",
+      "sha256": "a668b2d5af003fae5a9130d823630a913949cfd39794df2d96e59528a0d67aa4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "gael monfils.webp",
+      "crop": {
+        "x": 0.10243994910437781,
+        "y": 0,
+        "size": 0.8292041812931095
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:47:29.443Z"
+    },
+    {
+      "player": "Garbine Muguruza",
+      "object": "garbine-muguruza-7e13afcd606c.jpg",
+      "sha256": "7e13afcd606c1513bc658b5df9104543a44c293a921bfae0e6846be021818ff0",
+      "mimeType": "image/jpeg",
+      "sourceFile": "garbinemuguruza.webp",
+      "crop": {
+        "x": 0.2323869610935857,
+        "y": 0.052913385826771686,
+        "size": 0.35874518586007326
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:37:47.568Z"
+    },
+    {
+      "player": "Gaston Gaudio",
+      "object": "gaston-gaudio-3aaaf3e40a8f.jpg",
+      "sha256": "3aaaf3e40a8f35493393ade49ab460883946acd62939d57ecc5db940e9c2120f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "gastongaudio.jpg",
+      "crop": {
+        "x": 0.22447129909365557,
+        "y": 0.008928571428571428,
+        "size": 0.3549848942598187
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:18:36.111Z"
+    },
+    {
+      "player": "German Puentes",
+      "object": "german-puentes-c9fd32e0d5ec.jpg",
+      "sha256": "c9fd32e0d5ec54902bfa2651c698a35a26e084a9d70dbebcd0ff84380cadf095",
+      "mimeType": "image/jpeg",
+      "sourceFile": "German Puentes.jpg",
+      "crop": {
+        "x": 0.46959205136534227,
+        "y": 0.004296016121693587,
+        "size": 0.48117974023538757
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:55:06.441Z"
+    },
+    {
+      "player": "Gilles Simon",
+      "object": "gilles-simon-9318cd590732.jpg",
+      "sha256": "9318cd590732ff78ec7e55789eeb7d3d65cf038769dd4b517ee373fcb58acd80",
+      "mimeType": "image/jpeg",
+      "sourceFile": "gillessimon.webp",
+      "crop": {
+        "x": 0.17123287671232876,
+        "y": 0,
+        "size": 0.4353120185468839
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:13:26.363Z"
+    },
+    {
+      "player": "Goran Ivanisevic",
+      "object": "goran-ivanisevic-fd99e5311992.jpg",
+      "sha256": "fd99e5311992f5eb311e24ec9eec83fbdcc559d2bec79acf13e334faadcb1bb5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "goranivanisevic.jpg",
+      "crop": {
+        "x": 0.22380952380952382,
+        "y": 0.1269642857142857,
+        "size": 0.5669312007843502
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:17:35.319Z"
+    },
+    {
+      "player": "Greg Rusedski",
+      "object": "greg-rusedski-d28b669857e5.jpg",
+      "sha256": "d28b669857e583cc5c2809abc37de645cceaa43b273335edf34c0cdda42066d8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "gregrusedski.webp",
+      "crop": {
+        "x": 0.3324524312896406,
+        "y": 0.026929133858267753,
+        "size": 0.393111343867683
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:48:39.435Z"
+    },
+    {
+      "player": "Guillermo Coria",
+      "object": "guillermo-coria-f92539ecd957.jpg",
+      "sha256": "f92539ecd957173b876ed021081f521437e11bc428c1d5cabb5f0f78533b519b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Guillermo Coria.jpg",
+      "crop": {
+        "x": 0.21839599075836405,
+        "y": 0.05354159236964533,
+        "size": 0.4845777574637775
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:56:26.039Z"
+    },
+    {
+      "player": "Guillermo Garcia-Lopez",
+      "object": "guillermo-garcia-lopez-1060f8dbd7fc.jpg",
+      "sha256": "1060f8dbd7fc85d8e1292f9028e9709c08b48890066219525c85a178cae222aa",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Guillermo Garcia-Lopez.jpg",
+      "crop": {
+        "x": 0.16718163337640482,
+        "y": 0.07167439348995686,
+        "size": 0.4525522594419843
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:57:23.464Z"
+    },
+    {
+      "player": "Guillermo Vilas",
+      "object": "guillermo-vilas-08c826e8862d.jpg",
+      "sha256": "08c826e8862dbc4f73f9071b6f18b8db751674ffa43f6edd237acee996e8bbf2",
+      "mimeType": "image/jpeg",
+      "sourceFile": "guillermovilas.jpg",
+      "crop": {
+        "x": 0.25973154362416107,
+        "y": 0.17272321428571427,
+        "size": 0.4
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:16:17.900Z"
+    },
+    {
+      "player": "Gustavo Kuerten",
+      "object": "gustavo-kuerten-f7d0d0cc26b5.jpg",
+      "sha256": "f7d0d0cc26b5d23166dfe8b3acec4a0a6c9c8fa623dfc71fe081e69ed076711d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "gustavokuerten.jpg",
+      "crop": {
+        "x": 0.32242744063324535,
+        "y": 0,
+        "size": 0.522515402117002
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:15:33.024Z"
+    },
+    {
+      "player": "Hailey Baptiste",
+      "object": "hailey-baptiste-3bdc2f1b7beb.jpg",
+      "sha256": "3bdc2f1b7beb2576f69187732d9ab718047c86e8bd8f8977b4ab5bdb88e1de05",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Baptiste RGQ22 (3) (52128602342).jpg",
+      "crop": {
+        "x": 0.1864734299516908,
+        "y": 0.01732689210950079,
+        "size": 0.7897503853765663
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Baptiste_RGQ22_(3)_(52128602342).jpg",
+      "updatedAt": "2026-10-01T23:12:33.419Z"
+    },
+    {
+      "player": "Hamad Medjedovic",
+      "object": "hamad-medjedovic-7011f39bf707.jpg",
+      "sha256": "7011f39bf7073a031ad76fe372ef4f1182f465f843549c73680ac65a36291b16",
+      "mimeType": "image/jpeg",
+      "sourceFile": "hamad medjedovic.jpg",
+      "crop": {
+        "x": 0.29798403640122006,
+        "y": 0.07480308236656608,
+        "size": 0.3593078090473354
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:11:34.849Z"
+    },
+    {
+      "player": "Hana Mandlikova",
+      "object": "hana-mandlikova-877500603842.jpg",
+      "sha256": "877500603842b38359eff1eab0bdd5e45919a07bc41816fe12af173678800dff",
+      "mimeType": "image/jpeg",
+      "sourceFile": "hanamandlikova.webp",
+      "crop": {
+        "x": 0.25381062355658196,
+        "y": 0.18362204724409448,
+        "size": 0.49114699859266747
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:50:48.456Z"
+    },
+    {
+      "player": "Harel Levy",
+      "object": "harel-levy-70f551743175.jpg",
+      "sha256": "70f5517431755b65c4357a9a090e5787ad39dc7865ba67cf8fd8b5dbf3624882",
+      "mimeType": "image/jpeg",
+      "sourceFile": "harellevy.webp",
+      "crop": {
+        "x": 0.19143426294820717,
+        "y": 0.21022421524663676,
+        "size": 0.35636786289899
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:05:24.396Z"
+    },
+    {
+      "player": "Hubert Hurkacz",
+      "object": "hubert-hurkacz-ae96f1c5304c.jpg",
+      "sha256": "ae96f1c5304cf4a424c015d4762d81fbbef85ffcba9034208daa87eddc17e028",
+      "mimeType": "image/jpeg",
+      "sourceFile": "huberthurkacz.webp",
+      "crop": {
+        "x": 0.09411146161934805,
+        "y": 0.10015748031496066,
+        "size": 0.44707326156985244
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:13:36.324Z"
+    },
+    {
+      "player": "Hugo Gaston",
+      "object": "hugo-gaston-4554c1164772.jpg",
+      "sha256": "4554c1164772fa2b57b36458c45418c8bd71894632e0e02ac0762667896c933a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "hugogaston.webp",
+      "crop": {
+        "x": 0.29527561697694993,
+        "y": 0.04096153564751148,
+        "size": 0.7047243830230501
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:08:02.230Z"
+    },
+    {
+      "player": "Hyung-taik Lee",
+      "object": "hyung-taik-lee-b45d4bb118d0.jpg",
+      "sha256": "b45d4bb118d0b819408c10e8171d8679376bd08288db9ccd1edb6be60d742214",
+      "mimeType": "image/jpeg",
+      "sourceFile": "hyungtaiklee.webp",
+      "crop": {
+        "x": 0.038229166666666654,
+        "y": 0.04185351270553064,
+        "size": 0.5436805566151937
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:06:42.079Z"
+    },
+    {
+      "player": "Iga Swiatek",
+      "object": "iga-swiatek-50ab70f8670b.jpg",
+      "sha256": "50ab70f8670b47b193d795604c749fcff42f933c27b9c1d482c4bf4db4341e9a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Iga Swiatek.jpg",
+      "crop": {
+        "x": 0.16881639618019492,
+        "y": 0.06336393068764316,
+        "size": 0.5379559846890979
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:02:40.450Z"
+    },
+    {
+      "player": "Ignacio Buse",
+      "object": "ignacio-buse-91ba727760ca.jpg",
+      "sha256": "91ba727760ca0f3317c545eea48965f3abdda437ff37b1480712a02984e95ece",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ignaciobuse.webp",
+      "crop": {
+        "x": 0.10381165919282513,
+        "y": 0.022630792227204762,
+        "size": 0.5659940300500981
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:03:15.894Z"
+    },
+    {
+      "player": "Igor Andreev",
+      "object": "igor-andreev-b8964eaf32f1.jpg",
+      "sha256": "b8964eaf32f1931488da593960ca3e9bb1720413593487d206a41ad8dd723b46",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Igor Andreev.jpg",
+      "crop": {
+        "x": 0.10965823820542271,
+        "y": 0.052994413301348686,
+        "size": 0.7898029746351446
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:57:54.161Z"
+    },
+    {
+      "player": "Igor Kunitsyn",
+      "object": "igor-kunitsyn-8236b79ab866.jpg",
+      "sha256": "8236b79ab866e96dd907faa79f14fe8209171446c05483fcede286afbb7c59f4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Igor Kunitsyn.jpg",
+      "crop": {
+        "x": 0.21166336061187155,
+        "y": 0.19670699536800385,
+        "size": 0.337726185289471
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:58:30.361Z"
+    },
+    {
+      "player": "Ilie Nastase",
+      "object": "ilie-nastase-1bfd1933f82c.jpg",
+      "sha256": "1bfd1933f82cad4b2e9b565be7ba69fe3c7f342555644f09d8b00e4077583e69",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ilienastase.jpg",
+      "crop": {
+        "x": 0.3548104956268221,
+        "y": 0.12473214285714285,
+        "size": 0.2612244897959184
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:12:31.430Z"
+    },
+    {
+      "player": "Illya Marchenko",
+      "object": "illya-marchenko-dba8b014ff22.jpg",
+      "sha256": "dba8b014ff22c19aff6ba8295985a74a0545a34c8c7e09bd93c964f6b1ff4a32",
+      "mimeType": "image/jpeg",
+      "sourceFile": "illya marchenko.webp",
+      "crop": {
+        "x": 0.061052631578947365,
+        "y": 0.001732283464566965,
+        "size": 0.6613333290501645
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:48:49.908Z"
+    },
+    {
+      "player": "Iva Jovic",
+      "object": "iva-jovic-a80539db1b54.jpg",
+      "sha256": "a80539db1b545f11f4192b4cf46bb5cfd44bc3bf294b7a1742c88bc3f081ebab",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Iva Jovic, Roma 7 May 2026.jpg",
+      "crop": {
+        "x": 0.271825876662636,
+        "y": 0.14373590982286633,
+        "size": 0.3003627569528416
+      },
+      "artist": "Raffaele Di Buono",
+      "license": "Public domain",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Iva_Jovic,_Roma_7_May_2026.jpg",
+      "updatedAt": "2026-10-01T23:26:58.719Z"
+    },
+    {
+      "player": "Ivan Dodig",
+      "object": "ivan-dodig-ec5eff23f510.jpg",
+      "sha256": "ec5eff23f510e344189eb70eb049d513ca8ce70b64484017048ea2fbb968035c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ivandodig.webp",
+      "crop": {
+        "x": 0.024789915966386578,
+        "y": 0.007086614173228346,
+        "size": 0.6410714542164522
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:49:27.501Z"
+    },
+    {
+      "player": "Ivan Lendl",
+      "object": "ivan-lendl-c34f00283015.jpg",
+      "sha256": "c34f002830159f87c1d6cd5c25da347680f457ef16f57162f340c5a37aab8529",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ivanlendl.jpg",
+      "crop": {
+        "x": 0.23959731543624163,
+        "y": 0.011160714285714286,
+        "size": 0.4597315436241611
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:12:07.938Z"
+    },
+    {
+      "player": "Ivan Ljubicic",
+      "object": "ivan-ljubicic-79c27d6bea6e.jpg",
+      "sha256": "79c27d6bea6e3a3be0afd432299aff31df7b38afeec9bbca3bf7e8b69d7a3262",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ivanljubicic.webp",
+      "crop": {
+        "x": 0.25567729083665336,
+        "y": 0.43294469357249626,
+        "size": 0.33794156807827286
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:08:28.499Z"
+    },
+    {
+      "player": "Ivo Karlovic",
+      "object": "ivo-karlovic-e6e0738b4c09.jpg",
+      "sha256": "e6e0738b4c09bc4fcae991c757d6cac62959c0438cb1b81281bb72ac3d919252",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ivokarlovic.webp",
+      "crop": {
+        "x": 0.06782077393075359,
+        "y": 0.03165354330708665,
+        "size": 0.7757976834982815
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:49:56.309Z"
+    },
+    {
+      "player": "Jacob Fearnley",
+      "object": "jacob-fearnley-f04cfb4c05ae.jpg",
+      "sha256": "f04cfb4c05ae7bb40f6977e9fb20f6d8bffb70c0f8a95b23ba2421e07ca8f8fe",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Jacob Fearnley (2026 US Open) 03.jpg",
+      "crop": {
+        "x": 0.2215378323614885,
+        "y": 0.203317230273752,
+        "size": 0.6182528008355035
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Jacob_Fearnley_(2026_US_Open)_03.jpg",
+      "updatedAt": "2026-10-01T22:08:01.052Z"
+    },
+    {
+      "player": "Jaime Faria",
+      "object": "jaime-faria-ae5b2a5a12f9.jpg",
+      "sha256": "ae5b2a5a12f964c0e4ed83ae17c509d90c6527325ca1f2d169d350d982939b79",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jaimefaria.jpg",
+      "crop": {
+        "x": 0.3679726585674801,
+        "y": 0.07935069873929024,
+        "size": 0.33445813955296694
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:57:25.941Z"
+    },
+    {
+      "player": "Jakub Mensik",
+      "object": "jakub-mensik-dcf40669e64e.jpg",
+      "sha256": "dcf40669e64e5330617b5edcc517d2b0fd0a24668bf2729d8196c09b3e16b905",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jakubmensik.jpg",
+      "crop": {
+        "x": 0.20850252427428392,
+        "y": 0.19164739467694863,
+        "size": 0.3942577179898221
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:27:16.016Z"
+    },
+    {
+      "player": "James Duckworth",
+      "object": "james-duckworth-a240c69ee7c1.jpg",
+      "sha256": "a240c69ee7c1295a00097b4f5eff021fdd600d28d438467736f78e2894cc0834",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Duckworth WMQ23 (53062101305).jpg",
+      "crop": {
+        "x": 0.18004484304932739,
+        "y": 0.01868460388639761,
+        "size": 0.6411061308309102
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Duckworth_WMQ23_(53062101305).jpg",
+      "updatedAt": "2026-10-01T22:45:01.039Z"
+    },
+    {
+      "player": "Jan Choinski",
+      "object": "jan-choinski-90f40c4e4497.jpg",
+      "sha256": "90f40c4e44970f6ba89607e077564609e064996f6f79bef6bfd2da1d8b85bcfc",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Choinski RGQ23 (52944022775).jpg",
+      "crop": {
+        "x": 0.31049116051715353,
+        "y": 0.03262479871175522,
+        "size": 0.638784201801687
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Choinski_RGQ23_(52944022775).jpg",
+      "updatedAt": "2026-10-01T22:24:07.753Z"
+    },
+    {
+      "player": "Jan Hajek",
+      "object": "jan-hajek-c042480c01d9.jpg",
+      "sha256": "c042480c01d976febd8ae8b25854cfc5bf2ff2645d928f005044b9f732113a19",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Jan Hajek.jpg",
+      "crop": {
+        "x": 0.07133422700679685,
+        "y": 0.03815469518303871,
+        "size": 0.4853798467295093
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:58:59.520Z"
+    },
+    {
+      "player": "Jan Kodes",
+      "object": "jan-kodes-482da7e868ca.jpg",
+      "sha256": "482da7e868ca4e9dd5aad31917e9e6de771d8f254c42cde3a5aadf753787481d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jankodes.jpg",
+      "crop": {
+        "x": 0.23973988439306354,
+        "y": 0.004464285714285714,
+        "size": 0.3453757225433526
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:10:57.516Z"
+    },
+    {
+      "player": "Jan-Lennard Struff",
+      "object": "jan-lennard-struff-9baf6c549351.jpg",
+      "sha256": "9baf6c549351aa003640996a923ba4aad88361160079fae8a51f738f61776ef1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Struff WM19 (11) (48521877302).jpg",
+      "crop": {
+        "x": 0.18143176733780758,
+        "y": 0.009715994020926755,
+        "size": 0.6877703229319596
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Struff_WM19_(11)_(48521877302).jpg",
+      "updatedAt": "2026-10-01T22:42:28.745Z"
+    },
+    {
+      "player": "Jana Novotna",
+      "object": "jana-novotna-5a7ea57f5c67.jpg",
+      "sha256": "5a7ea57f5c67d4659cb55cde53b9dbaa5d0dbc8d05765cd318916c5d23952671",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jananovotna.webp",
+      "crop": {
+        "x": 0.27196261682242984,
+        "y": 0.17653543307086614,
+        "size": 0.5296339088511245
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:53:34.762Z"
+    },
+    {
+      "player": "Janko Tipsarevic",
+      "object": "janko-tipsarevic-29a4cc3b37cf.jpg",
+      "sha256": "29a4cc3b37cf377e7197f38330c77dd45096b41d55b6bd0eb3815d3bb71e8a88",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jankotipsarevic.jpg",
+      "crop": {
+        "x": 0.09540709812108557,
+        "y": 0,
+        "size": 0.6425887265135699
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:50:21.610Z"
+    },
+    {
+      "player": "Jannik Sinner",
+      "object": "jannik-sinner-1763bf8d5065.jpg",
+      "sha256": "1763bf8d5065238266824f157b33075392179c1413c95cc7fd1f42f8864cf977",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jannik sinner.jpg",
+      "crop": {
+        "x": 0.16271719538478338,
+        "y": 0.027088886380686863,
+        "size": 0.4347973708691529
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:13:02.379Z"
+    },
+    {
+      "player": "Jarkko Nieminen",
+      "object": "jarkko-nieminen-7f31654f57ea.jpg",
+      "sha256": "7f31654f57ea05976f0a8ed1b9ca62d70db713200295a3289329c1fc31f251d2",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jarkkonieminen.webp",
+      "crop": {
+        "x": 0.3312302839116719,
+        "y": 0,
+        "size": 0.40396074842579355
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:50:39.318Z"
+    },
+    {
+      "player": "Jasmine Paolini",
+      "object": "jasmine-paolini-bdfa859c8609.jpg",
+      "sha256": "bdfa859c8609d2d6ee32dd47a55daa7cb2678914639bab2ff2ebe3662c5f78b2",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Paolini WMQ19 (11).jpg",
+      "crop": {
+        "x": 0.20443110686082105,
+        "y": 0.04067632850241545,
+        "size": 0.795568893139179
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Paolini_WMQ19_(11).jpg",
+      "updatedAt": "2026-10-01T23:32:57.376Z"
+    },
+    {
+      "player": "Jason Stoltenberg",
+      "object": "jason-stoltenberg-57390e202691.jpg",
+      "sha256": "57390e202691d3de82013c3bb8048e23c7ec76c50e5ea71a86ebb13b34e4a474",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jasonstoltenberg.webp",
+      "crop": {
+        "x": 0.2336842105263158,
+        "y": 0,
+        "size": 0.5735438617907073
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:10:31.966Z"
+    },
+    {
+      "player": "Jaume Munar",
+      "object": "jaume-munar-d616ff7b5526.jpg",
+      "sha256": "d616ff7b5526e388fbcc2d7a97f3596f3412cb684540d6075271c3c80a803eb8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jaumemunar.webp",
+      "crop": {
+        "x": 0.19768664563617244,
+        "y": 0.020629921259842556,
+        "size": 0.4362951236568415
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:42:10.328Z"
+    },
+    {
+      "player": "Jelena Ostapenko",
+      "object": "jelena-ostapenko-e36c66512af3.jpg",
+      "sha256": "e36c66512af3872949d885f60e2910c58a640a31e0d6fdd24d2a80ef4f43f0be",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Ostapenko RG19 (31) (48199115066).jpg",
+      "crop": {
+        "x": 0.05301204819277108,
+        "y": 0.005249597423510452,
+        "size": 0.7408594205925264
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Ostapenko_RG19_(31)_(48199115066).jpg",
+      "updatedAt": "2026-10-01T23:09:14.184Z"
+    },
+    {
+      "player": "Jennifer Capriati",
+      "object": "jennifer-capriati-39b8881df4fe.jpg",
+      "sha256": "39b8881df4fe5bd26fe97de074b5d34f050ccd5e5a97c5d4709f6b2b31d3a7cf",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jennifercapriati.webp",
+      "crop": {
+        "x": 0.3067178502879079,
+        "y": 0.0324409448818898,
+        "size": 0.6256238003838771
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:54:41.807Z"
+    },
+    {
+      "player": "Jenson Brooksby",
+      "object": "jenson-brooksby-ba4873512113.jpg",
+      "sha256": "ba487351211332d351b3c18065e68000848f0a61eedae69727801b3b2f10e8df",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Brooksby RG21 (42) (51376192761).jpg",
+      "crop": {
+        "x": 0.1349514563106796,
+        "y": 0,
+        "size": 0.6553802638377958
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Brooksby_RG21_(42)_(51376192761).jpg",
+      "updatedAt": "2026-10-01T22:08:24.643Z"
+    },
+    {
+      "player": "Jeremy Chardy",
+      "object": "jeremy-chardy-c0f8ce98485e.jpg",
+      "sha256": "c0f8ce98485ef835721cdee53633c67bf80fb7b051b6b0727de3654bae4b162b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jeremychardy.webp",
+      "crop": {
+        "x": 0.3322818086225026,
+        "y": 0.04346456692913389,
+        "size": 0.37451805652253384
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:52:02.762Z"
+    },
+    {
+      "player": "Jesper de Jong",
+      "object": "jesper-de-jong-68517669e800.jpg",
+      "sha256": "68517669e80057e753b6a3f30549c0a9c80d30d80e5b9ddce1f7488b8c181213",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:De Jong WMQ22 (12) (52190174717).jpg",
+      "crop": {
+        "x": 0.1441705404375701,
+        "y": 0.014748383708777093,
+        "size": 0.7084080649063726
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:De_Jong_WMQ22_(12)_(52190174717).jpg",
+      "updatedAt": "2026-10-01T22:19:49.385Z"
+    },
+    {
+      "player": "Jessica Pegula",
+      "object": "jessica-pegula-7b5546ee8153.jpg",
+      "sha256": "7b5546ee815342630838fad3b49bf4c8ba2da359711306cc19105a9ff977ca48",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Jessica Pegula (2025 DC Open) 01.jpg",
+      "crop": {
+        "x": 0.0101931330472103,
+        "y": 0.008856682769726247,
+        "size": 0.6232474986064076
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Jessica_Pegula_(2025_DC_Open)_01.jpg",
+      "updatedAt": "2026-10-01T23:19:20.092Z"
+    },
+    {
+      "player": "Jim Courier",
+      "object": "jim-courier-24c2a35b36df.jpg",
+      "sha256": "24c2a35b36df055c414e4261449edcfa95c06aff809c0a13722b36c1353d2c92",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jimcourier.jpg",
+      "crop": {
+        "x": 0.0809364548494983,
+        "y": 0.05107142857142856,
+        "size": 0.5909141515010975
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:10:25.048Z"
+    },
+    {
+      "player": "Jimmy Connors",
+      "object": "jimmy-connors-fa477053c88b.jpg",
+      "sha256": "fa477053c88b4dff63455a723bba8aaf4fcd7873e5b22ee5182294d8fe5db0ce",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jimmyconnors.jpg",
+      "crop": {
+        "x": 0.41814092953523235,
+        "y": 0.030982142857142847,
+        "size": 0.324837579684279
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:09:26.718Z"
+    },
+    {
+      "player": "Jiri Lehecka",
+      "object": "jiri-lehecka-3b367f28524d.jpg",
+      "sha256": "3b367f28524dcbef8c3a579ee0d2c460cdc27314fc9b4c0847aed21f2033f815",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jiri lehecka.webp",
+      "crop": {
+        "x": 0.17107623318385654,
+        "y": 0.07046337817638264,
+        "size": 0.6351868483196994
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:21:47.349Z"
+    },
+    {
+      "player": "Jiri Novak",
+      "object": "jiri-novak-9900b4359b37.jpg",
+      "sha256": "9900b4359b373e9b6642bff32fd13fc624fa488621121db439ffa62478f8e5f0",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jirinovak.webp",
+      "crop": {
+        "x": 0.13757338551859102,
+        "y": 0,
+        "size": 0.7119373896350599
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:10:15.352Z"
+    },
+    {
+      "player": "Jiri Vanek",
+      "object": "jiri-vanek-4b0a230cadcc.jpg",
+      "sha256": "4b0a230cadccbc164eaf2b59bcaff647c11642c2030395bc6c11b3584d883c1f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jirivanek.webp",
+      "crop": {
+        "x": 0.16290417760347772,
+        "y": 0.06567015597994909,
+        "size": 0.5599647266313933
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:13:30.754Z"
+    },
+    {
+      "player": "Jo-Wilfried Tsonga",
+      "object": "jo-wilfried-tsonga-62ec63f0db01.jpg",
+      "sha256": "62ec63f0db01513da3595b8c95f28c25bd174a3d95392364a6f18c89b084b834",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jowilfriedtsonga.webp",
+      "crop": {
+        "x": 0.15818181818181817,
+        "y": 0.015118110236220509,
+        "size": 0.4676161702473958
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:52:12.888Z"
+    },
+    {
+      "player": "Joao Fonseca",
+      "object": "joao-fonseca-2a4f23b52f9a.jpg",
+      "sha256": "2a4f23b52f9a577109f45f6796eebb6da08a90bd9e1f43c884667a194081ed45",
+      "mimeType": "image/jpeg",
+      "sourceFile": "joaofonseca.webp",
+      "crop": {
+        "x": 0.00846613545816733,
+        "y": 0.11156950672645738,
+        "size": 0.5202025303327705
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:33:14.366Z"
+    },
+    {
+      "player": "Johan Kriek",
+      "object": "johan-kriek-35e7fad984cd.jpg",
+      "sha256": "35e7fad984cdcd4b168c0f04695cbdc2d7a63b96befd46a711526f9ea508d782",
+      "mimeType": "image/jpeg",
+      "sourceFile": "johankriek.jpg",
+      "crop": {
+        "x": 0.3833333333333333,
+        "y": 0.21625,
+        "size": 0.3983673469387755
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:09:53.214Z"
+    },
+    {
+      "player": "John Isner",
+      "object": "john-isner-e0c64a01b6c3.jpg",
+      "sha256": "e0c64a01b6c36dbb1fe18bf79c79578fbdd9d3072fe626fb99b06ed030302aff",
+      "mimeType": "image/jpeg",
+      "sourceFile": "johnisner.webp",
+      "crop": {
+        "x": 0.28601472134595163,
+        "y": 0.020629921259842556,
+        "size": 0.34954433501330834
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:11:18.655Z"
+    },
+    {
+      "player": "John McEnroe",
+      "object": "john-mcenroe-60fc870d4b63.jpg",
+      "sha256": "60fc870d4b63e86b309d29faf2cde023792bcafa223b81c685b5ce8a34f7b0e1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "johnmcenroe.jpg",
+      "crop": {
+        "x": 0.2811320754716981,
+        "y": 0.02986607142857142,
+        "size": 0.4217610062893082
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:08:45.830Z"
+    },
+    {
+      "player": "John Newcombe",
+      "object": "john-newcombe-e2653a2c95db.jpg",
+      "sha256": "e2653a2c95db3703007426cbb7cfcea5a935b64c40d92abfac69dcc9f65de34e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "johnnewcombe.jpg",
+      "crop": {
+        "x": 0.2068759342301943,
+        "y": 0.04772321428571428,
+        "size": 0.33426008968609866
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:07:33.684Z"
+    },
+    {
+      "player": "Juan Balcells",
+      "object": "juan-balcells-3b91ac8f511b.jpg",
+      "sha256": "3b91ac8f511b8ee209a3a69da784e0801a50ddacde4113e7a9a9179e82407141",
+      "mimeType": "image/jpeg",
+      "sourceFile": "juanbalcells.webp",
+      "crop": {
+        "x": 0.16419753086419753,
+        "y": 0.027716535433070857,
+        "size": 0.6788065743152005
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:52:30.193Z"
+    },
+    {
+      "player": "Juan Carlos Ferrero",
+      "object": "juan-carlos-ferrero-24583674abc8.jpg",
+      "sha256": "24583674abc898b5d895f29e367803ba7f7ce00ab1bc8c68679871d1be336a5f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "juan carlos ferrero.webp",
+      "crop": {
+        "x": 0.12683982683982684,
+        "y": 0.01354330708661421,
+        "size": 0.6256132712095847
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:52:21.388Z"
+    },
+    {
+      "player": "Juan Ignacio Chela",
+      "object": "juan-ignacio-chela-f557a7fb1119.jpg",
+      "sha256": "f557a7fb11190a0448982c57bd9df9358b1079e272c64e075ebb64b367336423",
+      "mimeType": "image/jpeg",
+      "sourceFile": "juanignaciochela.webp",
+      "crop": {
+        "x": 0.1454106280193237,
+        "y": 0,
+        "size": 0.5646537793047378
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:52:37.877Z"
+    },
+    {
+      "player": "Juan Manuel Cerundolo",
+      "object": "juan-manuel-cerundolo-cf75b3548a14.jpg",
+      "sha256": "cf75b3548a1496c977b32826eba300ad06f83462fd20beb0679ba678dd000299",
+      "mimeType": "image/jpeg",
+      "sourceFile": "juanmanuelcerundolo.jpg",
+      "crop": {
+        "x": 0.2513848005636113,
+        "y": 0.004650000482797623,
+        "size": 0.4287844034227576
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:50:24.443Z"
+    },
+    {
+      "player": "Juan Martin del Potro",
+      "object": "juan-martin-del-potro-1b316322d986.jpg",
+      "sha256": "1b316322d98686efa8a843093ea224db356db0e6d73d1418f237c577ab6d35c7",
+      "mimeType": "image/jpeg",
+      "sourceFile": "juanmartindelpotro.jpg",
+      "crop": {
+        "x": 0.2109375,
+        "y": 0.11580357142857142,
+        "size": 0.32718749046325685
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:06:09.507Z"
+    },
+    {
+      "player": "Juan Monaco",
+      "object": "juan-monaco-85beeb68f148.jpg",
+      "sha256": "85beeb68f148dc45cc41cf6ffdee7c845b1c48c6fef807bfce115e6e2010c6f4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "juanmonaco.webp",
+      "crop": {
+        "x": 0.2056224899598393,
+        "y": 0.037165354330708694,
+        "size": 0.6705153867422816
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:52:44.580Z"
+    },
+    {
+      "player": "Julien Benneteau",
+      "object": "julien-benneteau-d44f5ba24cd0.jpg",
+      "sha256": "d44f5ba24cd06dbe6e2c50ad90efd3ba35a5f2d847458cf9746b412446056253",
+      "mimeType": "image/jpeg",
+      "sourceFile": "julien benneteau.webp",
+      "crop": {
+        "x": 0.05768321513002362,
+        "y": 0.015118110236220464,
+        "size": 0.6180062945571069
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:53:19.714Z"
+    },
+    {
+      "player": "Julien Boutter",
+      "object": "julien-boutter-2af045426a33.jpg",
+      "sha256": "2af045426a33715a7f167dea5e0b9788c379518e1b11437811e367335d0834db",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Julien Boutter.jpg",
+      "crop": {
+        "x": 0.32906085339113295,
+        "y": 0.006059940557106067,
+        "size": 0.4087221419873245
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:59:51.448Z"
+    },
+    {
+      "player": "Jurgen Melzer",
+      "object": "jurgen-melzer-fccb70c3d1e4.jpg",
+      "sha256": "fccb70c3d1e489d8ac2eb508d182a507b75b2fece7dd9b7c35a873d6de8bf089",
+      "mimeType": "image/jpeg",
+      "sourceFile": "jurgenmelzer.jpg",
+      "crop": {
+        "x": 0.19103869653767824,
+        "y": 0.11590551181102361,
+        "size": 0.6362864818689536
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:53:29.545Z"
+    },
+    {
+      "player": "Justin Gimelstob",
+      "object": "justin-gimelstob-e627cf7de5e0.jpg",
+      "sha256": "e627cf7de5e0f778bba7404b0130f3217ffa31cabf17dc9e07e7597e33f40ede",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Justin Gimelstob.webp",
+      "crop": {
+        "x": 0.160513240174433,
+        "y": 0.039761082417218485,
+        "size": 0.43324851096163386
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:01:05.144Z"
+    },
+    {
+      "player": "Justine Henin",
+      "object": "justine-henin-e1f6c812de3a.jpg",
+      "sha256": "e1f6c812de3a7f04a8e05e2472e074bd43e2b549a19aa03629af071140d3b724",
+      "mimeType": "image/jpeg",
+      "sourceFile": "justinehenin.jpg",
+      "crop": {
+        "x": 0.17058823529411765,
+        "y": 0.03544642857142856,
+        "size": 0.5274509654325598
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:44:20.126Z"
+    },
+    {
+      "player": "Kamil Majchrzak",
+      "object": "kamil-majchrzak-a3805e3fc4c9.jpg",
+      "sha256": "a3805e3fc4c9b317d15e3543febed7ba1a4eb995e5b3a1ac30a1974df5c2d140",
+      "mimeType": "image/jpeg",
+      "sourceFile": "kamilmajchrzak.jpg",
+      "crop": {
+        "x": 0.2642220726558977,
+        "y": 0.042206439939616,
+        "size": 0.3811773221360798
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:01:19.101Z"
+    },
+    {
+      "player": "Karen Khachanov",
+      "object": "karen-khachanov-e5aa427f78c4.jpg",
+      "sha256": "e5aa427f78c4db32314aa17170bcc88615ccfcec06aa97594434747ad2d15ff6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "karenkhachanov.webp",
+      "crop": {
+        "x": 0.20449925033500907,
+        "y": 0.027115097159940187,
+        "size": 0.6789088214138699
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:31:46.965Z"
+    },
+    {
+      "player": "Karim Alami",
+      "object": "karim-alami-80a07b2037f3.jpg",
+      "sha256": "80a07b2037f32999a1e5811c8fdf09af2f121e6381bae27a2ee29429f31195df",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Karim Alami.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.13481884907489106,
+        "size": 0.6934189950518402
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:02:30.447Z"
+    },
+    {
+      "player": "Karol Kucera",
+      "object": "karol-kucera-ce294ec9b847.jpg",
+      "sha256": "ce294ec9b8470fbe0518a423b410a44a3b8834226d26f5a8ed3267d16053ef7a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Karol Kucera.jpg",
+      "crop": {
+        "x": 0.3335175426635012,
+        "y": 0.07048314238377547,
+        "size": 0.2990233309022831
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:17:28.814Z"
+    },
+    {
+      "player": "Karolina Muchova",
+      "object": "karolina-muchova-0336dc2e9589.jpg",
+      "sha256": "0336dc2e9589b0455b5a2490c37637b51a6277cafa037f92f5fcaf18307064c0",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Karolína Muchová (2024 US Open) 01.jpg",
+      "crop": {
+        "x": 0.27826086956521734,
+        "y": 0.16950080515297905,
+        "size": 0.26438806653598657
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Karol%C3%ADna_Muchov%C3%A1_(2024_US_Open)_01.jpg",
+      "updatedAt": "2026-10-01T23:23:38.302Z"
+    },
+    {
+      "player": "Kei Nishikori",
+      "object": "kei-nishikori-d003a0ca2293.jpg",
+      "sha256": "d003a0ca2293a65abcfcc4ada29251fe1ab7d1627f7c9c01c3abbd41a1104f67",
+      "mimeType": "image/jpeg",
+      "sourceFile": "kei nishikori.webp",
+      "crop": {
+        "x": 0.1919902912621359,
+        "y": 0.048976377952755897,
+        "size": 0.5969255465905643
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:53:38.479Z"
+    },
+    {
+      "player": "Ken Rosewall",
+      "object": "ken-rosewall-29a6938b544c.jpg",
+      "sha256": "29a6938b544cf058457fe754835388cbeddd513e8d0e437bd280d42c8d923c27",
+      "mimeType": "image/jpeg",
+      "sourceFile": "kenrosewall.jpg",
+      "crop": {
+        "x": 0.4275071633237822,
+        "y": 0.17941964285714285,
+        "size": 0.30836676217765047
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:05:22.991Z"
+    },
+    {
+      "player": "Kerry Melville Reid",
+      "object": "kerry-melville-reid-422b73bf8aa4.jpg",
+      "sha256": "422b73bf8aa4ec27e1cbc52403520eba0af9cf6a81e72f99e47e58c27081657f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "kerrymelvillereid.jpg",
+      "crop": {
+        "x": 0.4262458471760798,
+        "y": 0.2441517857142857,
+        "size": 0.29163896427598107
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:48:18.687Z"
+    },
+    {
+      "player": "Kevin Anderson",
+      "object": "kevin-anderson-455b45aa7581.jpg",
+      "sha256": "455b45aa75818f3b8ed667fa5cf10f0a96b6791e87575299d896330134c49d80",
+      "mimeType": "image/jpeg",
+      "sourceFile": "kevinanderson.webp",
+      "crop": {
+        "x": 0.0933789954337899,
+        "y": 0.037952755905511844,
+        "size": 0.7355022552350885
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:13:45.401Z"
+    },
+    {
+      "player": "Kim Clijsters",
+      "object": "kim-clijsters-bc79779af5e2.jpg",
+      "sha256": "bc79779af5e267a100442398c3e2a4237f9b8ab4d32797964020a050ebfc4a11",
+      "mimeType": "image/jpeg",
+      "sourceFile": "kimclijsters.webp",
+      "crop": {
+        "x": 0,
+        "y": 0.022204724409448855,
+        "size": 0.7338455380559249
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:07:07.690Z"
+    },
+    {
+      "player": "Learner Tien",
+      "object": "learner-tien-43f5d1e4dca0.jpg",
+      "sha256": "43f5d1e4dca00f5ec3c9c2a597b0720648f361dcc0d2f18c2c861b1407e99ff8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "learnertien.jpg",
+      "crop": {
+        "x": 0.4031578542178502,
+        "y": 0.10613410161746727,
+        "size": 0.3382719676297081
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:22:09.215Z"
+    },
+    {
+      "player": "Leonardo Mayer",
+      "object": "leonardo-mayer-00ee9d9cb9cd.jpg",
+      "sha256": "00ee9d9cb9cd43021cbc04503d0cc5319c04138bf63ecea573c009d09a93c1f9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Leonardo Mayer.jpg",
+      "crop": {
+        "x": 0.1261024913854069,
+        "y": 0.05591004243972948,
+        "size": 0.7873501746900498
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:18:20.740Z"
+    },
+    {
+      "player": "Li Na",
+      "object": "li-na-7743e3523c90.jpg",
+      "sha256": "7743e3523c9078979be9dcc16278fa79be9f1003b532ca78f65ba96d4f28ff7b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "lina.webp",
+      "crop": {
+        "x": 0.031132075471698085,
+        "y": 0.19307086614173227,
+        "size": 0.6585299221974499
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:41:11.998Z"
+    },
+    {
+      "player": "Linda Noskova",
+      "object": "linda-noskova-e40a40a89542.jpg",
+      "sha256": "e40a40a8954239d413eb4cefa7ed0fff60791592ca7a0c8bba704d8586317c3e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Linda Noskova.jpg",
+      "crop": {
+        "x": 0.41594002573488803,
+        "y": 0.04186145684190011,
+        "size": 0.32463833664594116
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:01:05.645Z"
+    },
+    {
+      "player": "Lindsay Davenport",
+      "object": "lindsay-davenport-d8c27ded6c27.jpg",
+      "sha256": "d8c27ded6c27cde342ebaeb401322d2061e52a4c5d75e64d4c02825200614d7e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "lindsaydavenport.webp",
+      "crop": {
+        "x": 0,
+        "y": 0.0031496062992125984,
+        "size": 0.7022383840460527
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:42:41.665Z"
+    },
+    {
+      "player": "Liudmila Samsonova",
+      "object": "liudmila-samsonova-752e6ac87287.jpg",
+      "sha256": "752e6ac8728749004d06c8d9f2b7cc4d28dc1005e4d6bd74ab7646faf8ba81f9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Liudmila Samsonova (2023 DC Open) 05.jpg",
+      "crop": {
+        "x": 0.1864734299516908,
+        "y": 0.14695652173913043,
+        "size": 0.5047262307871944
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Liudmila_Samsonova_(2023_DC_Open)_05.jpg",
+      "updatedAt": "2026-10-01T23:11:46.169Z"
+    },
+    {
+      "player": "Lleyton Hewitt",
+      "object": "lleyton-hewitt-fb5269d6e96f.jpg",
+      "sha256": "fb5269d6e96f83e537aab3546169adf387ab321e4799a09be7d82b11d9351066",
+      "mimeType": "image/jpeg",
+      "sourceFile": "lleytonhewitt.webp",
+      "crop": {
+        "x": 0.154014598540146,
+        "y": 0,
+        "size": 0.6993511858937804
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:11:49.536Z"
+    },
+    {
+      "player": "Lorenzo Musetti",
+      "object": "lorenzo-musetti-73f099f2b7aa.jpg",
+      "sha256": "73f099f2b7aa594b1c2351c83c60ad0758cc1556626c7bc463edc2ea9271e085",
+      "mimeType": "image/jpeg",
+      "sourceFile": "lorenzomusetti.webp",
+      "crop": {
+        "x": 0.15460829493087555,
+        "y": 0.029357249626307903,
+        "size": 0.45001920005692864
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:22:51.582Z"
+    },
+    {
+      "player": "Lorenzo Sonego",
+      "object": "lorenzo-sonego-7c67545fabd8.jpg",
+      "sha256": "7c67545fabd8c5bd2ffa26fee98d70894e8e590e97257d14260a29f73283ce3f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Sonego MCM22 (22) (52035355412).jpg",
+      "crop": {
+        "x": 0.21704035874439465,
+        "y": 0.023378176382660668,
+        "size": 0.6979671173779954
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Sonego_MCM22_(22)_(52035355412).jpg",
+      "updatedAt": "2026-10-01T22:22:02.884Z"
+    },
+    {
+      "player": "Luca Van Assche",
+      "object": "luca-van-assche-35f80a767925.jpg",
+      "sha256": "35f80a767925d959bc7c8987be2684b2adc015e585a08c8c6b7cf5b5296af3da",
+      "mimeType": "image/jpeg",
+      "sourceFile": "lucavanassche.webp",
+      "crop": {
+        "x": 0.07255520504731862,
+        "y": 0,
+        "size": 0.4800385516273988
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:32:30.610Z"
+    },
+    {
+      "player": "Luciano Darderi",
+      "object": "luciano-darderi-d02f6a2cda86.jpg",
+      "sha256": "d02f6a2cda8688fe0252c2820e0b25db37ccfdd7754abd43e23a118d2a29e7c6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "luciano darderi.jpg",
+      "crop": {
+        "x": 0.2339974435638975,
+        "y": 0.06316492905901684,
+        "size": 0.3298490934341578
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:27:19.736Z"
+    },
+    {
+      "player": "Lukas Lacko",
+      "object": "lukas-lacko-b7d12d23c38d.jpg",
+      "sha256": "b7d12d23c38d848f9e45bb4d05ec8983bbb5a11dbf89e9f2e1bc21b223463453",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Lukas Lacko.jpg",
+      "crop": {
+        "x": 0.3096155820706657,
+        "y": 0.02644932083785534,
+        "size": 0.3736850957842298
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:03:22.074Z"
+    },
+    {
+      "player": "Lukasz Kubot",
+      "object": "lukasz-kubot-c3ae21826b5d.jpg",
+      "sha256": "c3ae21826b5dcb3e792b2af802ce3d1b6ee0408eadf13f828075e98243fbb242",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Lukasz Kubot.jpg",
+      "crop": {
+        "x": 0.310308199648983,
+        "y": 0.05418270826339722,
+        "size": 0.3684090444943772
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:04:24.077Z"
+    },
+    {
+      "player": "Madison Keys",
+      "object": "madison-keys-383278bed970.jpg",
+      "sha256": "383278bed970699554cf997143a3e19c3cfaaa9abe7a6f14898eb4d58fe82bc9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Madison Keys.jpg",
+      "crop": {
+        "x": 0.33308383233532934,
+        "y": 0.06380254557963169,
+        "size": 0.32557385838674213
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:08:42.960Z"
+    },
+    {
+      "player": "Magnus Gustafsson",
+      "object": "magnus-gustafsson-69fc94f2a4de.jpg",
+      "sha256": "69fc94f2a4de34bfb325f25ee117eb18ea4741d43d89529438210d05336c3430",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Magnus Gustafsson.jpg",
+      "crop": {
+        "x": 0.3499984975861985,
+        "y": 0.15856206004879533,
+        "size": 0.39286286581195007
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:19:29.370Z"
+    },
+    {
+      "player": "Magnus Larsson",
+      "object": "magnus-larsson-fe9aae282520.jpg",
+      "sha256": "fe9aae2825206ed73d1872b4eea2687b95291412ba6de1f2b42c38c3ca6a3b4f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Magnus Larsson.jpg",
+      "crop": {
+        "x": 0.20017494386790888,
+        "y": 0.0589570495915615,
+        "size": 0.5414152619145487
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:18:56.769Z"
+    },
+    {
+      "player": "Maja Chwalinska",
+      "object": "maja-chwalinska-0ec93a8a7931.jpg",
+      "sha256": "0ec93a8a79315db261f47a6488fb0538335fee5edaed7a52ceffb4ef5af9fbc3",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Maja Chwalinska.jpg",
+      "crop": {
+        "x": 0.13387445105755397,
+        "y": 0.0547932781026525,
+        "size": 0.4382481798529625
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:16:42.249Z"
+    },
+    {
+      "player": "Manuel Orantes",
+      "object": "manuel-orantes-99afd16a0cf2.jpg",
+      "sha256": "99afd16a0cf22c80b6c16b5941b143f1b987116e56ba0a441b5106e8976db8ae",
+      "mimeType": "image/jpeg",
+      "sourceFile": "manuelorantes.jpg",
+      "crop": {
+        "x": 0.4563405797101449,
+        "y": 0.15709821428571427,
+        "size": 0.23753623188405798
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:02:33.327Z"
+    },
+    {
+      "player": "Marat Safin",
+      "object": "marat-safin-edffad78583f.jpg",
+      "sha256": "edffad78583f9e25d27bc964ff16d8588ac41a5556ec8f517d0069a5e671ec4d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "maratsafin.jpg",
+      "crop": {
+        "x": 0.11543624161073827,
+        "y": 0.09348214285714285,
+        "size": 0.4
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:00:22.157Z"
+    },
+    {
+      "player": "Marcel Granollers",
+      "object": "marcel-granollers-4dab59c73157.jpg",
+      "sha256": "4dab59c73157a25dc45ca5452cb68fbe5c0806ecd404c42b4ef1794f28baa6ca",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Marcel Granollers.jpg",
+      "crop": {
+        "x": 0.30926757982516356,
+        "y": 0,
+        "size": 0.30160946771502495
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:19:48.494Z"
+    },
+    {
+      "player": "Marco Trungelliti",
+      "object": "marco-trungelliti-1f2ebae33e4c.jpg",
+      "sha256": "1f2ebae33e4cc29fda2625e91b8615a711b661daadf0002c017cf1ce5dcdb31a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Marco Trungelliti (2023 US Open) 03.jpg",
+      "crop": {
+        "x": 0.36038647342995167,
+        "y": 0.2073429951690821,
+        "size": 0.32839772837173536
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Marco_Trungelliti_(2023_US_Open)_03.jpg",
+      "updatedAt": "2026-10-01T22:23:09.689Z"
+    },
+    {
+      "player": "Marcos Baghdatis",
+      "object": "marcos-baghdatis-fcc5db136a93.jpg",
+      "sha256": "fcc5db136a93e0faadc1e53e61aecb553645155e03e31621abbe710b4fcec01e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marcosbaghdatis.webp",
+      "crop": {
+        "x": 0.014938488576449912,
+        "y": 0,
+        "size": 0.693731700179866
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:08:21.551Z"
+    },
+    {
+      "player": "Marcos Daniel",
+      "object": "marcos-daniel-bb9887d31cc0.jpg",
+      "sha256": "bb9887d31cc0ec9c8267426d5dbde8c00e8fafe062a2b18f81e95acca9f9ec3b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marcosdaniel.webp",
+      "crop": {
+        "x": 0.10515247108307045,
+        "y": 0.25055118110236224,
+        "size": 0.44181563801569895
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T03:53:50.797Z"
+    },
+    {
+      "player": "Marcos Giron",
+      "object": "marcos-giron-377f8c8d66ab.jpg",
+      "sha256": "377f8c8d66ab864b1292bfe93e5419132eeccb5947554188662e46fd0100d223",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Marcos Giron (2023 DC Open) 07.jpg",
+      "crop": {
+        "x": 0.13590669446820328,
+        "y": 0.012167414050822101,
+        "size": 0.8640933055317968
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Marcos_Giron_(2023_DC_Open)_07.jpg",
+      "updatedAt": "2026-10-01T22:21:46.481Z"
+    },
+    {
+      "player": "Mardy Fish",
+      "object": "mardy-fish-8a26304824b2.jpg",
+      "sha256": "8a26304824b20e506abc3450b90f953c9c8697a9c3a7ec720cb9fddd6edde4ca",
+      "mimeType": "image/jpeg",
+      "sourceFile": "mardyfish.webp",
+      "crop": {
+        "x": 0.3319954128440367,
+        "y": 0.06157480314960633,
+        "size": 0.40259938721263083
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:13:53.068Z"
+    },
+    {
+      "player": "Margaret Court",
+      "object": "margaret-court-38cc6ef2bb19.jpg",
+      "sha256": "38cc6ef2bb192840dc10932fdad84764ce08b622809d699f4f39d39bdf0e5161",
+      "mimeType": "image/jpeg",
+      "sourceFile": "margaretcourt.webp",
+      "crop": {
+        "x": 0.4161000244140625,
+        "y": 0.10251968503937012,
+        "size": 0.5838999755859374
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:44:05.051Z"
+    },
+    {
+      "player": "Maria Sakkari",
+      "object": "maria-sakkari-e70fba294760.jpg",
+      "sha256": "e70fba294760c472fdc1299e7cfe9e3388df5ca3d6fb8a28612e6e9a2a440bf9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Sakkari2023-DCOpen.jpg",
+      "crop": {
+        "x": 0.3540201005025125,
+        "y": 0.02940418679549113,
+        "size": 0.4684840692108001
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Sakkari2023-DCOpen.jpg",
+      "updatedAt": "2026-10-01T23:10:13.350Z"
+    },
+    {
+      "player": "Maria Sharapova",
+      "object": "maria-sharapova-14862841c951.jpg",
+      "sha256": "14862841c951e7be7d38b60a87dca89145061b5c17ddd9bab8fd2fad8d5dadb5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "mariasharapova.webp",
+      "crop": {
+        "x": 0.2677033492822966,
+        "y": 0.013543307086614165,
+        "size": 0.49621211147764654
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:23:32.419Z"
+    },
+    {
+      "player": "Mariano Navone",
+      "object": "mariano-navone-40e6295f2cef.jpg",
+      "sha256": "40e6295f2cef86b02a089919f6bf0059f4064bf433ab7aaf984ef8198389dd4a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marianonavone.webp",
+      "crop": {
+        "x": 0.29547844374342797,
+        "y": 0.036377952755905545,
+        "size": 0.3739922941671185
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:14:03.018Z"
+    },
+    {
+      "player": "Mariano Zabaleta",
+      "object": "mariano-zabaleta-3a2c45825f32.jpg",
+      "sha256": "3a2c45825f324bf25d8b4229f96f989a980c2769db8d751cba31394dffd8f02b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marianozabaleta.webp",
+      "crop": {
+        "x": 0.06831566548881036,
+        "y": 0.04173228346456693,
+        "size": 0.4110914753800427
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:23:16.974Z"
+    },
+    {
+      "player": "Marin Cilic",
+      "object": "marin-cilic-a920e9dbfdfd.jpg",
+      "sha256": "a920e9dbfdfdeb1ccb3d0e00ab91525a7d9b5c96a9134448a5df6ccbceec6936",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marincilic.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.031057264210124103,
+        "size": 0.5948972329497337
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:42:39.300Z"
+    },
+    {
+      "player": "Marion Bartoli",
+      "object": "marion-bartoli-a1bc0871cf2d.jpg",
+      "sha256": "a1bc0871cf2d678b44ff8305fdc0b96fe13a6e2016ad38ff7565039b4be123d8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marionbartoli.webp",
+      "crop": {
+        "x": 0.06149425287356326,
+        "y": 0.06787401574803154,
+        "size": 0.5978608230064655
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:23:41.703Z"
+    },
+    {
+      "player": "Mark Edmondson",
+      "object": "mark-edmondson-8e0e12d9735d.jpg",
+      "sha256": "8e0e12d9735dbbc2249e65ac81d7eefe2b2a9e55000b1a2df52c1b6ab7273ea3",
+      "mimeType": "image/jpeg",
+      "sourceFile": "markedmondson.jpg",
+      "crop": {
+        "x": 0.4260997067448681,
+        "y": 0.11133928571428571,
+        "size": 0.3597751829980755
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:03:40.199Z"
+    },
+    {
+      "player": "Marketa Vondrousova",
+      "object": "marketa-vondrousova-7a6e4f595baf.jpg",
+      "sha256": "7a6e4f595bafd4e6c1981ded6fc42589554ed91df1cc42a2100471c757396bec",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marketavondrousova.jpg",
+      "crop": {
+        "x": 0.27185430463576155,
+        "y": 0.013124999999999989,
+        "size": 0.4209271523178808
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:41:50.404Z"
+    },
+    {
+      "player": "Markus Hantschk",
+      "object": "markus-hantschk-2676e3182092.jpg",
+      "sha256": "2676e318209271c2c55b01cbb6f59740d8382aa8c4a471181f4d03c747924e8b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "markushantschk.webp",
+      "crop": {
+        "x": 0.07799227799227795,
+        "y": 0.03757847533632285,
+        "size": 0.7235392555030616
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:17:41.137Z"
+    },
+    {
+      "player": "Marsel Ilhan",
+      "object": "marsel-ilhan-aef794c60068.jpg",
+      "sha256": "aef794c60068929273c6ccffc916b996d8ca90b86417e7dab2669fa67355d70d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Marsel Ilhan.jpg",
+      "crop": {
+        "x": 0.14837844258076266,
+        "y": 0.02923064663122266,
+        "size": 0.7636271950881384
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:20:25.010Z"
+    },
+    {
+      "player": "Marta Kostyuk",
+      "object": "marta-kostyuk-f1dae892a103.jpg",
+      "sha256": "f1dae892a1039ef235c273185f110fae2742ffce69abe0a4d5dbe2ee32e752e8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Marta Kostyuk (2025 DC Open) 04.jpg",
+      "crop": {
+        "x": 0.016908212560386472,
+        "y": 0.15178743961352656,
+        "size": 0.7149355975902023
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Marta_Kostyuk_(2025_DC_Open)_04.jpg",
+      "updatedAt": "2026-10-01T23:25:07.312Z"
+    },
+    {
+      "player": "Martin Damm",
+      "object": "martin-damm-066d72339913.jpg",
+      "sha256": "066d72339913932d1e4403829cbb48d80c9c82a06d7c46077cf81b13d0d1d243",
+      "mimeType": "image/jpeg",
+      "sourceFile": "martindamm.jpg",
+      "crop": {
+        "x": 0.17276785714285708,
+        "y": 0.1347384155455904,
+        "size": 0.43815476417541505
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:02:13.166Z"
+    },
+    {
+      "player": "Martin Landaluce",
+      "object": "martin-landaluce-6c0b75387bb5.jpg",
+      "sha256": "6c0b75387bb5018df57ca4e018f44b73f1dd63d9957a7c0f05fab35c45d3e4a0",
+      "mimeType": "image/jpeg",
+      "sourceFile": "martin landaluce.webp",
+      "crop": {
+        "x": 0.15488855806298746,
+        "y": 0,
+        "size": 0.5461190211085173
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:57:32.448Z"
+    },
+    {
+      "player": "Martina Hingis",
+      "object": "martina-hingis-7332ebfe5fb5.jpg",
+      "sha256": "7332ebfe5fb522b7ddc746b9d77374ecf9f23b82b048b990fb4c1b230fbd55be",
+      "mimeType": "image/jpeg",
+      "sourceFile": "martinahingis.webp",
+      "crop": {
+        "x": 0.053709198813056365,
+        "y": 0.19058035714285712,
+        "size": 0.5640949464339531
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:31:34.533Z"
+    },
+    {
+      "player": "Martina Navratilova",
+      "object": "martina-navratilova-2dd845579cda.jpg",
+      "sha256": "2dd845579cdaa7a70e2038ccdd141306133a76fdf013a85cad0f7bd898e61830",
+      "mimeType": "image/jpeg",
+      "sourceFile": "martinanavratilova.webp",
+      "crop": {
+        "x": 0.43972746331236895,
+        "y": 0.052913385826771686,
+        "size": 0.33796295869775284
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:08:00.747Z"
+    },
+    {
+      "player": "Mary Pierce",
+      "object": "mary-pierce-5ba49bf310fc.jpg",
+      "sha256": "5ba49bf310fcf7eb4e1f6ae53da9b95df9dec409e176c988d59e48e865aaea44",
+      "mimeType": "image/jpeg",
+      "sourceFile": "marypierce.webp",
+      "crop": {
+        "x": 0.07122641509433959,
+        "y": 0.06236220472440944,
+        "size": 0.4762185438623968
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:20:27.494Z"
+    },
+    {
+      "player": "Mats Wilander",
+      "object": "mats-wilander-57d8384ae558.jpg",
+      "sha256": "57d8384ae558c2173cea52b0d2bb79fa62f5df121bcfbf9ffc46a12715fc3040",
+      "mimeType": "image/jpeg",
+      "sourceFile": "matswilander.jpg",
+      "crop": {
+        "x": 0.13110367892976585,
+        "y": 0.17941964285714285,
+        "size": 0.48160534096402074
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:04:33.637Z"
+    },
+    {
+      "player": "Matteo Arnaldi",
+      "object": "matteo-arnaldi-d137ed06bb6c.jpg",
+      "sha256": "d137ed06bb6c18245087d6ef84e40edc2a203c29cfb63160bc127522f55eb96a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "matteoarnaldi.jpg",
+      "crop": {
+        "x": 0.3033958449959755,
+        "y": 0.13486727327108383,
+        "size": 0.2869080752134323
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:46:24.196Z"
+    },
+    {
+      "player": "Matteo Berrettini",
+      "object": "matteo-berrettini-654d69a14b22.jpg",
+      "sha256": "654d69a14b228d59652832d22f17adb5e9983931dd53ce0db5b02f34a9abcb0b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "matteoberrettini.webp",
+      "crop": {
+        "x": 0.0813238770685579,
+        "y": 0.007086614173228346,
+        "size": 0.7506304080322843
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:38:57.180Z"
+    },
+    {
+      "player": "Mattia Bellucci",
+      "object": "mattia-bellucci-ebbf39fcff38.jpg",
+      "sha256": "ebbf39fcff38dee8b57dba70d14c9a8fd26ea994a0e86000ff2647d8529c66b6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Bellucci WMQ23 (53061135007).jpg",
+      "crop": {
+        "x": 0.21425120772946857,
+        "y": 0.031819645732689195,
+        "size": 0.6214573367206371
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Bellucci_WMQ23_(53061135007).jpg",
+      "updatedAt": "2026-10-01T22:23:46.077Z"
+    },
+    {
+      "player": "Michael Berrer",
+      "object": "michael-berrer-f09461bb9ef2.jpg",
+      "sha256": "f09461bb9ef29288979b550767a8ca6346ea08ff2856eceb1bc0eb5fd5503110",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Michael Berrer.jpg",
+      "crop": {
+        "x": 0.10675017727212717,
+        "y": 0,
+        "size": 0.40086911370356876
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:20:57.844Z"
+    },
+    {
+      "player": "Michael Chang",
+      "object": "michael-chang-64d4bccf6f3c.jpg",
+      "sha256": "64d4bccf6f3c721e07e5c3210f0961baf59c1732ec15884d92aaced0b4ace41f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "michael chang.jpg",
+      "crop": {
+        "x": 0.4006711409395973,
+        "y": 0.12138392857142856,
+        "size": 0.3561073825503356
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:59:35.688Z"
+    },
+    {
+      "player": "Michael Llodra",
+      "object": "michael-llodra-3600b2fee6f7.jpg",
+      "sha256": "3600b2fee6f7015bab9242f2ca5e6ba55945d582c75131f19005bf36959d31c2",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Michael Llodra.jpg",
+      "crop": {
+        "x": 0.14566905848563663,
+        "y": 0,
+        "size": 0.8280101134663537
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:22:39.974Z"
+    },
+    {
+      "player": "Michael Russell",
+      "object": "michael-russell-c895b908ab58.jpg",
+      "sha256": "c895b908ab5819f2170ff8a79e978680354a1ab3101594b9a875ef809f66b975",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Michael Russell.jpg",
+      "crop": {
+        "x": 0.3418164914966792,
+        "y": 0.014830508474576272,
+        "size": 0.34410878964038283
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:23:27.560Z"
+    },
+    {
+      "player": "Michael Stich",
+      "object": "michael-stich-ad82d7403e92.jpg",
+      "sha256": "ad82d7403e92170e67e1f3501b0f33f480d151c7de832c297c2d74d28bf742dd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "michaelstich.jpg",
+      "crop": {
+        "x": 0.30830564784053155,
+        "y": 0.29214285714285715,
+        "size": 0.3492358803986711
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:59:05.312Z"
+    },
+    {
+      "player": "Michael Zheng",
+      "object": "michael-zheng-1be15b05de58.jpg",
+      "sha256": "1be15b05de5801ea6b9d424232d60f8eac9dca818bcd66527f971d1bbce2e736",
+      "mimeType": "image/jpeg",
+      "sourceFile": "michaelzheng.jpg",
+      "crop": {
+        "x": 0.1135785220739844,
+        "y": 0.04100718966142817,
+        "size": 0.32670823536277954
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:02:52.614Z"
+    },
+    {
+      "player": "Michal Przysiezny",
+      "object": "michal-przysiezny-fb91b575076c.jpg",
+      "sha256": "fb91b575076cca284504e157dcbb23c124a2b3a01548ea4b3c2657fe735f598d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Michal Przysiezny.jpg",
+      "crop": {
+        "x": 0.1586604938121502,
+        "y": 0.041386256657414515,
+        "size": 0.3220338374376297
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:24:00.141Z"
+    },
+    {
+      "player": "Michal Tabara",
+      "object": "michal-tabara-cc98f2c75b4e.jpg",
+      "sha256": "cc98f2c75b4edcd0f45ad788049d331754a6312d5f65a8ff9c8005ab9bb7c965",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Michal Tabara.jpg",
+      "crop": {
+        "x": 0.4001899163831364,
+        "y": 0.0922717658203032,
+        "size": 0.31526110276128305
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:25:59.905Z"
+    },
+    {
+      "player": "Michel Kratochvil",
+      "object": "michel-kratochvil-2fcfe946adb5.jpg",
+      "sha256": "2fcfe946adb566733fdd6763941897481ef4a956c93f9da7439353b8db2bd30b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Michel Kratochvil.jpg",
+      "crop": {
+        "x": 0.4014401648425113,
+        "y": 0.04264053033064988,
+        "size": 0.28775719304879505
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:27:05.761Z"
+    },
+    {
+      "player": "Mikael Tillstrom",
+      "object": "mikael-tillstrom-5c7edba8380b.jpg",
+      "sha256": "5c7edba8380ba380a6098f99372bf36fced2af9442c6780d427e3011da04a9fb",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Mikael Tillstrom.jpg",
+      "crop": {
+        "x": 0.06741047692500127,
+        "y": 0.18152299960601634,
+        "size": 0.45890408924442394
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:28:10.468Z"
+    },
+    {
+      "player": "Mikhail Kukushkin",
+      "object": "mikhail-kukushkin-482f916c4a2c.jpg",
+      "sha256": "482f916c4a2c6177b070e2d1837bd43fd7dd32231db3289ee4976542cb473ea5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Mikhail Kukushkin.jpg",
+      "crop": {
+        "x": 0.10362118435284448,
+        "y": 0.03710161935601194,
+        "size": 0.7442555671173429
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:28:30.571Z"
+    },
+    {
+      "player": "Mikhail Youzhny",
+      "object": "mikhail-youzhny-3ff7bb62d261.jpg",
+      "sha256": "3ff7bb62d2613d56bff735edaa943aed4ac9bc90d386d84cee0f3ddd0eab53ff",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Mikhail Youzhny.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 0.5124283188474392
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:47:29.242Z"
+    },
+    {
+      "player": "Mima Jausovec",
+      "object": "mima-jausovec-83dd5e246cb7.jpg",
+      "sha256": "83dd5e246cb70ddd2dc26ed3f8a59e84a2183a3cb6323c4ae9303161823e0c8d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "mimajausovec.webp",
+      "crop": {
+        "x": 0.32836879432624105,
+        "y": 0.10015748031496062,
+        "size": 0.551812441129211
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:10:59.551Z"
+    },
+    {
+      "player": "Miomir Kecmanovic",
+      "object": "miomir-kecmanovic-8f2afcc5ade8.jpg",
+      "sha256": "8f2afcc5ade81449855b34581b7d5c6c4a419fd984945ac9e2b82617e00f69a8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Kecmanovic RG21 (11) (51377164760).jpg",
+      "crop": {
+        "x": 0.09977628635346755,
+        "y": 0.018893871449925242,
+        "size": 0.6829828508961654
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Kecmanovic_RG21_(11)_(51377164760).jpg",
+      "updatedAt": "2026-10-01T22:57:30.214Z"
+    },
+    {
+      "player": "Mirra Andreeva",
+      "object": "mirra-andreeva-9c6a4a889f98.jpg",
+      "sha256": "9c6a4a889f987f9ed559f4397b62938d7539de1e6dbb789a65075ecfb3b0d95d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Andreeva M. WMQ23 (53062105200).jpg",
+      "crop": {
+        "x": 0.14178743961352655,
+        "y": 0.03262479871175522,
+        "size": 0.6653542501108658
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Andreeva_M._WMQ23_(53062105200).jpg",
+      "updatedAt": "2026-10-01T23:20:39.382Z"
+    },
+    {
+      "player": "Mischa Zverev",
+      "object": "mischa-zverev-2d0b8f455b16.jpg",
+      "sha256": "2d0b8f455b16a24a1f7e4232df24fea9d19a2bc6ef11bf31e9ed1f86398d9891",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Mischa Zverev.jpg",
+      "crop": {
+        "x": 0.3560070231637756,
+        "y": 0.01714448987851652,
+        "size": 0.39771063631110476
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:45:40.126Z"
+    },
+    {
+      "player": "Monica Seles",
+      "object": "monica-seles-d14b83071a53.jpg",
+      "sha256": "d14b83071a5345d115db8b45d1c70d7ff8f385b36afec62b99859d2ac0a39410",
+      "mimeType": "image/jpeg",
+      "sourceFile": "monicaseles.webp",
+      "crop": {
+        "x": 0.12482598607888634,
+        "y": 0.07653543307086617,
+        "size": 0.6517787995305249
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:12:23.660Z"
+    },
+    {
+      "player": "Nancy Richey",
+      "object": "nancy-richey-b322c155fde8.jpg",
+      "sha256": "b322c155fde837760f42735b50e486050b9c0a83b46087734c472a779cd9fc7d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "nancy richey.webp",
+      "crop": {
+        "x": 0.2880174291938998,
+        "y": 0,
+        "size": 0.43151778343715963
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:13:44.329Z"
+    },
+    {
+      "player": "Naomi Osaka",
+      "object": "naomi-osaka-873ddde7b2b9.jpg",
+      "sha256": "873ddde7b2b961b4d8aafa19292aaca6e16f3dc69e4af7d20d4cd0fbb3dd0976",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Naomi Osaka.jpg",
+      "crop": {
+        "x": 0.37104998676675477,
+        "y": 0.0533388819494242,
+        "size": 0.23345009902388686
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:05:40.615Z"
+    },
+    {
+      "player": "Nicolas Almagro",
+      "object": "nicolas-almagro-cfa7c3276e44.jpg",
+      "sha256": "cfa7c3276e4469503c9fcae28163dcd2221edb2193a7b5a465e4711e603d0440",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Nicolas Almagro.jpg",
+      "crop": {
+        "x": 0.0015254636333944898,
+        "y": 0.0007399525493383408,
+        "size": 0.7332893272784228
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:08:50.961Z"
+    },
+    {
+      "player": "Nicolas Massu",
+      "object": "nicolas-massu-cc91a9c8fd45.jpg",
+      "sha256": "cc91a9c8fd455b54f345f0a5519bdf728719ecbd14bbbdee70a7b9e7f4f1cd3b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "nicolasmassu.webp",
+      "crop": {
+        "x": 0.4768664563617245,
+        "y": 0.034803149606299245,
+        "size": 0.32351910804724465
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:08:13.644Z"
+    },
+    {
+      "player": "Nikolay Davydenko",
+      "object": "nikolay-davydenko-31aa5c0bd4c0.jpg",
+      "sha256": "31aa5c0bd4c04d0c61baa600bb41388a3d963161b1e4f1eca8ec929239e375af",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Nikolay Davydenko.jpg",
+      "crop": {
+        "x": 0.19680490987129576,
+        "y": 0.33384250117384867,
+        "size": 0.36352448973837487
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:08:09.941Z"
+    },
+    {
+      "player": "Novak Djokovic",
+      "object": "novak-djokovic-580ee53660d3.jpg",
+      "sha256": "580ee53660d3af69827507e120f0bb1a4fcc16eb4a7c4e83cedd86772a57317b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "novakdjokovic.jpg",
+      "crop": {
+        "x": 0.3587649402390438,
+        "y": 0.07345291479820626,
+        "size": 0.3043658769463163
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-01T23:57:35.966Z"
+    },
+    {
+      "player": "Nuno Borges",
+      "object": "nuno-borges-9fb27ee8aa42.jpg",
+      "sha256": "9fb27ee8aa42374162c523d23d5ec2fccc0febd990df1383ee16130f6ef8b66d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "nunoborges.jpg",
+      "crop": {
+        "x": 0.14617218598523665,
+        "y": 0.056792424991726875,
+        "size": 0.7008817985693827
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:29:07.142Z"
+    },
+    {
+      "player": "Olivier Rochus",
+      "object": "olivier-rochus-922b591bd5a8.jpg",
+      "sha256": "922b591bd5a8df1686fa778aeb90914dfae6af6e3ad912d4fde7aa05856abe6a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Olivier Rochus.jpg",
+      "crop": {
+        "x": 0.12279290254045715,
+        "y": 0.008891413264562574,
+        "size": 0.524646147965927
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:47:58.161Z"
+    },
+    {
+      "player": "Pablo Andujar",
+      "object": "pablo-andujar-c11966767c8d.jpg",
+      "sha256": "c11966767c8d458fa0d189814d565ca10fff1db7caab5a559e02da6c28ce2038",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Pablo Andujar.jpg",
+      "crop": {
+        "x": 0.23892829800536344,
+        "y": 0.10734527185559273,
+        "size": 0.5468079124341955
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:07:34.481Z"
+    },
+    {
+      "player": "Pablo Carreno Busta",
+      "object": "pablo-carreno-busta-ff283d6fc96c.jpg",
+      "sha256": "ff283d6fc96cffa86ff27e4077685f5672a5a84177e9d394a79dc748b6380ba6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "pablocarrenobusta.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.08095975515385301,
+        "size": 0.66661376953125
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:57:45.529Z"
+    },
+    {
+      "player": "Pablo Cuevas",
+      "object": "pablo-cuevas-450606570767.jpg",
+      "sha256": "450606570767d8cfa78e4f5a6bb5edb5778905bf2675808914d28cfc9b000f2d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Pablo Cuevas.jpg",
+      "crop": {
+        "x": 0.2624239059504632,
+        "y": 0,
+        "size": 0.4365428473121396
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:46:15.652Z"
+    },
+    {
+      "player": "Pat Cash",
+      "object": "pat-cash-513dddfc64c5.jpg",
+      "sha256": "513dddfc64c5728f53c4f897c7d01a090242868adef072753dc11c8ad71cbccd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "patcash.jpg",
+      "crop": {
+        "x": 0.09472223917643229,
+        "y": 0.04017857142857143,
+        "size": 0.6216666666666667
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:27:18.888Z"
+    },
+    {
+      "player": "Patrick Rafter",
+      "object": "patrick-rafter-dcb746b3aed2.jpg",
+      "sha256": "dcb746b3aed2abe241663b8c10c38e8ebf88c6cc2caa91a520e8d50c4115fbc9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "patrafter.jpg",
+      "crop": {
+        "x": 0.043333333333333335,
+        "y": 0.05441964285714285,
+        "size": 0.8004
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:58:24.963Z"
+    },
+    {
+      "player": "Paul Goldstein",
+      "object": "paul-goldstein-5ed4ad65c7d2.jpg",
+      "sha256": "5ed4ad65c7d2072e0855382e05907da8ece4a913836d023021147ae31b8dab9b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Paul Goldstein.jpg",
+      "crop": {
+        "x": 0.20434169142261419,
+        "y": 0.056472906147998374,
+        "size": 0.5410856089503663
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:47:02.435Z"
+    },
+    {
+      "player": "Paul-Henri Mathieu",
+      "object": "paul-henri-mathieu-4ee97a0a99d6.jpg",
+      "sha256": "4ee97a0a99d6a7130cddc426253f324400d047feac09ab3eefe9629a7f4b5529",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Paul-Henri Mathieu.jpg",
+      "crop": {
+        "x": 0.05567751084713058,
+        "y": 0,
+        "size": 0.4069068682535241
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:48:28.609Z"
+    },
+    {
+      "player": "Pere Riba",
+      "object": "pere-riba-8c852f04a29a.jpg",
+      "sha256": "8c852f04a29a345e4574854ff044b0bb2411a51514e12257d256d96126b97ca7",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Pere Riba.jpg",
+      "crop": {
+        "x": 0.10533029139878322,
+        "y": 0.031824000070938906,
+        "size": 0.49040169537144623
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:49:44.659Z"
+    },
+    {
+      "player": "Pete Sampras",
+      "object": "pete-sampras-5ce8a111bfb2.jpg",
+      "sha256": "5ce8a111bfb26964370546fdf6bff6e3d14efea4d16480bb1b5198f06e8e841e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "petesampras.jpg",
+      "crop": {
+        "x": 0.1732876712328767,
+        "y": 0.09906249999999998,
+        "size": 0.542408689734054
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:57:17.032Z"
+    },
+    {
+      "player": "Petr Korda",
+      "object": "petr-korda-4aae2f18e608.jpg",
+      "sha256": "4aae2f18e6087f365c742f2c35870d3e1a9e3930043c12475cd37646b7e26f83",
+      "mimeType": "image/jpeg",
+      "sourceFile": "petrkorda.jpg",
+      "crop": {
+        "x": 0.2897959183673469,
+        "y": 0.13924107142857142,
+        "size": 0.4561904761904762
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:56:26.290Z"
+    },
+    {
+      "player": "Petra Kvitova",
+      "object": "petra-kvitova-ac1ad682a737.jpg",
+      "sha256": "ac1ad682a73758c997e5647e5afd94983a57ed0ea2b2a2cc9c92d6fd94b03c0f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:2018 Birmingham - Saturday Petra Kvitova (29159504017).jpg",
+      "crop": {
+        "x": 0.2329896907216495,
+        "y": 0.0390660225442834,
+        "size": 0.5057431179715186
+      },
+      "artist": "Peter Menzel",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:2018_Birmingham_-_Saturday_Petra_Kvitova_(29159504017).jpg",
+      "updatedAt": "2026-10-01T23:35:10.447Z"
+    },
+    {
+      "player": "Peyton Stearns",
+      "object": "peyton-stearns-4f33eb53d993.jpg",
+      "sha256": "4f33eb53d99332b438b286769bc1fc290dbfd54b9797dc55cc6ebe3dca2f71a7",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Peyton Stearns (2025 DC Open) 06.jpg",
+      "crop": {
+        "x": 0.37156652360515025,
+        "y": 0.10669887278582929,
+        "size": 0.2962088719969655
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Peyton_Stearns_(2025_DC_Open)_06.jpg",
+      "updatedAt": "2026-10-01T23:11:07.930Z"
+    },
+    {
+      "player": "Philipp Kohlschreiber",
+      "object": "philipp-kohlschreiber-4bba7a893069.jpg",
+      "sha256": "4bba7a893069a3cae9c6c31a17636e6d96c205acbf0523e5f9d7ee6fecc84724",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Philipp Kohlschreiber.jpg",
+      "crop": {
+        "x": 0.10748375228488725,
+        "y": 0.1389221027493477,
+        "size": 0.3572054701663357
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:06:23.537Z"
+    },
+    {
+      "player": "Philipp Petzschner",
+      "object": "philipp-petzschner-a2420dbb2123.jpg",
+      "sha256": "a2420dbb2123ffb995568d102665dca6378cc5ae2c3caf035a4d95ecb305f94d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Philipp Petzschner.jpg",
+      "crop": {
+        "x": 0.12104773753975144,
+        "y": 0,
+        "size": 0.47425150157448775
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:50:15.173Z"
+    },
+    {
+      "player": "Quentin Halys",
+      "object": "quentin-halys-67c9fe035aab.jpg",
+      "sha256": "67c9fe035aab140a20a0507eeab873484e30086b47f20c948b5769ced59310df",
+      "mimeType": "image/jpeg",
+      "sourceFile": "quentinhalys.jpg",
+      "crop": {
+        "x": 0.32637035926323266,
+        "y": 0.007843889783208187,
+        "size": 0.21819485101542951
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:31:23.185Z"
+    },
+    {
+      "player": "Radek Stepanek",
+      "object": "radek-stepanek-c9d9bf18c271.jpg",
+      "sha256": "c9d9bf18c27101897ad1db31289009e92b18d62fddbe9dfef11d864c6b7b7cf9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Radek Stepanek.jpg",
+      "crop": {
+        "x": 0.32188009878055907,
+        "y": 0.09705575063066968,
+        "size": 0.577083719688502
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:29:34.382Z"
+    },
+    {
+      "player": "Raemon Sluiter",
+      "object": "raemon-sluiter-92e4faacb34c.jpg",
+      "sha256": "92e4faacb34c5f5ecf8d541071532997dbe5c6d30919c0d538a80b3c2ce282c6",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Raemon Sluiter.jpg",
+      "crop": {
+        "x": 0.19802637492524988,
+        "y": 0.0404512511282149,
+        "size": 0.6724407861906069
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:32:05.528Z"
+    },
+    {
+      "player": "Rafael Jodar",
+      "object": "rafael-jodar-a3de7f6e9031.jpg",
+      "sha256": "a3de7f6e9031424c60e9ab0b1fca9110ae98db6b2aa7028fd2f1c529aa6c2ed9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "rafajodar.jpg",
+      "crop": {
+        "x": 0.18896761683244553,
+        "y": 0.009775550909719224,
+        "size": 0.618367986310096
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:28:01.306Z"
+    },
+    {
+      "player": "Rafael Nadal",
+      "object": "rafael-nadal-7157830c8456.jpg",
+      "sha256": "7157830c8456debc44bec22f0d4b31717ff6dafc61ad47d92dcb62cbab7a65bb",
+      "mimeType": "image/jpeg",
+      "sourceFile": "rafaelnadal.webp",
+      "crop": {
+        "x": 0.17546816479400748,
+        "y": 0.01732283464566929,
+        "size": 0.6439450381846911
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:14:50.214Z"
+    },
+    {
+      "player": "Rainer Schuettler",
+      "object": "rainer-schuettler-3a5c4ce1bf42.jpg",
+      "sha256": "3a5c4ce1bf428a231791d88365b61aab763fd336656d0c78adc80e752c483062",
+      "mimeType": "image/jpeg",
+      "sourceFile": "rainerschuttler.webp",
+      "crop": {
+        "x": 0.24481605351170566,
+        "y": 0.08343749999999998,
+        "size": 0.7163322117017663
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:42:05.867Z"
+    },
+    {
+      "player": "Raphael Collignon",
+      "object": "raphael-collignon-9d09d025ba92.jpg",
+      "sha256": "9d09d025ba9225daa9b6e821e93c7ccc1cfea48c4a255ba4a746721d66f35d4f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "raphaelcollignon.jpg",
+      "crop": {
+        "x": 0.35526787129655163,
+        "y": 0.0607764795422554,
+        "size": 0.2978093398091261
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:48:39.669Z"
+    },
+    {
+      "player": "Ricardas Berankis",
+      "object": "ricardas-berankis-cf5702df4686.jpg",
+      "sha256": "cf5702df4686110dbab5c95f181605b04284b3b53504e3ee5540269dda9962f4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ricardasberankis.webp",
+      "crop": {
+        "x": 0.1953125,
+        "y": 0.09906249999999998,
+        "size": 0.5417708396911621
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:42:13.129Z"
+    },
+    {
+      "player": "Richard Gasquet",
+      "object": "richard-gasquet-3ef2728cb64f.jpg",
+      "sha256": "3ef2728cb64f663a1879a7941696b5425da57d4b8f8b6ea9278ca26335c24f2d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "richardgasquet.jpg",
+      "crop": {
+        "x": 0.22667259396861655,
+        "y": 0.0418847281864639,
+        "size": 0.6423065799537957
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:31:23.532Z"
+    },
+    {
+      "player": "Richard Krajicek",
+      "object": "richard-krajicek-d0772ca77634.jpg",
+      "sha256": "d0772ca7763418125b9016a281e9a7c01ac218ab826dc8751f9dbfe694f8850d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "richardkrajicek.jpg",
+      "crop": {
+        "x": 0.28983050847457625,
+        "y": 0.15375,
+        "size": 0.43022600594213456
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:54:48.785Z"
+    },
+    {
+      "player": "Rinky Hijikata",
+      "object": "rinky-hijikata-398a0e73a4cc.jpg",
+      "sha256": "398a0e73a4ccb1432ef803ababcb3c054a8e937d63559d0b9a489fdcc5c0f306",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Hijikata WMQ22 (46) (52191428744).jpg",
+      "crop": {
+        "x": 0.12714499024532297,
+        "y": 0.028609865470851998,
+        "size": 0.7024514223107309
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Hijikata_WMQ22_(46)_(52191428744).jpg",
+      "updatedAt": "2026-10-01T22:20:41.217Z"
+    },
+    {
+      "player": "Robin Haase",
+      "object": "robin-haase-93d39ae0bf70.jpg",
+      "sha256": "93d39ae0bf707aba5344e75a32e8705c94e69c0fb633b0f194f56cbf2f390018",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Robin Haase.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.1128685656871836,
+        "size": 0.6302796729973384
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:32:55.533Z"
+    },
+    {
+      "player": "Robin Soderling",
+      "object": "robin-soderling-4cccfc76dcab.jpg",
+      "sha256": "4cccfc76dcab740b1271d5b531cbd8394beff9da0f33397f1d17e2b8778229d5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "robin soderling.webp",
+      "crop": {
+        "x": 0.22676923076923072,
+        "y": 0.023169642857142847,
+        "size": 0.35682050499549284
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:42:24.419Z"
+    },
+    {
+      "player": "Rod Laver",
+      "object": "rod-laver-28658e031a4f.jpg",
+      "sha256": "28658e031a4f4d0efad7aeb9dc22f72412f4a780318fee949734bb78e52edf6f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "rodlaver.jpg",
+      "crop": {
+        "x": 0.3881838074398249,
+        "y": 0.18388392857142857,
+        "size": 0.2289277899343545
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:52:32.656Z"
+    },
+    {
+      "player": "Roger Federer",
+      "object": "roger-federer-3f0c5b56d5b0.jpg",
+      "sha256": "3f0c5b56d5b0ba1881bdf2b0db921e5ea832e0c9aa5a80e20bbcf203747a7bec",
+      "mimeType": "image/jpeg",
+      "sourceFile": "rogerfederer.webp",
+      "crop": {
+        "x": 0.23080967402733965,
+        "y": 0.008661417322834646,
+        "size": 0.40553803549203965
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:19:42.806Z"
+    },
+    {
+      "player": "Roman Andres Burruchaga",
+      "object": "roman-andres-burruchaga-e92eaf141fc0.jpg",
+      "sha256": "e92eaf141fc0f5a47deee564028949535184699162f76a3b48636059e7d4d288",
+      "mimeType": "image/jpeg",
+      "sourceFile": "romanandresburruchaga.jpg",
+      "crop": {
+        "x": 0.04584424064667972,
+        "y": 0.033725347369909286,
+        "size": 0.39295646926999633
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:33:43.138Z"
+    },
+    {
+      "player": "Roscoe Tanner",
+      "object": "roscoe-tanner-3ff489742735.jpg",
+      "sha256": "3ff489742735a11f5f876af0811da5402e1350f9c114245016ed9b2434d970c2",
+      "mimeType": "image/jpeg",
+      "sourceFile": "roscoetanner.jpg",
+      "crop": {
+        "x": 0.39259259259259255,
+        "y": 0.25419642857142855,
+        "size": 0.3724579124579125
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:53:40.682Z"
+    },
+    {
+      "player": "Sam Querrey",
+      "object": "sam-querrey-9837905432f3.jpg",
+      "sha256": "9837905432f38745d5b609b3d9da4e36995bb40e44282918d572b21259e7e0c9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "sam querrey.webp",
+      "crop": {
+        "x": 0.1614649681528662,
+        "y": 0.06223214285714285,
+        "size": 0.5799893810490894
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:42:31.501Z"
+    },
+    {
+      "player": "Samantha Stosur",
+      "object": "samantha-stosur-14ee0837bf8a.jpg",
+      "sha256": "14ee0837bf8a92be5230f9c1d0cd07985d2e25ac046e5a44fc59aa51e49e790c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "samstosur.jpg",
+      "crop": {
+        "x": 0.10825958702064893,
+        "y": 0.02651785714285713,
+        "size": 0.5693706771265441
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:43:48.112Z"
+    },
+    {
+      "player": "Sebastian Baez",
+      "object": "sebastian-baez-1a48f5135ccf.jpg",
+      "sha256": "1a48f5135ccfc1c1aaefd1e95a4bb346b464fc22be78cba4ed803603e131efe4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "sebastianbaez.webp",
+      "crop": {
+        "x": 0.019921104536489195,
+        "y": 0,
+        "size": 0.7350098619329388
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:14:10.150Z"
+    },
+    {
+      "player": "Sebastian Korda",
+      "object": "sebastian-korda-2206e36f5321.jpg",
+      "sha256": "2206e36f5321256486c01d5cfbbe0fd7a9f6a2d454c0602e87f50e952eadf465",
+      "mimeType": "image/jpeg",
+      "sourceFile": "sebastiankorda.jpg",
+      "crop": {
+        "x": 0.35884064840469715,
+        "y": 0.06548354309052229,
+        "size": 0.22029951895884756
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:57:50.427Z"
+    },
+    {
+      "player": "Serena Williams",
+      "object": "serena-williams-3bbbc544bd71.jpg",
+      "sha256": "3bbbc544bd715bae94637efaefcec2126ae8dabee6c3d65ad1dee0ff35001e79",
+      "mimeType": "image/jpeg",
+      "sourceFile": "serenawilliams.jpg",
+      "crop": {
+        "x": 0.21806020066889628,
+        "y": 0.2396875,
+        "size": 0.4953846153846154
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:35:53.752Z"
+    },
+    {
+      "player": "Sho Shimabukuro",
+      "object": "sho-shimabukuro-0bf53ad8bd66.jpg",
+      "sha256": "0bf53ad8bd66b380c4008615e842f96b65d0965a7fa093d002232fead1b673ec",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Shimabukuro WMQ23 (53062069285).jpg",
+      "crop": {
+        "x": 0.07911476425463658,
+        "y": 0.02580970570289144,
+        "size": 0.7010462807967524
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Shimabukuro_WMQ23_(53062069285).jpg",
+      "updatedAt": "2026-10-01T22:19:14.406Z"
+    },
+    {
+      "player": "Simona Halep",
+      "object": "simona-halep-ed57efa0eed5.jpg",
+      "sha256": "ed57efa0eed507855d015e08cd03afa1cd8897cfc0bba7a6da6ca3a3db34c99e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "simonahalep.webp",
+      "crop": {
+        "x": 0.19569536423841058,
+        "y": 0.05999999999999999,
+        "size": 0.6676158940397351
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:37:41.955Z"
+    },
+    {
+      "player": "Sloane Stephens",
+      "object": "sloane-stephens-299ca6480bb6.jpg",
+      "sha256": "299ca6480bb601ebec4bef3d90b6da619dcf724a7d8dd31a3b1c772a87dcefbd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "sloanestephens.jpg",
+      "crop": {
+        "x": 0.24241071428571426,
+        "y": 0.021205357142857144,
+        "size": 0.3787202380952381
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:39:11.362Z"
+    },
+    {
+      "player": "Sofia Kenin",
+      "object": "sofia-kenin-183c4e2e8099.jpg",
+      "sha256": "183c4e2e80992b2388545600779e2180c017de517e995b62fa31edfbb69b46fa",
+      "mimeType": "image/jpeg",
+      "sourceFile": "sofiakenin.jpg",
+      "crop": {
+        "x": 0.47678855325914143,
+        "y": 0.07116071428571427,
+        "size": 0.24875464022443863
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:40:12.938Z"
+    },
+    {
+      "player": "Sorana Cirstea",
+      "object": "sorana-cirstea-9cd45315d5d0.jpg",
+      "sha256": "9cd45315d5d0f757eb73f0d82a0a0b65341051a2c7c64cdb3cb57a350f67b380",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Sorana Cirstea.jpg",
+      "crop": {
+        "x": 0.2578149397184865,
+        "y": 0.027305024144448103,
+        "size": 0.2994019359660645
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:05:13.748Z"
+    },
+    {
+      "player": "Stan Wawrinka",
+      "object": "stan-wawrinka-6e4d9364d071.jpg",
+      "sha256": "6e4d9364d071a47aae29f274a3066ea31a2cc1959e7519c171c659a3910230dd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "stanwawrinka.webp",
+      "crop": {
+        "x": 0.08368794326241129,
+        "y": 0,
+        "size": 0.7156422427923685
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:12:35.348Z"
+    },
+    {
+      "player": "Stefan Edberg",
+      "object": "stefan-edberg-ebc7f35ba2c6.jpg",
+      "sha256": "ebc7f35ba2c65cc68ef4df801c5389f3cb7780fedd200f1828c9d39171b50986",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Stefan Edberg.jpg",
+      "crop": {
+        "x": 0.24054854281346894,
+        "y": 0.06009471280856079,
+        "size": 0.3203377030199597
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:53:39.170Z"
+    },
+    {
+      "player": "Stefan Koubek",
+      "object": "stefan-koubek-32696f2bcfc8.jpg",
+      "sha256": "32696f2bcfc85022c5289d65a6b1cfb6d9904c9394bde50dc7f02f0f6d25fef7",
+      "mimeType": "image/jpeg",
+      "sourceFile": "stefankoubek.webp",
+      "crop": {
+        "x": 0.09980276134122293,
+        "y": 0.012598425196850394,
+        "size": 0.6472386587771203
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:12:50.631Z"
+    },
+    {
+      "player": "Stefanos Tsitsipas",
+      "object": "stefanos-tsitsipas-d5743dda17bc.jpg",
+      "sha256": "d5743dda17bcc8fc764c5b1a58b5a6843b501cb0e356b6b1ba85c9cf5fc34426",
+      "mimeType": "image/jpeg",
+      "sourceFile": "stefanostsitsipas.webp",
+      "crop": {
+        "x": 0.26498422712933756,
+        "y": 0.004724409448818898,
+        "size": 0.3748860805443283
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T01:40:39.431Z"
+    },
+    {
+      "player": "Steffi Graf",
+      "object": "steffi-graf-a7330c0fa349.jpg",
+      "sha256": "a7330c0fa349f704c959c00e21a2b53971f3e7a2ff63496365bbfff16421a1d4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "steffigraf.webp",
+      "crop": {
+        "x": 0.19327251995438996,
+        "y": 0.01354330708661421,
+        "size": 0.4366400619733021
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:19:20.773Z"
+    },
+    {
+      "player": "Svetlana Kuznetsova",
+      "object": "svetlana-kuznetsova-12d772946b4e.jpg",
+      "sha256": "12d772946b4e9ef6189a75fc9fa25483a5a180b9cd044d958dd5dbcbc00294f8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "svetlanakuznetsova.webp",
+      "crop": {
+        "x": 0.23233995584988962,
+        "y": 0.022992125984252005,
+        "size": 0.4123620376418495
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:22:26.952Z"
+    },
+    {
+      "player": "Tallon Griekspoor",
+      "object": "tallon-griekspoor-e6a00fb638e9.jpg",
+      "sha256": "e6a00fb638e9d115836be9c2fb1688c6b341f92cf816e22f8bf1996993e7a904",
+      "mimeType": "image/jpeg",
+      "sourceFile": "tallongriekspoor.webp",
+      "crop": {
+        "x": 0.11531739868223667,
+        "y": 0.040855130180716515,
+        "size": 0.3914627246558666
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:57:55.825Z"
+    },
+    {
+      "player": "Taylor Fritz",
+      "object": "taylor-fritz-d2a4ff7623ee.jpg",
+      "sha256": "d2a4ff7623eee43d54835da3eaf764e225ef1d04cea477c63dbbd50c872cdca9",
+      "mimeType": "image/jpeg",
+      "sourceFile": "taylorfritz.jpg",
+      "crop": {
+        "x": 0.18798928464644032,
+        "y": 0.009714707132365745,
+        "size": 0.6147827776231822
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:21:19.433Z"
+    },
+    {
+      "player": "Taylor Townsend",
+      "object": "taylor-townsend-9cb55e9ff9cf.jpg",
+      "sha256": "9cb55e9ff9cfa1d462ef12f8fd4e1a6e3ed65113a10fd087312e95790f19c9de",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Taylor Townsend (2025 DC Open) 04 (cropped).jpg",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Taylor_Townsend_(2025_DC_Open)_04_(cropped).jpg",
+      "updatedAt": "2026-10-01T21:49:25.566Z"
+    },
+    {
+      "player": "Terence Atmane",
+      "object": "terence-atmane-7e5e5d4c8f2c.jpg",
+      "sha256": "7e5e5d4c8f2c60f60f45b364881fbb7dbd387783f7d32a769a32957b250019cf",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Térence Atmane (2023 US Open) 01.jpg",
+      "crop": {
+        "x": 0.24913793103448276,
+        "y": 0.05626307922272046,
+        "size": 0.5272298868113551
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:T%C3%A9rence_Atmane_(2023_US_Open)_01.jpg",
+      "updatedAt": "2026-10-01T22:21:00.305Z"
+    },
+    {
+      "player": "Thiago Agustin Tirante",
+      "object": "thiago-agustin-tirante-d79eb679021e.jpg",
+      "sha256": "d79eb679021e03d1b976a8670d8ed06166c6d536113be4bc4cbb28f77a59d6fd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "thiagoagustintirante.jpg",
+      "crop": {
+        "x": 0.2838760170419195,
+        "y": 0.05659764673974779,
+        "size": 0.36588275690407346
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:34:34.858Z"
+    },
+    {
+      "player": "Titouan Droguet",
+      "object": "titouan-droguet-935151ff4826.jpg",
+      "sha256": "935151ff48265fb142fff9a2e2a94ea1abc40658472d3223763f7f9b93420f9a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Titouan Droguet (2026 US Open) 01 (cropped).jpg",
+      "crop": {
+        "x": 0.18650306748466255,
+        "y": 0.01366218236173391,
+        "size": 0.7531561029664334
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Titouan_Droguet_(2026_US_Open)_01_(cropped).jpg",
+      "updatedAt": "2026-10-01T22:21:18.522Z"
+    },
+    {
+      "player": "Tobias Kamke",
+      "object": "tobias-kamke-e315dfeecfdc.jpg",
+      "sha256": "e315dfeecfdc46a0e24a1d53fb4f66ef0c5051fa18df577477b00ef5ab77162a",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Tobias Kamke.jpg",
+      "crop": {
+        "x": 0.11820426712363538,
+        "y": 0.024115947185684057,
+        "size": 0.48050233648276663
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:14:57.701Z"
+    },
+    {
+      "player": "Toby Samuel",
+      "object": "toby-samuel-c0d7e0361c2d.jpg",
+      "sha256": "c0d7e0361c2d63795d9b0d136f667d30ee86ad6664818a330f9ac4c836e949b8",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Samuel WMQ23 (53061881914).jpg",
+      "crop": {
+        "x": 0.07593405685082683,
+        "y": 0.01905829596412556,
+        "size": 0.7216367576154358
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Samuel_WMQ23_(53061881914).jpg",
+      "updatedAt": "2026-10-01T22:18:42.836Z"
+    },
+    {
+      "player": "Todd Martin",
+      "object": "todd-martin-8f6c7a4416aa.jpg",
+      "sha256": "8f6c7a4416aa0bc7c9351ea8edc5d953770f026d4dcccaf0b564455d1cd8e8cd",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Todd Martin.jpg",
+      "crop": {
+        "x": 0.19949220784772664,
+        "y": 0.1464276666737209,
+        "size": 0.4623433073552755
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:15:39.282Z"
+    },
+    {
+      "player": "Tomas Berdych",
+      "object": "tomas-berdych-baefdcb9936e.jpg",
+      "sha256": "baefdcb9936e5df43167549587a0e78576134a8a3e4d7abf6766fd3c3df30ad4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Tomas Berdych.jpg",
+      "crop": {
+        "x": 0.048214922656310714,
+        "y": 0.009064125989595157,
+        "size": 0.47764135454920775
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:50:57.284Z"
+    },
+    {
+      "player": "Tomas Machac",
+      "object": "tomas-machac-750405ded2fa.jpg",
+      "sha256": "750405ded2fa703b4ae346bd0adeb22e412bb526b144b54c5cfa1ad9f58ff1a3",
+      "mimeType": "image/jpeg",
+      "sourceFile": "tomas machac.jpg",
+      "crop": {
+        "x": 0.405997247723289,
+        "y": 0.13001172018984516,
+        "size": 0.32172766083966164
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:01:06.033Z"
+    },
+    {
+      "player": "Tomas Martin Etcheverry",
+      "object": "tomas-martin-etcheverry-5dd8383a9dc2.jpg",
+      "sha256": "5dd8383a9dc244dce961513246064051c46757440a49ae8700ae46ee46e5e35f",
+      "mimeType": "image/jpeg",
+      "sourceFile": "tomasmartinetcheverry.jpg",
+      "crop": {
+        "x": 0.23104575163398688,
+        "y": 0.008529411764705928,
+        "size": 0.4454248366013072
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:59:17.263Z"
+    },
+    {
+      "player": "Tommy Paul",
+      "object": "tommy-paul-da97fb795043.jpg",
+      "sha256": "da97fb795043d75437e450bc933ffbe403f9279dd5013a1e9d5412227e678799",
+      "mimeType": "image/jpeg",
+      "sourceFile": "tommypaul.jpg",
+      "crop": {
+        "x": 0.23308833140082375,
+        "y": 0.19390310235730895,
+        "size": 0.314683036174068
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:27:25.777Z"
+    },
+    {
+      "player": "Tommy Robredo",
+      "object": "tommy-robredo-da7c53024107.jpg",
+      "sha256": "da7c5302410705eca323a07f104197d181f90f7f3b9dd30f2feeefeb60c4075e",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Tommy Robredo.jpg",
+      "crop": {
+        "x": 0.17900886161171325,
+        "y": 0,
+        "size": 0.7285234488559391
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:52:18.461Z"
+    },
+    {
+      "player": "Tracy Austin",
+      "object": "tracy-austin-3cc5c4fc8257.jpg",
+      "sha256": "3cc5c4fc8257affb1028772e9bc0a6e21c39c6a456de41582634040352239b15",
+      "mimeType": "image/jpeg",
+      "sourceFile": "tracyaustin.jpg",
+      "crop": {
+        "x": 0.24537313432835817,
+        "y": 0.14370535714285712,
+        "size": 0.34497513500612176
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T04:40:42.436Z"
+    },
+    {
+      "player": "Ugo Humbert",
+      "object": "ugo-humbert-50c88e46ac8e.jpg",
+      "sha256": "50c88e46ac8ef8b4233690cab461dbe4e1f5674d14a110aa454675393fbf5bc5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "ugohumbert.webp",
+      "crop": {
+        "x": 0.2665615141955836,
+        "y": 0.04346456692913389,
+        "size": 0.37793550220573735
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:51:51.053Z"
+    },
+    {
+      "player": "Valentin Vacherot",
+      "object": "valentin-vacherot-d254825023b0.jpg",
+      "sha256": "d254825023b030f6f2571a3f04717aa928d3cbf704cc9c183e037fefc69a8c29",
+      "mimeType": "image/jpeg",
+      "sourceFile": "valentin vacherot.jpg",
+      "crop": {
+        "x": 0.09576547940881633,
+        "y": 0.0235679992032132,
+        "size": 0.3544864909794411
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:27:29.843Z"
+    },
+    {
+      "player": "Venus Williams",
+      "object": "venus-williams-ee5305344529.jpg",
+      "sha256": "ee5305344529ef701b3e7ae5c8491cf33988c112bb6c9c7607e8b11f169b478d",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Venus Williams.jpg",
+      "crop": {
+        "x": 0.15998163705196056,
+        "y": 0.061996779388083734,
+        "size": 0.7312231759656652
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T07:21:45.801Z"
+    },
+    {
+      "player": "Victor Hanescu",
+      "object": "victor-hanescu-ef45cd6dcbf4.jpg",
+      "sha256": "ef45cd6dcbf451b69f42b2ecfd09ce30fb33ba413c6b2983ff5db09b105ee6d5",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Victor Hanescu.jpg",
+      "crop": {
+        "x": 0.03391904878000656,
+        "y": 0.04175355015845781,
+        "size": 0.535267235120078
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:53:03.483Z"
+    },
+    {
+      "player": "Victoria Azarenka",
+      "object": "victoria-azarenka-70dc727f9c4d.jpg",
+      "sha256": "70dc727f9c4d4899c3a25bdd6e33c1dd94517f6f102ff9555e1c789a85f417fe",
+      "mimeType": "image/jpeg",
+      "sourceFile": "victoriaazarenka.webp",
+      "crop": {
+        "x": 0.12269503546099285,
+        "y": 0.03952755905511814,
+        "size": 0.7468479021221187
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:09:56.316Z"
+    },
+    {
+      "player": "Victoria Mboko",
+      "object": "victoria-mboko-540b012d6eae.jpg",
+      "sha256": "540b012d6eaed3fd7e485ea1a466c638647da846fa3faf3f0f6ea07e4a0d7ccb",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Victoria Mboko (2025 DC Open) 01.jpg",
+      "crop": {
+        "x": 0.4195652173913043,
+        "y": 0.26692431561996777,
+        "size": 0.44029791643078203
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Victoria_Mboko_(2025_DC_Open)_01.jpg",
+      "updatedAt": "2026-10-01T23:28:01.717Z"
+    },
+    {
+      "player": "Viktor Troicki",
+      "object": "viktor-troicki-aff6cf9caba9.jpg",
+      "sha256": "aff6cf9caba94b111b566ab3515ba34cda99e69507dbffa1bc513da48be3c464",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Viktor Troicki.jpg",
+      "crop": {
+        "x": 0.1124309198208042,
+        "y": 0.025854294642471194,
+        "size": 0.5491245781252189
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:53:41.024Z"
+    },
+    {
+      "player": "Virginia Ruzici",
+      "object": "virginia-ruzici-98c3a7cd2983.jpg",
+      "sha256": "98c3a7cd2983950ab2ff60c09f6ddea2f1999256303e632a308a50c39f207620",
+      "mimeType": "image/jpeg",
+      "sourceFile": "virginiaruzici.webp",
+      "crop": {
+        "x": 0.17352245862884155,
+        "y": 0.1725984251968504,
+        "size": 0.6818360817911495
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:27:32.148Z"
+    },
+    {
+      "player": "Virginia Wade",
+      "object": "virginia-wade-44c733a2e227.jpg",
+      "sha256": "44c733a2e2274f147695802aaa7216429dbea5546b3dac4e1b50891ef145bab1",
+      "mimeType": "image/jpeg",
+      "sourceFile": "virginiawade.webp",
+      "crop": {
+        "x": 0.18756773413681402,
+        "y": 0.023069259118962536,
+        "size": 0.5914634146341463
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": "",
+      "updatedAt": "2026-10-02T00:20:04.009Z"
+    },
+    {
+      "player": "Vit Kopriva",
+      "object": "vit-kopriva-57053e7337ba.jpg",
+      "sha256": "57053e7337bad160721637d79ed753945bd21c662de3282b3c0fa01519659896",
+      "mimeType": "image/jpeg",
+      "sourceFile": "vit kopriva.jpg",
+      "crop": {
+        "x": 0.42200065277860965,
+        "y": 0.07418936513528064,
+        "size": 0.3582025605699053
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T06:11:44.335Z"
+    },
+    {
+      "player": "Vitas Gerulaitis",
+      "object": "vitas-gerulaitis-2a86a5843977.jpg",
+      "sha256": "2a86a5843977ee1be72ca45c4e15fd573f496af012d4362e0afa4d765f686de2",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Vitas Gerulaitis.jpg",
+      "crop": {
+        "x": 0.2680401919846234,
+        "y": 0.03680254608141572,
+        "size": 0.3757746149523572
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:56:47.103Z"
+    },
+    {
+      "player": "Wang Xinyu",
+      "object": "wang-xinyu-7e26d245af23.jpg",
+      "sha256": "7e26d245af239def7bab6c632bf439d7db42af82e8c08310781fbe5f8d647a47",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Wang Xinyu (2023 US Open) 05 (cropped).jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.008856682769726247,
+        "size": 0.8857567845558634
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Wang_Xinyu_(2023_US_Open)_05_(cropped).jpg",
+      "updatedAt": "2026-10-01T23:13:12.720Z"
+    },
+    {
+      "player": "Wayne Arthurs",
+      "object": "wayne-arthurs-fe6ba1da12e3.jpg",
+      "sha256": "fe6ba1da12e3414f3807ee71a6cd17adc010606fdb7b79ae25c1ffb3d5460c5b",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Wayne Arthurs.jpg",
+      "crop": {
+        "x": 0.38370263936995086,
+        "y": 0.05751629094436263,
+        "size": 0.3040465625225285
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:57:47.437Z"
+    },
+    {
+      "player": "Xavier Malisse",
+      "object": "xavier-malisse-c568b60f569d.jpg",
+      "sha256": "c568b60f569d6c40d6c9198ebc4d650046ef74e529c9d716d0910536579033fe",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Xavier Malisse.jpg",
+      "crop": {
+        "x": 0.17605749891798309,
+        "y": 0,
+        "size": 0.6836585440286775
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:58:16.514Z"
+    },
+    {
+      "player": "Yannick Hanfmann",
+      "object": "yannick-hanfmann-c20ffa3365b5.jpg",
+      "sha256": "c20ffa3365b5e1764a2e059c6a0731588ac69ff88f9abb3a60567d87bbd30c6c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "yannickhanfmann.jpg",
+      "crop": {
+        "x": 0.4965905583616554,
+        "y": 0.038637153374461025,
+        "size": 0.27476409702804866
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T05:52:48.472Z"
+    },
+    {
+      "player": "Yannick Noah",
+      "object": "yannick-noah-ede3bf20d9cf.jpg",
+      "sha256": "ede3bf20d9cfab0d9933b40fb15935a75f7ff8095dda7bf10f3f97d04e773384",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Yannick Noah.jpg",
+      "crop": {
+        "x": 0.245842296577457,
+        "y": 0.008465412033073019,
+        "size": 0.3598931233108837
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:59:14.278Z"
+    },
+    {
+      "player": "Yen-Hsun Lu",
+      "object": "yen-hsun-lu-7386677afaf0.jpg",
+      "sha256": "7386677afaf0fab27daa646a21606955a447f75d56087e05ef4f9d79ed33447c",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Yen-Hsun Lu.jpg",
+      "crop": {
+        "x": 0.058104913298701565,
+        "y": 0.0059251563142189816,
+        "size": 0.5111760891703588
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T05:59:55.743Z"
+    },
+    {
+      "player": "Yevgeny Kafelnikov",
+      "object": "yevgeny-kafelnikov-4f4ea06fd5f7.jpg",
+      "sha256": "4f4ea06fd5f7f4098282b42c4a2d8cdf0a29f1e4bba0e6f2f6b07e0861762da7",
+      "mimeType": "image/jpeg",
+      "sourceFile": "Yevgeny Kafelnikov.jpg",
+      "crop": {
+        "x": 0.17770264532598068,
+        "y": 0.07277559141806338,
+        "size": 0.5394351273792618
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-03T06:00:40.585Z"
+    },
+    {
+      "player": "Yuliia Starodubtseva",
+      "object": "yuliia-starodubtseva-4241d76f7a73.jpg",
+      "sha256": "4241d76f7a73dce84566990ad0f6f5ad719625ea8ccb3f9d41f933b618f44dd4",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Yuliia Starodubtseva (2023 US Open) 07 (cropped).jpg",
+      "crop": {
+        "x": 0.07254135888799364,
+        "y": 0.039452495974235106,
+        "size": 0.8674064217908576
+      },
+      "artist": "Hameltion",
+      "license": "CC BY-SA 4.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Yuliia_Starodubtseva_(2023_US_Open)_07_(cropped).jpg",
+      "updatedAt": "2026-10-01T23:14:38.182Z"
+    },
+    {
+      "player": "Zachary Svajda",
+      "object": "zachary-svajda-3a50197991a6.jpg",
+      "sha256": "3a50197991a647957321c4d2106c1cd43a9695fab9d5a568f2e9cdcf5b170267",
+      "mimeType": "image/jpeg",
+      "sourceFile": "File:Svajda WMQ23 (53061864069).jpg",
+      "crop": {
+        "x": 0.30317635985233327,
+        "y": 0.021499793447542975,
+        "size": 0.6733931126615926
+      },
+      "artist": "si.robi",
+      "license": "CC BY-SA 2.0",
+      "descriptionUrl": "https://commons.wikimedia.org/wiki/File:Svajda_WMQ23_(53061864069).jpg",
+      "updatedAt": "2026-10-01T22:20:18.928Z"
+    },
+    {
+      "player": "Zizou Bergs",
+      "object": "zizou-bergs-ea75e0f27024.jpg",
+      "sha256": "ea75e0f27024d8b8d8e9d96f9118e5ba3c6b93c59aadfec3657c5bf09d51ab99",
+      "mimeType": "image/jpeg",
+      "sourceFile": "zizoubergs.webp",
+      "crop": {
+        "x": 0.09905437352245858,
+        "y": 0,
+        "size": 0.6808904553136081
+      },
+      "artist": null,
+      "license": "downloaded",
+      "descriptionUrl": null,
+      "updatedAt": "2026-10-02T02:51:37.435Z"
+    }
+  ],
+  "skipped": [],
+  "declined": [
+    {
+      "file": "Daniel Gimeno-Traver.webp",
+      "declinedAt": "2026-10-02T07:19:45.908Z"
+    },
+    {
+      "file": "alexmolcan.webp",
+      "declinedAt": "2026-10-02T06:03:48.739Z"
+    },
+    {
+      "file": "andreasvinciguerra.webp",
+      "declinedAt": "2026-10-02T07:23:19.914Z"
+    },
+    {
+      "file": "kamilmajchrzak.webp",
+      "declinedAt": "2026-10-02T06:00:25.460Z"
+    },
+    {
+      "file": "magnusgustafsson.webp",
+      "declinedAt": "2026-10-02T07:19:49.354Z"
+    },
+    {
+      "file": "marincilic.webp",
+      "declinedAt": "2026-10-02T05:51:59.202Z"
+    },
+    {
+      "file": "marketavondrousova.webp",
+      "declinedAt": "2026-10-02T05:52:00.223Z"
+    },
+    {
+      "file": "sloanestephens.webp",
+      "declinedAt": "2026-10-02T05:52:01.171Z"
+    },
+    {
+      "file": "venuswilliams.webp",
+      "declinedAt": "2026-10-02T07:23:17.376Z"
+    }
+  ]
+}
