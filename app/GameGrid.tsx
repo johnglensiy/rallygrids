@@ -2,6 +2,7 @@
 "use client";
 import { useState, useEffect, Fragment } from "react";
 import GuessModal from "./GuessModal";
+import PlayerCell from "./PlayerCell";
 
 type Puzzle = {
   id: number;
@@ -30,17 +31,9 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
     row: number;
     col: number;
   } | null>(null);
-  const [gridValues, setGridValues] = useState<Array<string>>([
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-  ]);
+  const [gridValues, setGridValues] = useState<Array<Player | null>>(
+    Array(9).fill(null),
+  );
 
   useEffect(() => {
     const loadPuzzle = async () => {
@@ -88,7 +81,7 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
 
     const thisIndex = cellSelected.row * 3 + cellSelected.col;
     setGridValues((prev) =>
-      prev.map((v, i) => (i === thisIndex ? thisPlayer.name : v)),
+      prev.map((v, i) => (i === thisIndex ? thisPlayer : v)),
     );
     return "correct";
 
@@ -100,32 +93,34 @@ export default function GameGrid({ rows, cols, allPlayers }: GameGridProps) {
   if (!puzzle) return <p>Loading...</p>;
   return (
     <>
-      <div className="grid grid-cols-4 gap-2 w-full max-w-md aspect-square">
+      <div className="grid grid-cols-4 gap-2 sm:gap-3 aspect-square w-[min(100%,42rem,calc(100dvh-2rem))]">
         <div />
         {puzzle.cols.map((col) => (
           <div
             key={col}
-            className="flex items-center justify-center text-center text-sm font-semibold p-2"
+            className="flex items-center justify-center text-center text-sm sm:text-base font-semibold p-2"
           >
             {col}
           </div>
         ))}
         {puzzle.rows.map((row, i) => (
           <Fragment key={row}>
-            <div className="flex items-center justify-center text-center text-sm font-semibold p-2">
+            <div className="flex items-center justify-center text-center text-sm sm:text-base font-semibold p-2">
               {row}
             </div>
             {puzzle.cols.map((col, j) => (
               <div
                 key={`${row}-${col}`}
-                className="rounded-lg border-2 border-neutral-300 bg-white hover:bg-neutral-100 cursor-pointer aspect-square"
+                className="relative overflow-hidden rounded-lg border-2 border-neutral-300 bg-white hover:bg-neutral-100 cursor-pointer aspect-square"
                 onClick={() => {
                   setCellSelected({ row: i, col: j });
                   console.log("selected row is", rows[i]);
                   console.log("selected col is", cols[j]);
                 }}
               >
-                {gridValues[i * 3 + j]}
+                {gridValues[i * 3 + j] && (
+                  <PlayerCell player={gridValues[i * 3 + j]!} />
+                )}
               </div>
             ))}
           </Fragment>
