@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headshot Picker</title>
+<style>
+  :root {
+    --bg: #f6f6f4; --panel: #fff; --text: #1d1d1b; --muted: #6b6b66; --line: #e2e2dd;
+    --accent: #2f6f4f; --commons: #d93025; --warn: #a15c07; --warn-bg: #fdf1e1; --bad: #a3322b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.4 system-ui, sans-serif; color: var(--text); background: var(--bg); }
+  .app { display: grid; grid-template-columns: 260px 1fr; height: 100vh; }
+
+  aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+  .filters { padding: 12px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; }
+  .filters input, .filters select { width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+  .progress { color: var(--muted); font-size: 12px; }
+  #players { list-style: none; margin: 0; padding: 4px 0; overflow-y: auto; flex: 1; }
+  #players li { padding: 5px 12px; cursor: pointer; display: flex; gap: 8px; align-items: center; }
+  #players li:hover { background: var(--bg); }
+  #players li.current { background: #e7efe9; font-weight: 600; }
+  #players .rank { color: var(--muted); font-size: 11px; margin-left: auto; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); flex: none; }
+  .dot.picked { background: var(--accent); }
+  .dot.skipped { background: var(--warn); }
+  .dot.commons { background: var(--commons); }
+  .side-tab { padding: 9px 12px; cursor: pointer; display: flex; gap: 8px; align-items: center; font-weight: 600; border-bottom: 1px solid var(--line); }
+  .side-tab:hover { background: var(--bg); }
+  .side-tab.current { background: #e7efe9; }
+  .badge { margin-left: auto; font-size: 11px; font-weight: 500; padding: 0 7px; border-radius: 10px; background: var(--warn-bg); color: var(--warn); }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .legend span { display: inline-flex; gap: 4px; align-items: center; }
+  .legend .dot { display: inline-block; }
+  main.library .player-only, main:not(.library) .library-only { display: none !important; }
+
+  main { overflow-y: auto; padding: 16px 20px 40px; min-width: 0; }
+  header { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+  header h1 { font-size: 20px; margin: 0; display: inline; }
+  main:not(.library) header h1 { cursor: copy; }
+  #copied.blocked { background: var(--warn-bg); color: var(--warn); }
+  #copied { margin-left: 8px; font-size: 11px; padding: 1px 6px; border-radius: 10px; background: #e7efe9; color: var(--accent); vertical-align: middle; }
+  .slams { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; max-width: 640px; }
+  .slams .none { color: var(--muted); font-size: 12px; }
+  #saved { width: 64px; height: 64px; border-radius: 8px; object-fit: cover; border: 1px solid var(--line); display: none; }
+  .actions { display: flex; gap: 8px; margin-left: auto; flex-wrap: wrap; }
+  button { font: inherit; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); cursor: pointer; }
+  button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .hint { color: var(--muted); font-size: 12px; margin: 0 0 12px; }
+  kbd { font: 11px ui-monospace, monospace; border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; background: var(--panel); }
+
+  #downloadsGrid, .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+  #downloads { margin-bottom: 18px; padding: 12px; border: 1px dashed var(--accent); border-radius: 10px; background: #eef5f0; }
+  .photo-section { margin-bottom: 18px; }
+  .photo-section.unassigned { padding: 12px; border: 1px dashed var(--warn); border-radius: 10px; background: var(--warn-bg); }
+  .photo-section h2 { font-size: 12px; margin: 0 0 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .photo-section.unassigned h2 { color: var(--warn); }
+  /* headshots as the game grid shows them (app/PlayerCell.tsx) */
+  .cell-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .cell { position: relative; aspect-ratio: 1; overflow: hidden; border-radius: 8px; border: 2px solid #d4d4d4; background: #fff; cursor: pointer; display: flex; align-items: flex-end; }
+  .cell:hover { border-color: var(--accent); }
+  .cell img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .cell .label { position: relative; width: 100%; padding: 16px 4px 4px; text-align: center; font-size: 14px; font-weight: 600; line-height: 1.2; color: #fff; background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,.5), transparent); }
+  .cell .dot { position: absolute; top: 6px; left: 6px; box-shadow: 0 0 0 2px #fff; }
+  .card .who { font-size: 12px; }
+  .card .who.none { color: var(--warn); }
+  .card .assign { width: 100%; padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; font: inherit; font-size: 12px; }
+  #downloads h2 { font-size: 12px; margin: 0 0 10px; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; cursor: pointer; position: relative; }
+  .card:hover { outline: 2px solid var(--accent); }
+  .card img { width: 100%; height: 230px; object-fit: cover; display: block; background: var(--line); }
+  .card .num { position: absolute; top: 6px; left: 6px; background: rgba(0,0,0,.65); color: #fff; font-size: 11px; padding: 1px 6px; border-radius: 4px; }
+  .card .meta { padding: 6px 8px; font-size: 12px; display: grid; gap: 4px; }
+  .card .title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
+  .chips { display: flex; gap: 4px; flex-wrap: wrap; }
+  .chip { font-size: 11px; padding: 0 6px; border-radius: 10px; background: #e7efe9; color: var(--accent); }
+  .chip.warn { background: var(--warn-bg); color: var(--warn); }
+  .status { color: var(--muted); padding: 30px 0; }
+
+  #cropper { position: fixed; inset: 0; background: rgba(20,20,18,.85); display: none; align-items: center; justify-content: center; padding: 16px; z-index: 10; }
+  #cropper.open { display: flex; }
+  .crop-panel { display: flex; gap: 16px; align-items: flex-start; max-width: 100%; }
+  .stage { position: relative; overflow: hidden; user-select: none; touch-action: none; cursor: crosshair; line-height: 0; }
+  .stage img { max-height: 85vh; max-width: calc(100vw - 360px); display: block; }
+  .box { position: absolute; border: 2px solid #fff; box-shadow: 0 0 0 9999px rgba(0,0,0,.55); cursor: move; }
+  .handle { position: absolute; right: -7px; bottom: -7px; width: 14px; height: 14px; background: #fff; border-radius: 3px; cursor: nwse-resize; }
+  .crop-side { color: #fff; display: grid; gap: 10px; width: 300px; }
+  #preview { width: 280px; height: 280px; border-radius: 8px; background-color: #333; background-repeat: no-repeat; }
+  .crop-side p { margin: 0; font-size: 12px; color: #cfcfca; }
+  .crop-side a { color: #cfcfca; }
+  #saveError { color: #ffb4ad; }
+
+  @media (max-width: 800px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+    aside { max-height: 32vh; border-right: 0; border-bottom: 1px solid var(--line); }
+    main { padding: 12px 16px 32px; }
+    header .actions { margin-left: 0; width: 100%; }
+    #downloadsGrid, .photo-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+    .card img { height: 180px; }
+    .crop-panel { flex-direction: column; align-items: center; }
+    .stage img { max-width: calc(100vw - 32px); max-height: 60vh; }
+    .crop-side { width: 100%; grid-template-columns: 140px 1fr; align-items: start; }
+    #preview { width: 140px; height: 140px; grid-row: span 3; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="filters">
+      <input id="search" placeholder="Search players" autocomplete="off">
+      <select id="filter">
+        <option value="todo">To do</option>
+        <option value="all">All players</option>
+        <option value="picked">Picked</option>
+        <option value="commons">Picked from Commons</option>
+        <option value="skipped">Skipped</option>
+      </select>
+      <div class="progress" id="progress"></div>
+    </div>
+    <div class="side-tab" id="libraryTab">All photos <span class="badge" id="unassignedCount" hidden></span></div>
+    <ul id="players"></ul>
+    <datalist id="playerNames"></datalist>
+  </aside>
+
+  <main id="main" class="library">
+    <header>
+      <img id="saved" class="player-only" alt="Saved headshot">
+      <div>
+        <h1 id="name" title="Click to copy">Loading…</h1><span id="copied" hidden>Copied</span>
+        <div class="slams player-only" id="slams"></div>
+      </div>
+      <div class="actions">
+        <button id="reload" title="Reload photos and players (R)">Reload</button>
+        <button id="skip" class="player-only" title="No usable photo (S)">Skip</button>
+        <button id="next" class="player-only" title="Next player (↓)">Next</button>
+      </div>
+    </header>
+    <p class="hint library-only">
+      Everything in Downloads/player-photos. Click a photo to crop it for its player; name files after the player
+      (e.g. "stefankoubek.jpg") or pick one on the card. <kbd>R</kbd> reloads.
+    </p>
+    <section class="photo-section unassigned library-only" id="unassignedSection">
+      <h2 id="unassignedTitle">Not assigned yet</h2>
+      <div class="photo-grid" id="unassignedGrid"></div>
+    </section>
+    <section class="photo-section library-only">
+      <h2 id="allTitle">All photos</h2>
+      <div class="cell-grid" id="allGrid"></div>
+    </section>
+    <section class="photo-section library-only" id="declinedSection">
+      <h2 id="declinedTitle">Declined</h2>
+      <div class="photo-grid" id="declinedGrid"></div>
+    </section>
+    <p class="hint player-only">
+      Click a photo (or press <kbd>1</kbd>–<kbd>9</kbd>), drag a square around the head, <kbd>Enter</kbd> to save.
+      <kbd>↑</kbd>/<kbd>↓</kbd> switch player, <kbd>S</kbd> skips, <kbd>R</kbd> reloads after adding photos to Downloads/player-photos.
+    </p>
+    <p class="hint player-only" id="loading"></p>
+    <section id="downloads" class="player-only" hidden>
+      <h2>From Downloads</h2>
+      <div id="downloadsGrid"></div>
+    </section>
+  </main>
+</div>
+
+<div id="cropper">
+  <div class="crop-panel">
+    <div class="stage" id="stage">
+      <img id="cropImg" alt="">
+      <div class="box" id="box"><div class="handle" id="handle"></div></div>
+    </div>
+    <div class="crop-side">
+      <div id="preview"></div>
+      <button class="primary" id="saveCrop">Save headshot (Enter)</button>
+      <button id="cancelCrop">Cancel (Esc)</button>
+      <p>Drag to draw or move the square, drag the corner or scroll to resize.</p>
+      <p id="queueInfo"></p>
+      <p id="faceInfo"></p>
+      <p id="cropCredit"></p>
+      <p id="saveError"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let players = [];
+let current = null;      // player object
+let view = "library";   // "library" (all downloaded photos) or "player"
+let fromLibrary = false; // the cropper was opened from the library
+let queue = null;        // library photos to approve in turn, Enter saving each
+let queuePos = 0;
+let photos = [];         // the player's photos from ~/Downloads/player-photos
+let cropping = null;     // photo being cropped
+let box = null;          // {x, y, side} in displayed pixels
+let boxTouched = false;  // the user has moved or resized the box
+
+// Auto-crop from the face Apple Vision finds. Its box runs from about the
+// eyebrows to the chin, so the head is taken as HEAD_EXTRA taller, upward.
+// The head fills FACE_SHARE of the square's side, its top sits TOP_GAP of the
+// side below the square's top edge, and it's centred across the square.
+// Near the photo's edge the face may drift up to MAX_OFF_CENTER of the side
+// from the middle; past that the square shrinks (so the face fills more).
+const FACE_SHARE = 0.4;
+const HEAD_EXTRA = 0.25;
+const TOP_GAP = 0.12;
+const MAX_OFF_CENTER = 0.1;
+
+function boxForFace(face, W, H) {
+  const headTop = (face.y - face.h * HEAD_EXTRA) * H;
+  const centerX = (face.x + face.w / 2) * W;
+  // the face centre must be at least (0.5 - MAX_OFF_CENTER) of the side
+  // from each edge of the photo
+  const room = 0.5 - MAX_OFF_CENTER;
+  const side = Math.min((face.h * (1 + HEAD_EXTRA) * H) / FACE_SHARE, centerX / room, (W - centerX) / room, W, H);
+  const x = Math.min(Math.max(centerX - side / 2, 0), W - side);
+  return { x, y: headTop - side * TOP_GAP, side };
+}
+
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const api = async (path, body) => {
+  const res = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {});
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+  return data;
+};
+
+// A new URL whenever the headshot is re-picked; the same URL would show the
+// copy the browser already has.
+const headshotUrl = (p) => `/api/headshot?name=${encodeURIComponent(p.name)}&v=${p.version}`;
+
+// ---- player list ----
+function visiblePlayers() {
+  const q = $("search").value.trim().toLowerCase();
+  const f = $("filter").value;
+  return players.filter((p) =>
+    (f === "all" || (f === "todo" ? !p.status : f === "commons" ? p.source === "commons" : p.status === f)) &&
+    (!q || p.name.toLowerCase().includes(q)));
+}
+
+function renderPlayers() {
+  const count = (f) => players.filter(f).length;
+  const downloaded = count((p) => p.source === "downloads");
+  const commons = count((p) => p.source === "commons");
+  const skipped = count((p) => p.status === "skipped");
+  $("progress").innerHTML = `<div class="legend">
+    <span><i class="dot picked"></i>${downloaded} picked</span>
+    <span><i class="dot commons"></i>${commons} from Commons</span>
+    <span><i class="dot skipped"></i>${skipped} skipped</span>
+    <span><i class="dot"></i>${players.length - downloaded - commons - skipped} to do</span></div>`;
+  $("libraryTab").classList.toggle("current", view === "library");
+  $("players").innerHTML = visiblePlayers().map((p) => `
+    <li data-name="${esc(p.name)}" class="${p === current ? "current" : ""}">
+      <span class="dot ${p.source === "commons" ? "commons" : p.status ?? ""}"></span>${esc(p.name)}
+      <span class="rank">${p.tour}${p.rank ? " #" + p.rank : ""}</span>
+    </li>`).join("");
+  $("players").querySelector(".current")?.scrollIntoView({ block: "nearest" });
+}
+
+$("players").addEventListener("click", (e) => {
+  const li = e.target.closest("li");
+  if (li) selectPlayer(players.find((p) => p.name === li.dataset.name));
+});
+$("search").addEventListener("input", renderPlayers);
+$("filter").addEventListener("change", renderPlayers);
+
+function step(dir) {
+  const list = visiblePlayers();
+  if (!list.length) return;
+  const i = list.indexOf(current);
+  selectPlayer(list[Math.min(Math.max(i + dir, 0), list.length - 1)] ?? list[0]);
+}
+
+// After a save or skip, move on to the next player still to do.
+function advance() {
+  const i = players.indexOf(current);
+  const next = players.slice(i + 1).find((p) => !p.status) ?? players.find((p) => !p.status);
+  renderPlayers();
+  if (next) selectPlayer(next);
+}
+
+// ---- photos ----
+// Puts the player's name on the clipboard, ready to paste as the file name
+// when saving a photo of them into Downloads/player-photos.
+let copiedTimer;
+function copyName(name) {
+  const done = (ok = true) => {
+    $("copied").textContent = ok ? "Copied" : "Copy blocked";
+    $("copied").classList.toggle("blocked", !ok);
+    $("copied").hidden = false;
+    clearTimeout(copiedTimer);
+    copiedTimer = setTimeout(() => { $("copied").hidden = true; }, 1500);
+  };
+  navigator.clipboard.writeText(name).then(done, () => {
+    // older route for browsers that refuse the Clipboard API here
+    const field = Object.assign(document.createElement("textarea"), { value: name });
+    field.style.cssText = "position: fixed; opacity: 0";
+    const focused = document.activeElement;
+    document.body.append(field);
+    field.select();
+    const ok = document.execCommand("copy");
+    field.remove();
+    focused?.focus?.();
+    done(ok);
+  });
+}
+
+$("name").addEventListener("click", () => { if (current) copyName(current.name); });
+
+async function selectPlayer(p) {
+  if (!p) return;
+  if (p !== current) copyName(p.name);
+  view = "player";
+  $("main").classList.remove("library");
+  current = p;
+  photos = [];
+  renderPhotos();
+  renderPlayers();
+  $("name").textContent = p.name;
+  $("slams").innerHTML = p.slams.length
+    ? p.slams.map((s) => `<span class="chip">${esc(s)}</span>`).join("")
+    : `<span class="none">No Grand Slam titles</span>`;
+  $("saved").style.display = p.status === "picked" ? "block" : "none";
+  if (p.status === "picked") $("saved").src = headshotUrl(p);
+  $("loading").textContent = "";
+  try {
+    const found = await api(`/api/photos?name=${encodeURIComponent(p.name)}`);
+    if (current !== p) return;
+    photos = found;
+    renderPhotos();
+    if (!photos.length) $("loading").textContent = "No photos in Downloads/player-photos for this player. Save one named after them (e.g. \"stefankoubek.jpg\") and press R.";
+  } catch (err) {
+    $("loading").textContent = `Couldn't load photos: ${err.message}`;
+  }
+}
+
+function renderPhotos() {
+  $("downloads").hidden = !photos.length;
+  $("downloadsGrid").innerHTML = photos.map((ph, i) => `
+    <div class="card" data-i="${i}" title="${esc(ph.file)}">
+      ${i < 9 ? `<span class="num">${i + 1}</span>` : ""}
+      <img src="${esc(ph.url)}" loading="lazy" alt="">
+      <div class="meta"><div class="title">${esc(ph.file)}</div></div>
+    </div>`).join("");
+}
+
+$("downloadsGrid").addEventListener("click", (e) => {
+  const card = e.target.closest(".card");
+  if (card) openCropper(photos[card.dataset.i]);
+});
+
+// Picks up photos added to the folder, and picks/skips made elsewhere,
+// without losing the current player.
+async function reload() {
+  const name = current?.name;
+  await loadPlayers();
+  if (view === "library") return showLibrary();
+  selectPlayer(players.find((p) => p.name === name) ?? players.find((p) => !p.status) ?? players[0]);
+}
+
+async function loadPlayers() {
+  players = await api("/api/players");
+  $("playerNames").innerHTML = players.map((p) => `<option value="${esc(p.name)}">`).join("");
+  renderPlayers();
+}
+
+// ---- library: every photo in Downloads/player-photos ----
+let library = [];
+
+async function showLibrary() {
+  view = "library";
+  current = null;
+  $("main").classList.add("library");
+  $("name").textContent = "All photos";
+  renderPlayers();
+  library = await api("/api/library");
+  if (view !== "library") return;
+  const unassigned = library.filter((ph) => !ph.assignedTo.length && !ph.declined);
+  $("unassignedCount").hidden = !unassigned.length;
+  $("unassignedCount").textContent = unassigned.length;
+  $("unassignedSection").hidden = !unassigned.length;
+  $("unassignedTitle").textContent = `Not assigned yet (${unassigned.length})`;
+  const picked = players.filter((p) => p.status === "picked");
+  const declined = library.filter((ph) => ph.declined && !ph.assignedTo.length);
+  $("allTitle").textContent = `All photos (${picked.length} players)`;
+  $("declinedSection").hidden = !declined.length;
+  $("declinedTitle").textContent = `Declined (${declined.length})`;
+  $("declinedGrid").innerHTML = declined.map(libraryCard).join("");
+  $("unassignedGrid").innerHTML = unassigned.map(libraryCard).join("");
+  $("allGrid").innerHTML = picked.map((p) => `
+    <div class="cell" data-name="${esc(p.name)}" title="${esc(p.name)}${p.source === "commons" ? " (from Commons)" : ""}">
+      <img src="${headshotUrl(p)}" loading="lazy" alt="">
+      <span class="dot ${p.source === "commons" ? "commons" : "picked"}"></span>
+      <span class="label">${esc(p.name)}</span>
+    </div>`).join("");
+}
+
+function libraryCard(ph) {
+  const i = library.indexOf(ph);
+  const who = ph.assignedTo.length
+    ? `<div class="who">✓ ${esc(ph.assignedTo.join(", "))}</div>`
+    : ph.declined
+      ? `<div class="who none">✗ Declined${ph.players.length ? ` (${esc(ph.players.join(", "))})` : ""}</div>`
+    : ph.players.length
+      ? `<div class="who">→ ${esc(ph.players.join(", "))}</div>`
+      : `<div class="who none">No player named in file</div>
+         <input class="assign" list="playerNames" placeholder="Assign to player…" data-i="${i}">`;
+  return `
+    <div class="card" data-i="${i}" title="${esc(ph.file)}">
+      <img src="${esc(ph.url)}" loading="lazy" alt="">
+      <div class="meta"><div class="title">${esc(ph.file)}</div>${who}</div>
+    </div>`;
+}
+
+// The player a library photo is cropped for: chosen on its card, else the
+// one it's already assigned to, else the one it's named after.
+const playerFor = (ph) => ph.assignName ?? ph.assignedTo[0] ?? ph.players[0];
+
+// Opens the photo in the cropper for its player, coming back here after.
+async function cropFromLibrary(ph) {
+  const p = players.find((pl) => pl.name === playerFor(ph));
+  if (!p) return;
+  await selectPlayer(p);
+  fromLibrary = true;
+  openCropper({ file: ph.file, url: ph.url });
+}
+
+// Clicking a not-yet-assigned photo named after a player starts a queue of
+// all of them from there; Enter saves each crop and opens the next. Any
+// other photo opens on its own.
+function startQueue(ph) {
+  const pending = library.filter((l) => !l.assignedTo.length && !l.declined && l.players.length);
+  const i = pending.indexOf(ph);
+  queue = i >= 0 ? pending.slice(i) : [ph];
+  openQueued(0);
+}
+
+function openQueued(i) {
+  queuePos = i;
+  cropFromLibrary(queue[i]);
+  // warm up the next photo and its face detection while this one is checked
+  const next = queue[i + 1];
+  if (next) {
+    new Image().src = next.url;
+    fetch(`/api/face?file=${encodeURIComponent(next.file)}`).catch(() => {});
+  }
+}
+
+// a headshot cell opens that player, to re-crop or swap the photo
+$("allGrid").addEventListener("click", (e) => {
+  const cell = e.target.closest(".cell");
+  if (cell) selectPlayer(players.find((p) => p.name === cell.dataset.name));
+});
+
+for (const id of ["unassignedGrid", "declinedGrid"]) {
+  $(id).addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (!card || e.target.matches(".assign")) return;
+    const ph = library[card.dataset.i];
+    if (playerFor(ph)) startQueue(ph);
+    else card.querySelector(".assign")?.focus();
+  });
+  $(id).addEventListener("change", (e) => {
+    if (!e.target.matches(".assign")) return;
+    const ph = library[e.target.dataset.i];
+    if (!players.some((p) => p.name === e.target.value)) return;
+    ph.assignName = e.target.value;
+    startQueue(ph);
+  });
+}
+
+$("libraryTab").addEventListener("click", showLibrary);
+
+$("reload").addEventListener("click", reload);
+$("skip").addEventListener("click", skip);
+$("next").addEventListener("click", () => step(1));
+
+async function skip() {
+  if (!current) return;
+  await api("/api/skip", { name: current.name });
+  current.status = "skipped";
+  advance();
+}
+
+// ---- cropper ----
+const img = $("cropImg");
+
+function openCropper(c) {
+  cropping = c;
+  box = null;
+  boxTouched = false;
+  $("faceInfo").textContent = "Looking for a face…";
+  $("queueInfo").textContent = queue && queue.length > 1
+    ? `Queue ${queuePos + 1} of ${queue.length}: Enter saves and opens the next, Esc declines this photo, click outside to stop.`
+    : "";
+  const face = api(`/api/face?file=${encodeURIComponent(c.file)}`).then((r) => r.face, () => null);
+  $("saveError").textContent = "";
+  $("cropCredit").textContent = `From Downloads · ${c.file}`;
+  $("box").style.display = "none";
+  $("saveCrop").disabled = true;
+  $("saveError").textContent = "Loading full-size image…";
+  img.onerror = () => { $("saveError").textContent = "Couldn't load this image."; };
+  img.onload = () => {
+    $("saveCrop").disabled = false;
+    $("saveError").textContent = "";
+    // start with a square over the top-middle, where the head usually is
+    const W = img.clientWidth, H = img.clientHeight;
+    const side = Math.min(W, H) * 0.4;
+    setBox({ x: (W - side) / 2, y: H * 0.06, side });
+    face.then((f) => {
+      if (cropping !== c) return;
+      $("faceInfo").textContent = f ? "Box placed on the detected face." : "No face found; place the box by hand.";
+      // don't undo a box the user has already started adjusting
+      if (!f || boxTouched) return;
+      setBox(boxForFace(f, img.clientWidth, img.clientHeight));
+    });
+  };
+  img.src = c.url;
+  $("preview").style.backgroundImage = `url("${c.url.replace(/"/g, "%22")}")`;
+  $("cropper").classList.add("open");
+}
+
+function closeCropper() {
+  $("cropper").classList.remove("open");
+  cropping = null;
+  fromLibrary = false;
+  img.removeAttribute("src");
+}
+
+function setBox(b) {
+  const W = img.clientWidth, H = img.clientHeight;
+  const side = Math.max(20, Math.min(b.side, W, H));
+  box = { side, x: Math.min(Math.max(b.x, 0), W - side), y: Math.min(Math.max(b.y, 0), H - side) };
+  Object.assign($("box").style, { display: "block", left: box.x + "px", top: box.y + "px", width: side + "px", height: side + "px" });
+  const scale = $("preview").clientWidth / side;
+  Object.assign($("preview").style, {
+    backgroundSize: `${W * scale}px ${H * scale}px`,
+    backgroundPosition: `${-box.x * scale}px ${-box.y * scale}px`,
+  });
+}
+
+let drag = null;
+$("stage").addEventListener("pointerdown", (e) => {
+  if (!box) return;
+  boxTouched = true;
+  const r = img.getBoundingClientRect();
+  const px = e.clientX - r.left, py = e.clientY - r.top;
+  if (e.target === $("handle")) drag = { mode: "resize", start: { ...box } };
+  else if (e.target === $("box")) drag = { mode: "move", dx: px - box.x, dy: py - box.y };
+  else drag = { mode: "draw", ax: px, ay: py };
+  $("stage").setPointerCapture(e.pointerId);
+  e.preventDefault();
+});
+$("stage").addEventListener("pointermove", (e) => {
+  if (!drag) return;
+  const r = img.getBoundingClientRect();
+  const px = e.clientX - r.left, py = e.clientY - r.top;
+  if (drag.mode === "move") {
+    setBox({ ...box, x: px - drag.dx, y: py - drag.dy });
+  } else if (drag.mode === "resize") {
+    const side = Math.max(px - drag.start.x, py - drag.start.y);
+    setBox({ ...drag.start, side });
+  } else {
+    const side = Math.max(Math.abs(px - drag.ax), Math.abs(py - drag.ay), 20);
+    setBox({ x: px < drag.ax ? drag.ax - side : drag.ax, y: py < drag.ay ? drag.ay - side : drag.ay, side });
+  }
+});
+$("stage").addEventListener("pointerup", () => { drag = null; });
+$("stage").addEventListener("wheel", (e) => {
+  if (!box) return;
+  boxTouched = true;
+  e.preventDefault();
+  const side = box.side * (e.deltaY > 0 ? 0.95 : 1.05);
+  setBox({ x: box.x + (box.side - side) / 2, y: box.y + (box.side - side) / 2, side });
+}, { passive: false });
+
+async function saveCrop() {
+  if (!cropping || !box || !current) return;
+  const W = img.clientWidth, H = img.clientHeight;
+  const crop = { x: box.x / W, y: box.y / H, size: box.side / W };
+  $("saveCrop").disabled = true;
+  try {
+    await api("/api/save", { name: current.name, file: cropping.file, crop });
+    current.status = "picked";
+    current.source = "downloads";
+    current.version = Date.now();
+    if (queue && queuePos + 1 < queue.length) {
+      // stay in the cropper; nothing to save until the next photo is up
+      cropping = null;
+      box = null;
+      $("box").style.display = "none";
+      return openQueued(queuePos + 1);
+    }
+    const back = fromLibrary;
+    closeCropper();
+    queue = null;
+    back ? loadPlayers().then(showLibrary) : advance();
+  } catch (err) {
+    $("saveError").textContent = `Save failed: ${err.message}`;
+  } finally {
+    $("saveCrop").disabled = false;
+  }
+}
+
+$("saveCrop").addEventListener("click", saveCrop);
+// Cancel (or Esc) on a library photo nobody has yet declines it: it leaves
+// the queue for good, and the next one in the queue opens.
+async function cancelCrop() {
+  const ph = fromLibrary && queue?.[queuePos];
+  if (ph && !ph.assignedTo.length && !ph.declined) {
+    cropping = null;
+    try {
+      await api("/api/decline", { file: ph.file });
+      ph.declined = true;
+    } catch (err) {
+      $("saveError").textContent = `Couldn't decline: ${err.message}`;
+      return;
+    }
+    if (queuePos + 1 < queue.length) {
+      box = null;
+      $("box").style.display = "none";
+      return openQueued(queuePos + 1);
+    }
+  }
+  stopQueue();
+}
+
+// Leaves the cropper (and any queue) without saving or declining.
+function stopQueue() {
+  queue = null;
+  const back = fromLibrary;
+  closeCropper();
+  if (back) showLibrary();
+}
+
+$("cancelCrop").addEventListener("click", cancelCrop);
+$("cropper").addEventListener("click", (e) => { if (e.target === $("cropper")) stopQueue(); });
+
+// ---- keyboard ----
+document.addEventListener("keydown", (e) => {
+  if (cropping) {
+    if (e.key === "Enter") saveCrop();
+    if (e.key === "Escape") cancelCrop();
+    return;
+  }
+  if (e.target.matches("input, select")) return;
+  if (e.key === "ArrowDown" || e.key === "j") { step(1); e.preventDefault(); }
+  if (e.key === "ArrowUp" || e.key === "k") { step(-1); e.preventDefault(); }
+  if (e.key === "s") skip();
+  if (e.key === "r" && !e.metaKey && !e.ctrlKey) reload();
+  if (/^[1-9]$/.test(e.key) && photos[e.key - 1]) openCropper(photos[e.key - 1]);
+});
+
+(async () => {
+  await loadPlayers();
+  showLibrary();
+})();
+</script>
+</body>
+</html>
