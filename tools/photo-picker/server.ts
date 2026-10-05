@@ -6,6 +6,7 @@ import { basename, dirname, extname, join } from "node:path";
 import { promisify } from "node:util";
 import { Client } from "pg";
 import sharp from "sharp";
+import { headshotsSchemaSQL } from "../headshots/schema";
 
 // Local tool for hand-picking a headshot per player from photos you've
 // downloaded.
@@ -26,27 +27,6 @@ const LOCAL_TYPES: Record<string, string> = {
   ".webp": "image/webp", ".avif": "image/avif",
 };
 
-// Keyed by name rather than players.id so re-running populatedb (which
-// regenerates ids and drops players) doesn't lose or break picks.
-const schemaSQL = `
-  CREATE TABLE IF NOT EXISTS player_headshots (
-    player_name VARCHAR ( 255 ) PRIMARY KEY,
-    status VARCHAR ( 10 ) NOT NULL CHECK (status IN ('picked', 'skipped')),
-    image BYTEA,
-    mime_type VARCHAR ( 50 ),
-    file_title TEXT,
-    description_url TEXT,
-    artist TEXT,
-    license TEXT,
-    crop JSONB,
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-  );
-  -- downloaded photos turned down in the approval queue, so they stay out of it
-  CREATE TABLE IF NOT EXISTS declined_photos (
-    file TEXT PRIMARY KEY,
-    declined_at TIMESTAMPTZ NOT NULL DEFAULT now()
-  );
-`;
 
 // Grand Slam singles titles per player ("AO 2024", ...), from Wikipedia's
 // lists of men's and women's Grand Slam singles finals.
@@ -214,7 +194,7 @@ async function main() {
   }
   const db = new Client({ connectionString });
   await db.connect();
-  await db.query(schemaSQL);
+  await db.query(headshotsSchemaSQL);
 
   createServer(async (req, res) => {
     const url = new URL(req.url ?? "/", `http://localhost:${PORT}`);

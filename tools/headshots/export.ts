@@ -1,7 +1,8 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { dirname, join } from "node:path";
+import { dirname } from "node:path";
 import { Client } from "pg";
+import { BUCKET, MANIFEST, storage, type Headshot, type Manifest } from "./manifest";
 
 // Uploads the headshots picked in tools/photo-picker to the private Supabase
 // Storage bucket and writes data/headshots.json, the list of them that's
@@ -15,43 +16,11 @@ import { Client } from "pg";
 // so they never change once uploaded: a re-crop is a new object, and any
 // version of data/headshots.json points at images that still exist.
 
-const BUCKET = process.env.SUPABASE_HEADSHOTS_BUCKET ?? "headshots";
-const MANIFEST = join(import.meta.dirname, "..", "..", "data", "headshots.json");
 const PARALLEL_UPLOADS = 6;
-
-type Headshot = {
-  player: string;
-  object: string; // path in BUCKET
-  sha256: string;
-  mimeType: string;
-  sourceFile: string | null; // the downloaded photo (or Commons file) it was cropped from
-  crop: unknown;
-  artist: string | null;
-  license: string | null;
-  descriptionUrl: string | null;
-  updatedAt: string;
-};
-
-export type Manifest = {
-  bucket: string;
-  headshots: Headshot[];
-  skipped: string[]; // players marked as having no usable photo
-  declined: { file: string; declinedAt: string }[]; // photos turned down in the picker's queue
-};
 
 const slug = (name: string) =>
   name.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
     .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
-function storage(path: string, init: RequestInit = {}) {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SECRET_KEY;
-  if (!url || !key) throw new Error("Set SUPABASE_URL and SUPABASE_SECRET_KEY in .env.local");
-  return fetch(`${url}/storage/v1/${path}`, {
-    ...init,
-    headers: { apikey: key, Authorization: `Bearer ${key}`, ...init.headers },
-  });
-}
 
 async function upload(object: string, image: Buffer, mimeType: string) {
   const res = await storage(`object/${BUCKET}/${object}`, {
@@ -77,7 +46,9 @@ async function main() {
   try {
     ({ rows } = await db.query(
       `SELECT player_name, status, image, mime_type, file_title, crop, artist,
-              license, description_url, updated_at
+              license, description_url,
+              -- full precision; a JS Date would drop the microseconds
+              to_json(updated_at) #>> '{}' AS updated_at
        FROM player_headshots ORDER BY player_name`,
     ));
     // the table only exists once the picker has run its queue
@@ -100,7 +71,7 @@ async function main() {
     headshots.push({
       player: r.player_name, object, sha256, mimeType: r.mime_type,
       sourceFile: r.file_title, crop: r.crop, artist: r.artist, license: r.license,
-      descriptionUrl: r.description_url, updatedAt: r.updated_at.toISOString(),
+      descriptionUrl: r.description_url, updatedAt: r.updated_at,
     });
     if (force || !uploaded.has(object)) pending.push({ object, image: r.image, mimeType: r.mime_type });
   }
