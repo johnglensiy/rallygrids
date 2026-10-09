@@ -615,7 +615,7 @@ async function main() {
     throw new Error("Set DATABASE_URL in .env or pass a connection string");
   }
   const client = new Client({ connectionString });
-  
+
   await client.connect();
   try {
     await client.query(SQL);

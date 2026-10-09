@@ -21,10 +21,14 @@ const PARALLEL_DOWNLOADS = 6;
 
 async function download(h: Headshot, bucket: string): Promise<Buffer> {
   const res = await storage(`object/${bucket}/${h.object}`);
-  if (!res.ok) throw new Error(`download ${h.object}: ${res.status} ${await res.text()}`);
+  if (!res.ok)
+    throw new Error(`download ${h.object}: ${res.status} ${await res.text()}`);
   const image = Buffer.from(await res.arrayBuffer());
   const sha256 = createHash("sha256").update(image).digest("hex");
-  if (sha256 !== h.sha256) throw new Error(`download ${h.object}: contents don't match data/headshots.json`);
+  if (sha256 !== h.sha256)
+    throw new Error(
+      `download ${h.object}: contents don't match data/headshots.json`,
+    );
   return image;
 }
 
@@ -32,9 +36,12 @@ async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes("--dry-run");
   const overwrite = args.includes("--overwrite");
-  const connectionString = args.find((a) => !a.startsWith("--")) ?? process.env.DATABASE_URL;
+  const connectionString =
+    args.find((a) => !a.startsWith("--")) ?? process.env.DATABASE_URL;
   if (!connectionString) {
-    throw new Error("Set DATABASE_URL in .env.local or pass a connection string");
+    throw new Error(
+      "Set DATABASE_URL in .env.local or pass a connection string",
+    );
   }
   const manifest: Manifest = JSON.parse(await readFile(MANIFEST, "utf8"));
 
@@ -47,9 +54,11 @@ async function main() {
        FROM player_headshots`,
     );
     const existing = new Map(rows.map((r) => [r.player_name, r]));
-    const players = new Set((await db.query(
-      "SELECT name FROM players",
-    ).catch(() => ({ rows: [] }))).rows.map((r) => r.name));
+    const players = new Set(
+      (
+        await db.query("SELECT name FROM players").catch(() => ({ rows: [] }))
+      ).rows.map((r) => r.name),
+    );
 
     const changed: Headshot[] = [];
     const kept: string[] = [];
@@ -62,22 +71,31 @@ async function main() {
       }
       changed.push(h);
     }
-    const unknown = manifest.headshots.filter((h) => !players.has(h.player)).map((h) => h.player);
+    const unknown = manifest.headshots
+      .filter((h) => !players.has(h.player))
+      .map((h) => h.player);
 
-    console.log(`${manifest.headshots.length} headshots listed; ${changed.length} to download and save` +
-      (dryRun ? " (dry run)" : ""));
+    console.log(
+      `${manifest.headshots.length} headshots listed; ${changed.length} to download and save` +
+        (dryRun ? " (dry run)" : ""),
+    );
     if (kept.length) {
-      console.log(`kept ${kept.length} newer pick(s) in the database (export them, or pass --overwrite): ` +
-        kept.join(", "));
+      console.log(
+        `kept ${kept.length} newer pick(s) in the database (export them, or pass --overwrite): ` +
+          kept.join(", "),
+      );
     }
     if (unknown.length) {
-      console.log(`${unknown.length} headshot(s) for players not in this database's players table ` +
-        `(saved anyway; they show once the player is seeded): ${unknown.slice(0, 10).join(", ")}` +
-        (unknown.length > 10 ? ", …" : ""));
+      console.log(
+        `${unknown.length} headshot(s) for players not in this database's players table ` +
+          `(saved anyway; they show once the player is seeded): ${unknown.slice(0, 10).join(", ")}` +
+          (unknown.length > 10 ? ", …" : ""),
+      );
     }
     if (dryRun) {
       for (const h of changed.slice(0, 20)) console.log(`  ${h.player}`);
-      if (changed.length > 20) console.log(`  … and ${changed.length - 20} more`);
+      if (changed.length > 20)
+        console.log(`  … and ${changed.length - 20} more`);
       return;
     }
 
@@ -85,7 +103,9 @@ async function main() {
     const images = new Map<string, Buffer>();
     for (let i = 0; i < changed.length; i += PARALLEL_DOWNLOADS) {
       const batch = changed.slice(i, i + PARALLEL_DOWNLOADS);
-      const downloaded = await Promise.all(batch.map((h) => download(h, manifest.bucket)));
+      const downloaded = await Promise.all(
+        batch.map((h) => download(h, manifest.bucket)),
+      );
       batch.forEach((h, j) => images.set(h.player, downloaded[j]));
       process.stdout.write(`\r  downloaded ${images.size}/${changed.length}`);
     }
@@ -103,8 +123,17 @@ async function main() {
            artist = EXCLUDED.artist, license = EXCLUDED.license, crop = EXCLUDED.crop,
            updated_at = EXCLUDED.updated_at`,
         // the list's updated_at, so every database versions the image URL the same
-        [h.player, images.get(h.player), h.mimeType, h.sourceFile, h.descriptionUrl,
-         h.artist, h.license, JSON.stringify(h.crop), h.updatedAt],
+        [
+          h.player,
+          images.get(h.player),
+          h.mimeType,
+          h.sourceFile,
+          h.descriptionUrl,
+          h.artist,
+          h.license,
+          JSON.stringify(h.crop),
+          h.updatedAt,
+        ],
       );
     }
     // a skip never replaces a pick
@@ -118,11 +147,16 @@ async function main() {
       `INSERT INTO declined_photos (file, declined_at)
        SELECT * FROM unnest($1::text[], $2::timestamptz[])
        ON CONFLICT (file) DO NOTHING`,
-      [manifest.declined.map((d) => d.file), manifest.declined.map((d) => d.declinedAt)],
+      [
+        manifest.declined.map((d) => d.file),
+        manifest.declined.map((d) => d.declinedAt),
+      ],
     );
     await db.query("COMMIT");
-    console.log(`saved ${changed.length} headshot(s), ${skipped.rowCount} skip(s), ` +
-      `${declined.rowCount} declined photo(s)`);
+    console.log(
+      `saved ${changed.length} headshot(s), ${skipped.rowCount} skip(s), ` +
+        `${declined.rowCount} declined photo(s)`,
+    );
   } catch (err) {
     await db.query("ROLLBACK").catch(() => {});
     throw err;

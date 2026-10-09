@@ -57,7 +57,9 @@ export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
             key={j}
             contentEditable
             suppressContentEditableWarning
-            onBlur={(e) => setLabel("cols", j, e.currentTarget.textContent ?? "")}
+            onBlur={(e) =>
+              setLabel("cols", j, e.currentTarget.textContent ?? "")
+            }
             className={labelClass}
           >
             {col}
@@ -68,7 +70,9 @@ export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
             <div
               contentEditable
               suppressContentEditableWarning
-              onBlur={(e) => setLabel("rows", i, e.currentTarget.textContent ?? "")}
+              onBlur={(e) =>
+                setLabel("rows", i, e.currentTarget.textContent ?? "")
+              }
               className={labelClass}
             >
               {row}

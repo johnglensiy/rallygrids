@@ -70,14 +70,14 @@ async function genPuzzle() {
       `INSERT INTO puzzles (row_1, row_2, row_3, col_1, col_2, col_3)
        VALUES ('Active in 2026', 'Top 50 player', '2026 Grand Slam QF',
                'ATP', 'United States', 'WTA')
-       RETURNING id`
+       RETURNING id`,
     );
     const puzzleId: number = rows[0].id;
 
     for (const select of cellSQL) {
       await client.query(
         `INSERT INTO puzzle_cells (puzzle_id, row_pos, col_pos, answer_ids) ${select}`,
-        [puzzleId]
+        [puzzleId],
       );
     }
     await client.query("COMMIT");
@@ -85,7 +85,7 @@ async function genPuzzle() {
     const { rows: counts } = await client.query(
       `SELECT row_pos, col_pos, answer_count FROM puzzle_cells
        WHERE puzzle_id = $1 ORDER BY 1, 2`,
-      [puzzleId]
+      [puzzleId],
     );
     console.table(counts);
   } catch (err) {

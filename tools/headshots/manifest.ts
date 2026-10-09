@@ -5,7 +5,13 @@ import { join } from "node:path";
 // their images. Reads SUPABASE_URL and SUPABASE_SECRET_KEY (.env.local).
 
 export const BUCKET = process.env.SUPABASE_HEADSHOTS_BUCKET ?? "headshots";
-export const MANIFEST = join(import.meta.dirname, "..", "..", "data", "headshots.json");
+export const MANIFEST = join(
+  import.meta.dirname,
+  "..",
+  "..",
+  "data",
+  "headshots.json",
+);
 
 export type Headshot = {
   player: string;
@@ -30,7 +36,8 @@ export type Manifest = {
 export function storage(path: string, init: RequestInit = {}) {
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SECRET_KEY;
-  if (!url || !key) throw new Error("Set SUPABASE_URL and SUPABASE_SECRET_KEY in .env.local");
+  if (!url || !key)
+    throw new Error("Set SUPABASE_URL and SUPABASE_SECRET_KEY in .env.local");
   return fetch(`${url}/storage/v1/${path}`, {
     ...init,
     headers: { apikey: key, Authorization: `Bearer ${key}`, ...init.headers },

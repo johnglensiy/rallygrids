@@ -1,5 +1,9 @@
 import { execFile } from "node:child_process";
-import { createServer, type IncomingMessage, type ServerResponse } from "node:http";
+import {
+  createServer,
+  type IncomingMessage,
+  type ServerResponse,
+} from "node:http";
 import { mkdir, readFile, readdir, stat } from "node:fs/promises";
 import { homedir } from "node:os";
 import { basename, dirname, extname, join } from "node:path";
@@ -21,12 +25,16 @@ const PORT = 4000;
 const HEADSHOT_SIZE = 400;
 // Photos saved by hand, named after the player ("stefankoubek.webp",
 // "Gabriela Sabatini 2.jpg", or just the surname: "sabatini.jpg").
-const DOWNLOADS_DIR = process.env.PLAYER_PHOTOS_DIR ?? join(homedir(), "Downloads", "player-photos");
+const DOWNLOADS_DIR =
+  process.env.PLAYER_PHOTOS_DIR ??
+  join(homedir(), "Downloads", "player-photos");
 const LOCAL_TYPES: Record<string, string> = {
-  ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
-  ".webp": "image/webp", ".avif": "image/avif",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".png": "image/png",
+  ".webp": "image/webp",
+  ".avif": "image/avif",
 };
-
 
 // Grand Slam singles titles per player ("AO 2024", ...), from Wikipedia's
 // lists of men's and women's Grand Slam singles finals.
@@ -35,46 +43,69 @@ const SLAMS_FILE = join(import.meta.dirname, "slams.json");
 type Photo = { file: string; url: string; width: number; height: number };
 
 // Letters NFD doesn't split into base + accent ("Đoković" -> "djokovic").
-const LETTERS: Record<string, string> = { đ: "dj", ł: "l", ø: "o", æ: "ae", ß: "ss", ı: "i" };
+const LETTERS: Record<string, string> = {
+  đ: "dj",
+  ł: "l",
+  ø: "o",
+  æ: "ae",
+  ß: "ss",
+  ı: "i",
+};
 
 // Letters only, so "stefankoubek", "Stefan_Koubek" and "Stefan Koubek 2"
 // all compare equal to the player's name.
 const letters = (s: string) =>
-  s.toLowerCase().replace(/[đłøæßı]/g, (c) => LETTERS[c])
-    .normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z]/g, "");
+  s
+    .toLowerCase()
+    .replace(/[đłøæßı]/g, (c) => LETTERS[c])
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z]/g, "");
 
 const photoFiles = async () =>
   (await readdir(DOWNLOADS_DIR).catch(() => [] as string[]))
-    .filter((file) => LOCAL_TYPES[extname(file).toLowerCase()]).sort();
+    .filter((file) => LOCAL_TYPES[extname(file).toLowerCase()])
+    .sort();
 
-const photoUrl = (file: string) => `/api/photo?file=${encodeURIComponent(file)}`;
+const photoUrl = (file: string) =>
+  `/api/photo?file=${encodeURIComponent(file)}`;
 
 // Whether a file is named after a player: their full name (either order) or,
 // when no other player shares it, their surname.
 function fileMatcher(names: string[]) {
   const surname = (n: string) => letters(n.split(" ").slice(1).join(" "));
   const surnames = new Map<string, number>();
-  for (const n of names) surnames.set(surname(n), (surnames.get(surname(n)) ?? 0) + 1);
+  for (const n of names)
+    surnames.set(surname(n), (surnames.get(surname(n)) ?? 0) + 1);
   return (file: string, name: string) => {
     const stem = letters(basename(file, extname(file)));
     const first = letters(name.split(" ")[0]);
     const last = surname(name);
-    return stem === first + last || stem === last + first ||
-      (surnames.get(last) === 1 && stem === last);
+    return (
+      stem === first + last ||
+      stem === last + first ||
+      (surnames.get(last) === 1 && stem === last)
+    );
   };
 }
 
 const playerNames = async (db: Client) =>
-  (await db.query("SELECT name FROM players")).rows.map((r) => r.name as string);
+  (await db.query("SELECT name FROM players")).rows.map(
+    (r) => r.name as string,
+  );
 
 // The files in DOWNLOADS_DIR named after this player.
 async function playerPhotos(db: Client, name: string): Promise<Photo[]> {
   const matches = fileMatcher(await playerNames(db));
   const files = (await photoFiles()).filter((file) => matches(file, name));
-  return Promise.all(files.map(async (file) => {
-    const { width = 0, height = 0 } = await sharp(join(DOWNLOADS_DIR, file)).metadata();
-    return { file, url: photoUrl(file), width, height };
-  }));
+  return Promise.all(
+    files.map(async (file) => {
+      const { width = 0, height = 0 } = await sharp(
+        join(DOWNLOADS_DIR, file),
+      ).metadata();
+      return { file, url: photoUrl(file), width, height };
+    }),
+  );
 }
 
 // Every file in DOWNLOADS_DIR, with the players it's named after, the
@@ -86,12 +117,18 @@ async function library(db: Client) {
   const { rows } = await db.query(
     "SELECT player_name, file_title FROM player_headshots WHERE status = 'picked'",
   );
-  const declined = new Set((await db.query("SELECT file FROM declined_photos")).rows.map((r) => r.file));
+  const declined = new Set(
+    (await db.query("SELECT file FROM declined_photos")).rows.map(
+      (r) => r.file,
+    ),
+  );
   return (await photoFiles()).map((file) => ({
     file,
     url: photoUrl(file),
     players: names.filter((n) => matches(file, n)),
-    assignedTo: rows.filter((r) => r.file_title === file).map((r) => r.player_name),
+    assignedTo: rows
+      .filter((r) => r.file_title === file)
+      .map((r) => r.player_name),
     declined: declined.has(file),
   }));
 }
@@ -115,7 +152,10 @@ type Face = { x: number; y: number; w: number; h: number; confidence: number };
 let compiling: Promise<void> | null = null;
 function faceDetector() {
   compiling ??= (async () => {
-    const [source, binary] = await Promise.all([stat(FACE_SOURCE), stat(FACE_BINARY).catch(() => null)]);
+    const [source, binary] = await Promise.all([
+      stat(FACE_SOURCE),
+      stat(FACE_BINARY).catch(() => null),
+    ]);
     if (binary && binary.mtimeMs >= source.mtimeMs) return;
     await mkdir(dirname(FACE_BINARY), { recursive: true });
     await run("swiftc", ["-O", FACE_SOURCE, "-o", FACE_BINARY]);
@@ -145,14 +185,25 @@ async function largestFace(file: string): Promise<Face | null> {
 
 type Crop = { x: number; y: number; size: number }; // fractions of the image width/height
 
-async function saveHeadshot(db: Client, name: string, file: string, crop: Crop) {
+async function saveHeadshot(
+  db: Client,
+  name: string,
+  file: string,
+  crop: Crop,
+) {
   // apply the EXIF orientation first: the crop was drawn on the photo as the
   // browser shows it, which is already rotated
-  const source = await sharp(await readPhoto(file)).rotate().toBuffer();
+  const source = await sharp(await readPhoto(file))
+    .rotate()
+    .toBuffer();
   const { width = 0, height = 0 } = await sharp(source).metadata();
   const left = Math.round(crop.x * width);
   const top = Math.round(crop.y * height);
-  const side = Math.min(Math.round(crop.size * width), width - left, height - top);
+  const side = Math.min(
+    Math.round(crop.size * width),
+    width - left,
+    height - top,
+  );
   if (side < 16) throw new Error("crop is too small");
 
   const image = await sharp(source)
@@ -182,9 +233,16 @@ async function readJson(req: IncomingMessage) {
   return JSON.parse(Buffer.concat(chunks).toString() || "{}");
 }
 
-function send(res: ServerResponse, status: number, body: unknown, type = "application/json") {
+function send(
+  res: ServerResponse,
+  status: number,
+  body: unknown,
+  type = "application/json",
+) {
   res.writeHead(status, { "Content-Type": type, "Cache-Control": "no-store" });
-  res.end(type === "application/json" ? JSON.stringify(body) : body as Buffer);
+  res.end(
+    type === "application/json" ? JSON.stringify(body) : (body as Buffer),
+  );
 }
 
 async function main() {
@@ -218,8 +276,14 @@ async function main() {
            FROM players p LEFT JOIN player_headshots h ON h.player_name = p.name
            ORDER BY p.tour, p.current_rank NULLS LAST, p.name`,
         );
-        const slams: Record<string, string[]> = JSON.parse(await readFile(SLAMS_FILE, "utf8"));
-        return send(res, 200, rows.map((r) => ({ ...r, slams: slams[r.name] ?? [] })));
+        const slams: Record<string, string[]> = JSON.parse(
+          await readFile(SLAMS_FILE, "utf8"),
+        );
+        return send(
+          res,
+          200,
+          rows.map((r) => ({ ...r, slams: slams[r.name] ?? [] })),
+        );
       }
       if (req.method === "GET" && url.pathname === "/api/photos") {
         return send(res, 200, await playerPhotos(db, name));
@@ -228,18 +292,27 @@ async function main() {
         return send(res, 200, await library(db));
       }
       if (req.method === "GET" && url.pathname === "/api/face") {
-        return send(res, 200, { face: await largestFace(url.searchParams.get("file") ?? "") });
+        return send(res, 200, {
+          face: await largestFace(url.searchParams.get("file") ?? ""),
+        });
       }
       if (req.method === "GET" && url.pathname === "/api/photo") {
         const file = url.searchParams.get("file") ?? "";
-        return send(res, 200, await readPhoto(file), LOCAL_TYPES[extname(file).toLowerCase()]);
+        return send(
+          res,
+          200,
+          await readPhoto(file),
+          LOCAL_TYPES[extname(file).toLowerCase()],
+        );
       }
       if (req.method === "GET" && url.pathname === "/api/headshot") {
         const { rows } = await db.query(
           "SELECT image, mime_type FROM player_headshots WHERE player_name = $1 AND status = 'picked'",
           [name],
         );
-        return rows[0] ? send(res, 200, rows[0].image, rows[0].mime_type) : send(res, 404, {});
+        return rows[0]
+          ? send(res, 200, rows[0].image, rows[0].mime_type)
+          : send(res, 404, {});
       }
       if (req.method === "POST" && url.pathname === "/api/save") {
         const body = await readJson(req);
@@ -249,7 +322,10 @@ async function main() {
       if (req.method === "POST" && url.pathname === "/api/decline") {
         const { file } = await readJson(req);
         await readPhoto(file); // validates the name
-        await db.query("INSERT INTO declined_photos (file) VALUES ($1) ON CONFLICT DO NOTHING", [file]);
+        await db.query(
+          "INSERT INTO declined_photos (file) VALUES ($1) ON CONFLICT DO NOTHING",
+          [file],
+        );
         return send(res, 200, { ok: true });
       }
       if (req.method === "POST" && url.pathname === "/api/skip") {
@@ -269,7 +345,9 @@ async function main() {
       console.error(err);
       send(res, 500, { error: (err as Error).message });
     }
-  }).listen(PORT, () => console.log(`photo picker on http://localhost:${PORT}`));
+  }).listen(PORT, () =>
+    console.log(`photo picker on http://localhost:${PORT}`),
+  );
 }
 
 main().catch((err) => {

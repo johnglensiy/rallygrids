@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GameGrid from "./GameGrid";
 import { getAllPlayers } from "@/server/players";
 
