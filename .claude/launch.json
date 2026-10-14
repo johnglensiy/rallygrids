@@ -1,0 +1,39 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "photo-picker",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": [
+        "tools/photo-picker/server.ts",
+        "postgresql:///rally_grids?host=/tmp"
+      ],
+      "port": 4000
+    },
+    {
+      "name": "dev",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "DATABASE_URL=postgresql:///rally_grids?host=/tmp",
+        "bun",
+        "run",
+        "dev"
+      ],
+      "port": 3000
+    },
+    {
+      "name": "dev-sandbox",
+      "runtimeExecutable": "env",
+      "runtimeArgs": [
+        "SANDBOX=1",
+        "DATABASE_URL=postgresql:///rally_grids?host=/tmp",
+        "bun",
+        "run",
+        "dev",
+        "--port",
+        "3001"
+      ],
+      "port": 3001
+    }
+  ]
+}
