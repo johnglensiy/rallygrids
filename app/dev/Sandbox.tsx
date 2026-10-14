@@ -2,6 +2,7 @@
 import { useState, Fragment } from "react";
 import GuessModal from "../GuessModal";
 import PlayerCell from "../PlayerCell";
+import CategoryPicker, { SAMPLE_CATEGORIES } from "./CategoryPicker";
 import type { Player, GuessResult } from "../GameGrid";
 
 type SandboxProps = {
@@ -11,7 +12,23 @@ type SandboxProps = {
 };
 
 const labelClass =
-  "flex items-center justify-center text-center text-sm sm:text-base font-semibold p-2 rounded-lg outline-none hover:bg-neutral-100 focus:bg-neutral-100 cursor-text";
+  "flex items-center justify-center text-center text-sm sm:text-base font-semibold p-2 rounded-lg outline-none hover:bg-neutral-100 focus:bg-neutral-100 cursor-pointer";
+
+const LABEL_SEPARATOR = " & ";
+
+// a label is the selected categories' labels joined, so ids can be recovered from it
+function labelToIds(label: string): string[] {
+  const parts = label.split(LABEL_SEPARATOR);
+  return SAMPLE_CATEGORIES.filter((c) => parts.includes(c.label)).map(
+    (c) => c.id,
+  );
+}
+
+function idsToLabel(ids: string[]): string {
+  return SAMPLE_CATEGORIES.filter((c) => ids.includes(c.id))
+    .map((c) => c.label)
+    .join(LABEL_SEPARATOR);
+}
 
 export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
   const [puzzle, setPuzzle] = useState<{ rows: string[]; cols: string[] }>({
@@ -22,12 +39,14 @@ export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
     row: number;
     col: number;
   } | null>(null);
+  const [labelSelected, setLabelSelected] = useState<{
+    axis: "rows" | "cols";
+    index: number;
+  } | null>(null);
   const [gridValues, setGridValues] = useState<Array<Player | null>>(
     Array(9).fill(null),
   );
 
-  // labels are contentEditable and only committed on blur, so React doesn't
-  // re-render mid-typing and jump the caret
   function setLabel(axis: "rows" | "cols", index: number, value: string) {
     setPuzzle((prev) => ({
       ...prev,
@@ -53,30 +72,24 @@ export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
         <div />
         {/* index keys: label text changes on edit, which would remount the cells */}
         {puzzle.cols.map((col, j) => (
-          <div
+          <button
             key={j}
-            contentEditable
-            suppressContentEditableWarning
-            onBlur={(e) =>
-              setLabel("cols", j, e.currentTarget.textContent ?? "")
-            }
+            type="button"
+            onClick={() => setLabelSelected({ axis: "cols", index: j })}
             className={labelClass}
           >
-            {col}
-          </div>
+            {col || "Pick a category"}
+          </button>
         ))}
         {puzzle.rows.map((row, i) => (
           <Fragment key={i}>
-            <div
-              contentEditable
-              suppressContentEditableWarning
-              onBlur={(e) =>
-                setLabel("rows", i, e.currentTarget.textContent ?? "")
-              }
+            <button
+              type="button"
+              onClick={() => setLabelSelected({ axis: "rows", index: i })}
               className={labelClass}
             >
-              {row}
-            </div>
+              {row || "Pick a category"}
+            </button>
             {puzzle.cols.map((col, j) => (
               <div
                 key={j}
@@ -98,6 +111,17 @@ export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
           colLabel={puzzle.cols[cellSelected.col]}
           onClose={() => setCellSelected(null)}
           onSelectPlayer={handleGuess}
+        />
+      )}
+      {labelSelected && (
+        <CategoryPicker
+          initialSelected={labelToIds(
+            puzzle[labelSelected.axis][labelSelected.index],
+          )}
+          onChange={(ids) =>
+            setLabel(labelSelected.axis, labelSelected.index, idsToLabel(ids))
+          }
+          onClose={() => setLabelSelected(null)}
         />
       )}
     </>

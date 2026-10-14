@@ -1,7 +1,6 @@
 // Dev-only route: only a page when SANDBOX=1 (see pageExtensions in next.config.ts),
 // so production builds never bundle it.
 import Sandbox from "./Sandbox";
-import CategoryPicker from "./CategoryPicker";
 import { getAllPlayers } from "@/server/players";
 
 export default async function SandboxPage() {
@@ -13,7 +12,6 @@ export default async function SandboxPage() {
         cols={["Wimbledon finalist", "Former world #1", "Olympic medalist"]}
         allPlayers={players}
       />
-      <CategoryPicker />
     </main>
   );
 }

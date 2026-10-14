@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export type Category = {
   id: string;
@@ -8,7 +8,7 @@ export type Category = {
 };
 
 // placeholder until valid categories come from server logic
-const SAMPLE_CATEGORIES: Category[] = [
+export const SAMPLE_CATEGORIES: Category[] = [
   { id: "atp", label: "ATP", group: "Tour" },
   { id: "wta", label: "WTA", group: "Tour" },
   { id: "active-2026", label: "Active in 2026", group: "Career" },
@@ -25,15 +25,27 @@ const SAMPLE_CATEGORIES: Category[] = [
 
 type CategoryPickerProps = {
   categories?: Category[];
+  initialSelected?: string[];
   onChange?: (selectedIds: string[]) => void;
+  onClose: () => void;
 };
 
 export default function CategoryPicker({
   categories = SAMPLE_CATEGORIES,
+  initialSelected = [],
   onChange,
+  onClose,
 }: CategoryPickerProps) {
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState<string[]>([]);
+  const [selected, setSelected] = useState<string[]>(initialSelected);
+
+  useEffect(() => {
+    function handleKey(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+    }
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [onClose]);
 
   function update(next: string[]) {
     setSelected(next);
@@ -64,66 +76,77 @@ export default function CategoryPicker({
   }
 
   return (
-    <div className="w-full max-w-2xl rounded-xl bg-white p-4 text-neutral-900 shadow-xl">
-      <div className="mb-3 flex items-baseline justify-between gap-2">
-        <h2 className="text-lg font-semibold">Categories</h2>
-        <div className="flex items-baseline gap-3 text-sm text-neutral-500">
-          <span>
-            {selected.length} of {categories.length} selected
-          </span>
-          <button
-            type="button"
-            onClick={() => update([])}
-            disabled={selected.length === 0}
-            className="font-medium text-neutral-700 hover:text-neutral-900 disabled:cursor-default disabled:text-neutral-300"
-          >
-            Clear
-          </button>
+    <div
+      className="fixed inset-0 z-50 flex items-start justify-center bg-black/40 backdrop-blur-sm px-4 pt-24"
+      onClick={onClose}
+    >
+      <div
+        className="w-full max-w-2xl rounded-xl bg-white p-4 text-neutral-900 shadow-xl"
+        onClick={(e) => e.stopPropagation()} // clicks inside the panel don't close it
+        role="dialog"
+        aria-modal="true"
+      >
+        <div className="mb-3 flex items-baseline justify-between gap-2">
+          <h2 className="text-lg font-semibold">Categories</h2>
+          <div className="flex items-baseline gap-3 text-sm text-neutral-500">
+            <span>
+              {selected.length} of {categories.length} selected
+            </span>
+            <button
+              type="button"
+              onClick={() => update([])}
+              disabled={selected.length === 0}
+              className="font-medium text-neutral-700 hover:text-neutral-900 disabled:cursor-default disabled:text-neutral-300"
+            >
+              Clear
+            </button>
+          </div>
         </div>
+
+        <input
+          autoFocus
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Filter categories…"
+          className="mb-4 w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-500"
+        />
+
+        {groups.size === 0 ? (
+          <p className="py-6 text-center text-sm text-neutral-500">
+            No categories match “{query.trim()}”
+          </p>
+        ) : (
+          <div className="flex flex-col gap-4">
+            {[...groups].map(([group, items]) => (
+              <section key={group}>
+                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                  {group}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {items.map((c) => {
+                    const isSelected = selected.includes(c.id);
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        aria-pressed={isSelected}
+                        onClick={() => toggle(c.id)}
+                        className={`rounded-full border px-3 py-1 text-sm transition-colors ${
+                          isSelected
+                            ? "border-neutral-900 bg-neutral-900 text-white"
+                            : "border-neutral-300 hover:bg-neutral-100"
+                        }`}
+                      >
+                        {c.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
       </div>
-
-      <input
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Filter categories…"
-        className="mb-4 w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-500"
-      />
-
-      {groups.size === 0 ? (
-        <p className="py-6 text-center text-sm text-neutral-500">
-          No categories match “{query.trim()}”
-        </p>
-      ) : (
-        <div className="flex flex-col gap-4">
-          {[...groups].map(([group, items]) => (
-            <section key={group}>
-              <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                {group}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {items.map((c) => {
-                  const isSelected = selected.includes(c.id);
-                  return (
-                    <button
-                      key={c.id}
-                      type="button"
-                      aria-pressed={isSelected}
-                      onClick={() => toggle(c.id)}
-                      className={`rounded-full border px-3 py-1 text-sm transition-colors ${
-                        isSelected
-                          ? "border-neutral-900 bg-neutral-900 text-white"
-                          : "border-neutral-300 hover:bg-neutral-100"
-                      }`}
-                    >
-                      {c.label}
-                    </button>
-                  );
-                })}
-              </div>
-            </section>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
