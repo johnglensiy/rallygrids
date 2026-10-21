@@ -1,43 +1,46 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
+import {
+  CATEGORIES,
+  categoryName,
+  defaultParams,
+  formatCategory,
+  validateParams,
+  type Category,
+  type CategorySelection,
+  type ParamValue,
+} from "@/lib/categories";
+import { testCategory, type CategoryTestResult } from "./actions";
 
-export type Category = {
-  id: string;
-  label: string;
-  group: string;
-};
-
-// placeholder until valid categories come from server logic
-export const SAMPLE_CATEGORIES: Category[] = [
-  { id: "atp", label: "ATP", group: "Tour" },
-  { id: "wta", label: "WTA", group: "Tour" },
-  { id: "active-2026", label: "Active in 2026", group: "Career" },
-  { id: "top-50", label: "Top 50 player", group: "Ranking" },
-  { id: "former-no1", label: "Former world #1", group: "Ranking" },
-  { id: "gs-winner", label: "Grand Slam winner", group: "Results" },
-  { id: "wimbledon-finalist", label: "Wimbledon finalist", group: "Results" },
-  { id: "gs-qf-2026", label: "2026 Grand Slam QF", group: "Results" },
-  { id: "olympic-medalist", label: "Olympic medalist", group: "Results" },
-  { id: "usa", label: "United States", group: "Country" },
-  { id: "spain", label: "Born in Spain", group: "Country" },
-  { id: "left-handed", label: "Left-handed", group: "Playing style" },
-];
+export { formatCategory, parseCategory } from "@/lib/categories";
 
 type CategoryPickerProps = {
-  categories?: Category[];
-  initialSelected?: string[];
-  onChange?: (selectedIds: string[]) => void;
+  categories?: readonly Category[];
+  initialSelected?: CategorySelection | null;
+  onSelect: (selection: CategorySelection) => void;
   onClose: () => void;
 };
 
+// the category being looked at; values are kept as typed so a number input
+// can be empty mid-edit
+type Draft = { id: string; values: Record<string, string> };
+
+const fieldClass =
+  "rounded-lg border border-neutral-300 px-3 py-1.5 outline-none focus:border-neutral-500";
+
 export default function CategoryPicker({
-  categories = SAMPLE_CATEGORIES,
-  initialSelected = [],
-  onChange,
+  categories = CATEGORIES,
+  initialSelected = null,
+  onSelect,
   onClose,
 }: CategoryPickerProps) {
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState<string[]>(initialSelected);
+  const [chosen, setChosen] = useState<Draft | null>(null);
+  const [result, setResult] = useState<CategoryTestResult | null>(null);
+  const [testing, startTest] = useTransition();
+  // bumped whenever the selection changes, so a slow test can't show results
+  // for an earlier one
+  const testId = useRef(0);
 
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
@@ -47,16 +50,174 @@ export default function CategoryPicker({
     return () => window.removeEventListener("keydown", handleKey);
   }, [onClose]);
 
-  function update(next: string[]) {
-    setSelected(next);
-    onChange?.(next);
+  function show(next: Draft | null) {
+    testId.current++;
+    setChosen(next);
+    setResult(null);
   }
 
-  function toggle(id: string) {
-    update(
-      selected.includes(id)
-        ? selected.filter((s) => s !== id)
-        : [...selected, id],
+  function pick(c: Category) {
+    // reopen with the label's current values when it's this category
+    const values = {
+      ...defaultParams(c),
+      ...(initialSelected?.id === c.id ? initialSelected.params : {}),
+    };
+    show({
+      id: c.id,
+      values: Object.fromEntries(
+        Object.entries(values).map(([k, v]) => [k, String(v)]),
+      ),
+    });
+  }
+
+  const category = chosen && categories.find((c) => c.id === chosen.id);
+
+  if (chosen && category) {
+    const params = Object.entries(category.params ?? {});
+    const typed: Record<string, ParamValue> = Object.fromEntries(
+      params.map(([key, p]) => {
+        const raw = chosen.values[key] ?? "";
+        return [
+          key,
+          p.kind === "number" ? (raw === "" ? NaN : Number(raw)) : raw,
+        ];
+      }),
+    );
+    const checked = validateParams(category, typed);
+    const selection: CategorySelection = {
+      id: category.id,
+      ...(checked.ok && params.length > 0 && { params: checked.values }),
+    };
+
+    function runTest() {
+      const id = ++testId.current;
+      startTest(async () => {
+        const res = await testCategory(selection);
+        if (id === testId.current) setResult(res);
+      });
+    }
+
+    return (
+      <Overlay onClose={onClose}>
+        <button
+          type="button"
+          onClick={() => show(null)}
+          className="mb-3 text-sm font-medium text-neutral-500 hover:text-neutral-900"
+        >
+          ← All categories
+        </button>
+        <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
+          {category.group}
+        </p>
+        <h2 className="mb-4 text-lg font-semibold">
+          {checked.ok ? formatCategory(selection) : categoryName(category)}
+        </h2>
+
+        {params.length > 0 && (
+          <div className="mb-4 flex flex-wrap gap-4">
+            {params.map(([key, p], i) => (
+              <label key={key} className="flex flex-col gap-1 text-sm">
+                <span className="text-neutral-500">
+                  {p.label}
+                  {p.kind === "number" && ` (${p.min}–${p.max})`}
+                </span>
+                {p.kind === "number" ? (
+                  <input
+                    autoFocus={i === 0}
+                    type="number"
+                    min={p.min}
+                    max={p.max}
+                    step={1}
+                    value={chosen.values[key] ?? ""}
+                    onChange={(e) =>
+                      show({
+                        id: category.id,
+                        values: { ...chosen.values, [key]: e.target.value },
+                      })
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" && checked.ok) runTest();
+                    }}
+                    className={`w-28 ${fieldClass}`}
+                  />
+                ) : (
+                  <select
+                    autoFocus={i === 0}
+                    value={chosen.values[key] ?? ""}
+                    onChange={(e) =>
+                      show({
+                        id: category.id,
+                        values: { ...chosen.values, [key]: e.target.value },
+                      })
+                    }
+                    className={`bg-white ${fieldClass}`}
+                  >
+                    {p.options.map((o) => (
+                      <option key={o.value} value={o.value}>
+                        {o.label}
+                      </option>
+                    ))}
+                  </select>
+                )}
+              </label>
+            ))}
+          </div>
+        )}
+        {!checked.ok && (
+          <p className="mb-4 text-sm text-red-700">{checked.error}</p>
+        )}
+
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={runTest}
+            disabled={!checked.ok || testing}
+            className="rounded-lg border border-neutral-300 px-3 py-1.5 text-sm font-medium hover:bg-neutral-100 disabled:cursor-default disabled:text-neutral-300 disabled:hover:bg-transparent"
+          >
+            {testing ? "Testing…" : "Test"}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              onSelect(selection);
+              onClose();
+            }}
+            disabled={!checked.ok}
+            className="rounded-lg bg-neutral-900 px-3 py-1.5 text-sm font-medium text-white hover:bg-neutral-700 disabled:bg-neutral-300"
+          >
+            Use category
+          </button>
+        </div>
+
+        {result && !result.ok && (
+          <p className="mt-4 text-sm text-red-700">{result.error}</p>
+        )}
+        {result?.ok && (
+          <div className="mt-4">
+            <p className="mb-2 text-sm text-neutral-500">
+              {result.players.length}{" "}
+              {result.players.length === 1
+                ? "player qualifies"
+                : "players qualify"}
+            </p>
+            {result.players.length > 0 && (
+              <ul className="max-h-72 overflow-y-auto rounded-lg border border-neutral-200 text-sm">
+                {result.players.map((p) => (
+                  <li
+                    key={p.id}
+                    className="flex justify-between gap-2 border-b border-neutral-100 px-3 py-1.5 last:border-b-0"
+                  >
+                    <span>{p.name}</span>
+                    <span className="text-neutral-500">
+                      {p.tour} · {p.country}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
+      </Overlay>
     );
   }
 
@@ -76,6 +237,64 @@ export default function CategoryPicker({
   }
 
   return (
+    <Overlay onClose={onClose}>
+      <h2 className="mb-3 text-lg font-semibold">Choose a category</h2>
+
+      <input
+        autoFocus
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Filter categories…"
+        className="mb-4 w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-500"
+      />
+
+      {groups.size === 0 ? (
+        <p className="py-6 text-center text-sm text-neutral-500">
+          No categories match “{query.trim()}”
+        </p>
+      ) : (
+        <div className="flex flex-col gap-4">
+          {[...groups].map(([group, items]) => (
+            <section key={group}>
+              <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                {group}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {items.map((c) => {
+                  const isSelected = initialSelected?.id === c.id;
+                  return (
+                    <button
+                      key={c.id}
+                      type="button"
+                      aria-pressed={isSelected}
+                      onClick={() => pick(c)}
+                      className={`rounded-full border px-3 py-1 text-sm transition-colors ${
+                        isSelected
+                          ? "border-neutral-900 bg-neutral-900 text-white"
+                          : "border-neutral-300 hover:bg-neutral-100"
+                      }`}
+                    >
+                      {categoryName(c)}
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
+    </Overlay>
+  );
+}
+
+function Overlay({
+  onClose,
+  children,
+}: {
+  onClose: () => void;
+  children: React.ReactNode;
+}) {
+  return (
     <div
       className="fixed inset-0 z-50 flex items-start justify-center bg-black/40 backdrop-blur-sm px-4 pt-24"
       onClick={onClose}
@@ -86,66 +305,7 @@ export default function CategoryPicker({
         role="dialog"
         aria-modal="true"
       >
-        <div className="mb-3 flex items-baseline justify-between gap-2">
-          <h2 className="text-lg font-semibold">Categories</h2>
-          <div className="flex items-baseline gap-3 text-sm text-neutral-500">
-            <span>
-              {selected.length} of {categories.length} selected
-            </span>
-            <button
-              type="button"
-              onClick={() => update([])}
-              disabled={selected.length === 0}
-              className="font-medium text-neutral-700 hover:text-neutral-900 disabled:cursor-default disabled:text-neutral-300"
-            >
-              Clear
-            </button>
-          </div>
-        </div>
-
-        <input
-          autoFocus
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Filter categories…"
-          className="mb-4 w-full rounded-lg border border-neutral-300 px-3 py-2 outline-none focus:border-neutral-500"
-        />
-
-        {groups.size === 0 ? (
-          <p className="py-6 text-center text-sm text-neutral-500">
-            No categories match “{query.trim()}”
-          </p>
-        ) : (
-          <div className="flex flex-col gap-4">
-            {[...groups].map(([group, items]) => (
-              <section key={group}>
-                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                  {group}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {items.map((c) => {
-                    const isSelected = selected.includes(c.id);
-                    return (
-                      <button
-                        key={c.id}
-                        type="button"
-                        aria-pressed={isSelected}
-                        onClick={() => toggle(c.id)}
-                        className={`rounded-full border px-3 py-1 text-sm transition-colors ${
-                          isSelected
-                            ? "border-neutral-900 bg-neutral-900 text-white"
-                            : "border-neutral-300 hover:bg-neutral-100"
-                        }`}
-                      >
-                        {c.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </section>
-            ))}
-          </div>
-        )}
+        {children}
       </div>
     </div>
   );

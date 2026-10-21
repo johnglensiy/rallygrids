@@ -2,7 +2,10 @@
 import { useState, Fragment } from "react";
 import GuessModal from "../GuessModal";
 import PlayerCell from "../PlayerCell";
-import CategoryPicker, { SAMPLE_CATEGORIES } from "./CategoryPicker";
+import CategoryPicker, {
+  formatCategory,
+  parseCategory,
+} from "./CategoryPicker";
 import type { Player, GuessResult } from "../GameGrid";
 
 type SandboxProps = {
@@ -13,22 +16,6 @@ type SandboxProps = {
 
 const labelClass =
   "flex items-center justify-center text-center text-sm sm:text-base font-semibold p-2 rounded-lg outline-none hover:bg-neutral-100 focus:bg-neutral-100 cursor-pointer";
-
-const LABEL_SEPARATOR = " & ";
-
-// a label is the selected categories' labels joined, so ids can be recovered from it
-function labelToIds(label: string): string[] {
-  const parts = label.split(LABEL_SEPARATOR);
-  return SAMPLE_CATEGORIES.filter((c) => parts.includes(c.label)).map(
-    (c) => c.id,
-  );
-}
-
-function idsToLabel(ids: string[]): string {
-  return SAMPLE_CATEGORIES.filter((c) => ids.includes(c.id))
-    .map((c) => c.label)
-    .join(LABEL_SEPARATOR);
-}
 
 export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
   const [puzzle, setPuzzle] = useState<{ rows: string[]; cols: string[] }>({
@@ -115,11 +102,15 @@ export default function Sandbox({ rows, cols, allPlayers }: SandboxProps) {
       )}
       {labelSelected && (
         <CategoryPicker
-          initialSelected={labelToIds(
+          initialSelected={parseCategory(
             puzzle[labelSelected.axis][labelSelected.index],
           )}
-          onChange={(ids) =>
-            setLabel(labelSelected.axis, labelSelected.index, idsToLabel(ids))
+          onSelect={(selection) =>
+            setLabel(
+              labelSelected.axis,
+              labelSelected.index,
+              formatCategory(selection),
+            )
           }
           onClose={() => setLabelSelected(null)}
         />
